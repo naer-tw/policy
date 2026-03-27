@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naer-tw.github.io/policy/sitemap.xml
