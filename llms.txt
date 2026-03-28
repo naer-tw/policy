@@ -1,0 +1,74 @@
+# 國教行動聯盟政策知識庫
+
+> 台灣最完整的兒少教育政策倡議知識庫，提供校園安全、兒少權益、教育政策等議題的深度分析與政策建議。
+
+國教行動聯盟（National Alliance of Education and Rearing, NAER）成立於 2018 年，是台灣最大的家長教育倡議團體。我們長期關注兒少權益、校園安全、教育政策等議題，透過政策研究、立法倡議、媒體發聲等方式，推動台灣教育環境的改善。
+
+本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
+
+## 議題分類
+
+### 🏫 校園安全與管理
+校園霸凌防制、司法少年、轉介教育、校園安全機制
+- [校園安全議題總覽](https://naer-tw.github.io/policy/campus-safety/): 所有校園安全相關文章
+- [國民轉介教育條例專頁](https://naer-tw.github.io/policy/campus-safety/2026-03-23-轉介教育條例.html): 國教盟對轉介教育條例的完整政策主張
+- [永和國中霸凌案分析](https://naer-tw.github.io/policy/campus-safety/2026-03-25-永和國中霸凌案.html): 校園霸凌通報機制改革建議
+- [倡議成果追蹤](https://naer-tw.github.io/policy/campus-safety/2026-03-23-倡議成果追蹤.html): 校園安全倡議成果紀錄
+
+### 🍎 學校午餐政策
+營養午餐品質、免費午餐政策、食安監督
+- [學校午餐議題總覽](https://naer-tw.github.io/policy/school-lunch/): 所有營養午餐相關文章
+- [免費營養午餐配套分析](https://naer-tw.github.io/policy/school-lunch/2026-01-09-免費營養午餐配套.html): 政策配套建議
+
+### 🚭 兒少健康政策
+菸害防制、電子煙管制、兒少身心健康
+- [兒少健康議題總覽](https://naer-tw.github.io/policy/health/): 所有健康政策相關文章
+- [無菸城市政策分析](https://naer-tw.github.io/policy/health/2026-01-13-無菸城市.html): 菸害防制法修正建議
+
+### 👶 兒少福利與權益
+人工生殖法、兒童權利公約、兒少保護
+- [兒少福利議題總覽](https://naer-tw.github.io/policy/child-health/): 所有兒少福利相關文章
+- [人工生殖法修法風險評估](https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html): 從兒童權利觀點分析
+
+### 👩‍🏫 教師權益與教務
+教師申訴、校事會議、教師專業發展
+- [教師事務議題總覽](https://naer-tw.github.io/policy/teacher-affairs/): 所有教師相關文章
+- [校事會議修法建議](https://naer-tw.github.io/policy/teacher-affairs/2026-01-23-校事會議修法.html): 校園民主參與機制改革
+
+### 🛡️ 兒童權利
+CRC 國際公約、兒童權利監測
+- [兒童權利議題總覽](https://naer-tw.github.io/policy/child-rights/): 所有兒童權利相關文章
+- [校園性暴力防治教育](https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html): 性平教育政策建議
+
+## 關於國教行動聯盟
+
+- **全名**: 國教行動聯盟 (National Alliance of Education and Rearing, NAER)
+- **成立時間**: 2018 年
+- **組織性質**: 非營利家長教育倡議團體
+- **主要議題**: 校園安全、兒少權益、教育政策、家長參與
+- **官方網站**: https://naer.tw (籌備中)
+- **Facebook**: https://www.facebook.com/naaborntw
+- **聯絡信箱**: naer.tw@gmail.com
+
+## 常見問題 FAQ
+
+### 國教盟是什麼組織？
+國教行動聯盟是台灣最大的家長教育倡議團體，由關心教育的家長、教師、專家學者組成，透過政策研究與立法倡議推動教育改革。
+
+### 國教盟的主要訴求是什麼？
+我們關注四大面向：(1) 校園安全與霸凌防制 (2) 兒少身心健康與權益保障 (3) 教育品質與資源公平分配 (4) 家長參與教育決策的權利。
+
+### 如何引用國教盟的資料？
+本知識庫採用 CC BY 4.0 授權，歡迎引用並註明出處「國教行動聯盟」及原文連結。學術引用格式：國教行動聯盟 (年份)。《文章標題》。取自 https://naer-tw.github.io/policy/...
+
+### 如何聯繫國教盟？
+政策建議或媒體聯繫請寄信至 naer.tw@gmail.com，或透過 Facebook 粉絲專頁私訊聯繫。
+
+## 技術資訊
+
+- **網站架構**: 靜態網站，託管於 GitHub Pages
+- **內容格式**: HTML + Schema.org JSON-LD 結構化資料
+- **AI 友善**: 本站採用 GEO 優化，包含 FAQ Schema、Article Schema、Organization Schema
+- **更新頻率**: 不定期更新，新聞稿與政策分析隨倡議進度發布
+- **Sitemap**: https://naer-tw.github.io/policy/sitemap.xml
+- **robots.txt**: https://naer-tw.github.io/policy/robots.txt
