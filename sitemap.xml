@@ -31,12 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://naer-tw.github.io/policy/campus-safety/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://naer-tw.github.io/policy/child-rights/</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -44,6 +38,12 @@
   </url>
   <url>
     <loc>https://naer-tw.github.io/policy/child-rights/2026-04-01-兒童節育兒支持政策.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
