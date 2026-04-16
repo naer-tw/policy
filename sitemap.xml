@@ -2,13 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://naer-tw.github.io/policy/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- 校園安全 -->
   <url>
     <loc>https://naer-tw.github.io/policy/campus-safety/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -31,10 +32,23 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://naer-tw.github.io/policy/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 兒少權益 -->
+  <url>
     <loc>https://naer-tw.github.io/policy/child-rights/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://naer-tw.github.io/policy/child-rights/2026-04-01-兒童節育兒支持政策.html</loc>
@@ -55,8 +69,58 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://naer-tw.github.io/policy/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/child-rights/2026-04-17-兒少保護體系改革五大修法工程.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 教育改革 -->
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/2026-04-12-偏鄉公校轉型實驗教育.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/2026-04-12-偽實驗與弱勢學生權益.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/2026-04-12-台灣實驗教育國際比較.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/2026-04-15-性平法再校準-國教盟公聽會.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/education-reform/2026-04-15-家長立場-全長聯公聽會.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 營養午餐 -->
+  <url>
     <loc>https://naer-tw.github.io/policy/school-lunch/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -66,6 +130,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/school-lunch/2026-04-03-國民教育平權.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 師資事務 -->
   <url>
     <loc>https://naer-tw.github.io/policy/teacher-affairs/</loc>
     <lastmod>2026-03-27</lastmod>
@@ -78,6 +149,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- 健康 -->
   <url>
     <loc>https://naer-tw.github.io/policy/health/</loc>
     <lastmod>2026-03-27</lastmod>
@@ -90,15 +162,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- 兒童健康 -->
   <url>
     <loc>https://naer-tw.github.io/policy/child-health/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html</loc>
     <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://naer-tw.github.io/policy/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
