@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>國教行動聯盟政策知識庫</title>
-  <meta name="description" content="國教行動聯盟自2012年推動教育政策倡議，聚焦校園安全、兒少權益、教育改革、青少年健康等議題。25 篇政策深度分析、8 大主題專區，為孩子爭取更好的教育環境。">
-  <meta name="keywords" content="國教行動聯盟,國教盟,教育政策,校園安全,兒少權益,教育改革,青少年健康,政策倡議,家長團體">
+  <meta name="description" content="國教行動聯盟自 2012 年推動教育政策倡議。25 篇政策深度分析、8 大主題專區，為孩子爭取更好的教育環境。">
+  <meta name="keywords" content="國教行動聯盟,國教盟,教育政策,校園安全,兒少權益,教育改革,青少年健康,政策倡議">
   <link rel="canonical" href="https://naer-tw.github.io/policy/">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="國教行動聯盟政策知識庫">
-  <meta property="og:description" content="教育政策深度分析・政策倡議紀錄・家長發聲平台。8 大主題、25 篇專題，國教盟 2012 年起的倡議行動全紀錄。">
+  <meta property="og:description" content="教育政策深度分析・倡議紀錄・家長發聲平台。8 大主題、25 篇專題，國教盟 2012 年起的倡議行動全紀錄。">
   <meta property="og:image" content="https://naer-tw.github.io/policy/images/logo-naer.png">
   <meta property="og:url" content="https://naer-tw.github.io/policy/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="國教行動聯盟政策知識庫">
   <meta property="og:locale" content="zh_TW">
 
-  <!-- Schema.org Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,356 +33,434 @@
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
     :root {
-      --c-campus-safety: #8B2631;
-      --c-child-rights: #D97706;
-      --c-education-reform: #1E40AF;
-      --c-child-health: #EA580C;
-      --c-school-lunch: #15803D;
-      --c-teacher-affairs: #4338CA;
-      --c-health: #0F766E;
-      --c-youth-health: #0369A1;
-      --c-text: #2C323C;
-      --c-text-light: #666;
-      --c-border: #e5e7eb;
-      --c-bg-soft: #f8f9fa;
+      /* 品牌主色（logo）— 強調色只用這兩種 */
+      --brand-teal:   #2FA598;
+      --brand-orange: #E89143;
+
+      /* 分類色 — 只用在卡片左邊細線 */
+      --c-campus:    #8B2631;
+      --c-rights:    #D97706;
+      --c-reform:    #1E40AF;
+      --c-health2:   #EA580C;
+      --c-lunch:     #15803D;
+      --c-teacher:   #4338CA;
+      --c-health:    #0F766E;
+      --c-youth:     #0369A1;
+
+      /* 中性色 — 主要用灰階 */
+      --ink:        #111418;
+      --ink-2:      #4a5058;
+      --ink-3:      #8a9099;
+      --line:       #e8eaed;
+      --line-soft:  #f2f4f6;
+      --bg:         #ffffff;
+
+      /* 文字黃金比例（55/34/21/13）轉 web */
+      --fs-hero:    3.4rem;   /* 55pt equiv */
+      --fs-h2:      2rem;     /* 34pt */
+      --fs-body:    1.08rem;  /* 21pt */
+      --fs-small:   0.82rem;  /* 13pt */
     }
+
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', 'Noto Sans TC', -apple-system, sans-serif;
-      max-width: 1040px; margin: 0 auto; padding: 56px 24px 40px;
-      line-height: 1.75; color: var(--c-text); background: #fff;
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink); background: var(--bg);
+      font-size: var(--fs-body); line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+    main { max-width: 1040px; margin: 0 auto; padding: 88px 32px 64px; }
+    a { color: inherit; text-decoration: none; }
 
     /* ─── Hero ─── */
     .hero {
       text-align: center;
-      padding: 20px 0 48px;
-      margin-bottom: 48px;
-      border-bottom: 1px solid var(--c-border);
+      padding-bottom: 80px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid var(--line);
     }
-    .hero img {
-      height: 108px; max-width: 100%;
-      margin: 0 auto 28px;
-      display: block;
+    .hero-logo {
+      height: 120px; margin: 0 auto 36px; display: block;
     }
-    .hero-text h1 {
-      font-size: 2.2em; line-height: 1.25; margin-bottom: 10px;
-      letter-spacing: 0.04em; font-weight: 700;
+    .hero-title {
+      font-size: var(--fs-hero);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      margin-bottom: 20px;
     }
-    .hero-text .tagline {
-      color: var(--c-text-light); font-size: 1.02em;
-      letter-spacing: 0.05em;
+    .hero-sub {
+      font-size: 1.02rem; color: var(--ink-2);
+      letter-spacing: 0.05em; font-weight: 500;
     }
-    .hero-text .tagline-en {
-      color: #999; font-size: 0.82em; margin-top: 6px;
-      letter-spacing: 0.18em; text-transform: uppercase;
+    .hero-en {
+      margin-top: 10px;
+      font-size: 0.72rem; color: var(--ink-3);
+      letter-spacing: 0.3em; text-transform: uppercase;
       font-weight: 500;
     }
-    .hero-divider {
-      display: inline-block; width: 40px; height: 2px;
-      background: var(--c-campus-safety);
-      margin: 16px auto 0;
+    .hero-mark {
+      display: inline-block; width: 36px; height: 3px;
+      background: var(--brand-orange);
+      margin-top: 28px; border-radius: 2px;
     }
 
-    /* ─── Intro ─── */
-    .intro {
-      background: var(--c-bg-soft); border-left: 4px solid var(--c-campus-safety);
-      padding: 20px 24px; border-radius: 0 8px 8px 0;
-      margin-bottom: 40px; font-size: 1.02em; line-height: 1.85;
-    }
-    .intro .highlight { font-weight: 600; color: var(--c-campus-safety); }
+    /* ─── Stats (大數字聚焦) ─── */
     .stats {
-      display: flex; gap: 32px; margin-top: 16px;
-      padding-top: 16px; border-top: 1px dashed var(--c-border);
-      flex-wrap: wrap;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 96px;
     }
-    .stat-item { font-size: 0.92em; color: var(--c-text-light); }
+    .stat {
+      text-align: center; padding: 12px 8px;
+    }
     .stat-num {
-      font-size: 1.6em; font-weight: 700; color: var(--c-text);
-      display: block; line-height: 1.1;
+      font-size: 3.2rem; font-weight: 800;
+      line-height: 1; color: var(--ink);
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-num .plus { color: var(--brand-orange); font-weight: 700; }
+    .stat-label {
+      margin-top: 10px; font-size: 0.88rem;
+      color: var(--ink-3); letter-spacing: 0.08em;
+    }
+
+    /* ─── Mission Statement ─── */
+    .mission {
+      text-align: center;
+      max-width: 680px; margin: 0 auto 96px;
+    }
+    .mission-kicker {
+      display: inline-block;
+      font-size: 0.72rem; letter-spacing: 0.3em;
+      color: var(--brand-teal); font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .mission p {
+      font-size: 1.15rem; line-height: 1.85;
+      color: var(--ink-2); font-weight: 400;
+    }
+    .mission .brand {
+      color: var(--ink); font-weight: 700;
+    }
+    .mission .accent {
+      color: var(--brand-orange); font-weight: 600;
+    }
+
+    /* ─── Section ─── */
+    .section-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 32px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-title {
+      font-size: var(--fs-h2); font-weight: 800;
+      letter-spacing: 0.02em; color: var(--ink);
+    }
+    .section-hint {
+      font-size: var(--fs-small); color: var(--ink-3);
+      letter-spacing: 0.08em;
     }
 
     /* ─── Category Grid ─── */
-    .section-title {
-      font-size: 1.15em; font-weight: 700; margin-bottom: 16px;
-      padding-bottom: 8px; border-bottom: 2px solid var(--c-text);
-    }
-    .category-grid {
+    .cats {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px; margin-bottom: 48px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 96px;
     }
-    .category-card {
-      background: #fff; border-radius: 10px; padding: 20px 22px;
-      border: 1px solid var(--c-border);
-      border-left: 5px solid var(--card-color);
-      transition: all 0.2s;
-      display: flex; flex-direction: column;
+    .cat {
+      display: block;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--card-color, var(--brand-teal));
+      border-radius: 6px;
+      padding: 24px 22px 22px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
-    .category-card:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
+    .cat:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border-color: var(--card-color);
     }
-    .category-card h2 {
-      font-size: 1.1em; color: var(--card-color);
-      margin-bottom: 6px; font-weight: 700;
+    .cat-num {
+      font-size: 0.7rem; letter-spacing: 0.18em; font-weight: 600;
+      color: var(--ink-3); text-transform: uppercase;
+      margin-bottom: 14px;
     }
-    .category-card .count {
-      color: var(--c-text-light); font-size: 0.82em; font-weight: 500;
-      margin-bottom: 10px;
+    .cat-title {
+      font-size: 1.18rem; font-weight: 800;
+      line-height: 1.3; color: var(--ink);
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
     }
-    .category-card p {
-      color: var(--c-text-light); font-size: 0.92em; line-height: 1.6;
-      margin-bottom: 14px; flex: 1;
+    .cat-desc {
+      font-size: 0.88rem; color: var(--ink-2);
+      line-height: 1.6; margin-bottom: 18px;
     }
-    .category-card a.more {
-      color: var(--card-color); text-decoration: none;
-      font-weight: 600; font-size: 0.92em;
-      align-self: flex-start;
-    }
-    .category-card a.more:hover { text-decoration: underline; }
-
-    /* ─── Latest Articles ─── */
-    .latest { margin-bottom: 40px; }
-    .article-item {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--c-border);
-    }
-    .article-item:last-child { border-bottom: none; }
-    .article-item a.title {
-      color: var(--c-text); text-decoration: none;
-      font-weight: 500; font-size: 1em; line-height: 1.5;
-    }
-    .article-item a.title:hover { color: var(--c-campus-safety); }
-    .article-meta { margin-top: 6px; font-size: 0.82em; color: #888; }
-    .tag {
-      display: inline-block; padding: 2px 8px; border-radius: 4px;
-      font-size: 0.78em; margin-right: 6px; font-weight: 500;
-    }
-    .tag.new {
-      background: var(--c-child-rights); color: white;
-    }
-    .tag.category {
-      color: var(--tag-color);
-      background: color-mix(in srgb, var(--tag-color) 10%, white);
+    .cat-more {
+      font-size: 0.82rem; font-weight: 600;
+      color: var(--card-color); letter-spacing: 0.08em;
     }
 
+    /* ─── Articles ─── */
+    .articles { margin-bottom: 80px; }
+    .article {
+      display: grid; grid-template-columns: 80px 1fr auto;
+      gap: 24px; align-items: baseline;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+      transition: background 0.2s ease;
+    }
+    .article:hover { background: var(--line-soft); margin: 0 -16px; padding: 22px 16px; }
+    .article-date {
+      font-size: 0.78rem; color: var(--ink-3);
+      letter-spacing: 0.08em; font-variant-numeric: tabular-nums;
+    }
+    .article-title {
+      font-size: 1.06rem; font-weight: 600;
+      color: var(--ink); line-height: 1.5;
+    }
+    .article:hover .article-title { color: var(--brand-teal); }
+    .article-cat {
+      font-size: 0.72rem; letter-spacing: 0.15em;
+      font-weight: 600; color: var(--tag-color);
+      text-transform: uppercase; white-space: nowrap;
+    }
+
+    /* ─── Footer ─── */
     footer {
-      margin-top: 48px; padding: 24px 0 8px;
-      border-top: 1px solid var(--c-border);
-      color: var(--c-text-light); font-size: 0.88em;
-      text-align: center; line-height: 1.8;
+      margin-top: 80px; padding: 40px 0 16px;
+      border-top: 1px solid var(--line);
+      text-align: center;
     }
-    footer a { color: var(--c-campus-safety); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    .footer-main {
+      font-size: 0.95rem; color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+    .footer-main a { color: var(--brand-teal); font-weight: 600; }
+    .footer-tagline {
+      font-size: 0.78rem; color: var(--ink-3);
+      letter-spacing: 0.2em;
+    }
 
+    /* ─── Mobile ─── */
     @media (max-width: 768px) {
-      body { padding: 32px 18px 28px; }
-      .hero { padding: 12px 0 32px; margin-bottom: 32px; }
-      .hero img { height: 88px; margin-bottom: 20px; }
-      .hero-text h1 { font-size: 1.45em; letter-spacing: 0.02em; line-height: 1.3; }
-      .hero-text .tagline { font-size: 0.92em; letter-spacing: 0.02em; padding: 0 8px; }
-      .hero-text .tagline-en { font-size: 0.68em; letter-spacing: 0.15em; margin-top: 4px; padding: 0 8px; }
-      .hero-divider { width: 32px; margin-top: 14px; }
+      :root {
+        --fs-hero: 2.1rem;
+        --fs-h2: 1.4rem;
+        --fs-body: 1rem;
+      }
+      main { padding: 48px 20px 40px; }
 
-      .intro { padding: 18px 20px; font-size: 0.95em; line-height: 1.75; margin-bottom: 32px; }
-      .intro p { margin-bottom: 12px; }
+      .hero { padding-bottom: 48px; margin-bottom: 48px; }
+      .hero-logo { height: 88px; margin-bottom: 24px; }
+      .hero-sub { font-size: 0.92rem; padding: 0 12px; }
+      .hero-en { font-size: 0.62rem; letter-spacing: 0.22em; padding: 0 12px; }
+      .hero-mark { margin-top: 20px; width: 28px; height: 2px; }
+
       .stats {
-        gap: 0; margin-top: 12px; padding-top: 14px;
-        display: grid; grid-template-columns: repeat(2, 1fr);
-        row-gap: 14px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 8px;
+        margin-bottom: 56px;
       }
-      .stat-item { font-size: 0.85em; }
-      .stat-num { font-size: 1.5em; }
+      .stat-num { font-size: 2.4rem; }
+      .stat-label { font-size: 0.78rem; margin-top: 6px; }
 
-      .section-title { font-size: 1.05em; margin-bottom: 14px; }
-      .category-grid {
+      .mission { margin-bottom: 56px; }
+      .mission-kicker { font-size: 0.64rem; letter-spacing: 0.25em; margin-bottom: 14px; }
+      .mission p { font-size: 1rem; line-height: 1.8; }
+
+      .section-head { margin-bottom: 20px; padding-bottom: 10px; }
+      .section-hint { display: none; }
+
+      .cats {
         grid-template-columns: 1fr;
-        gap: 12px; margin-bottom: 36px;
+        gap: 10px; margin-bottom: 56px;
       }
-      .category-card { padding: 16px 18px; border-left-width: 4px; }
-      .category-card h2 { font-size: 1.05em; }
-      .category-card p { font-size: 0.88em; line-height: 1.55; margin-bottom: 10px; }
-      .category-card .count { font-size: 0.78em; }
-      .category-card a.more { font-size: 0.88em; }
+      .cat { padding: 18px 18px 16px; }
+      .cat-num { font-size: 0.66rem; margin-bottom: 10px; }
+      .cat-title { font-size: 1.05rem; }
+      .cat-desc { font-size: 0.85rem; margin-bottom: 14px; }
 
-      .article-item { padding: 12px 0; }
-      .article-item a.title { font-size: 0.95em; line-height: 1.5; }
-      .article-meta { margin-top: 4px; font-size: 0.76em; }
-      .tag { font-size: 0.72em; padding: 1px 6px; margin-right: 4px; }
+      .article {
+        grid-template-columns: 1fr;
+        gap: 6px; padding: 16px 0;
+      }
+      .article:hover { margin: 0; padding: 16px 0; background: transparent; }
+      .article-date { order: 2; font-size: 0.72rem; }
+      .article-title { order: 1; font-size: 0.98rem; }
+      .article-cat { order: 3; font-size: 0.66rem; }
 
-      footer { margin-top: 36px; padding: 20px 0 4px; font-size: 0.82em; }
+      footer { margin-top: 56px; padding: 32px 0 12px; }
+      .footer-main { font-size: 0.88rem; }
+      .footer-tagline { font-size: 0.7rem; letter-spacing: 0.15em; }
     }
 
     @media (max-width: 420px) {
-      body { padding: 24px 14px 24px; }
-      .hero img { height: 76px; }
-      .hero-text h1 { font-size: 1.3em; }
-      .hero-text .tagline { font-size: 0.88em; }
-      .hero-text .tagline-en { font-size: 0.62em; }
-      .category-card { padding: 14px 16px; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
+      :root { --fs-hero: 1.7rem; }
+      main { padding: 40px 16px 32px; }
+      .hero-logo { height: 72px; }
+      .stat-num { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ─── Hero ─── -->
-  <header class="hero">
-    <img src="https://naer-tw.github.io/policy/images/logo-naer.png" alt="國教行動聯盟">
-    <div class="hero-text">
-      <h1>國教行動聯盟政策知識庫</h1>
-      <p class="tagline">教育政策深度分析・倡議紀錄・家長發聲平台</p>
-      <p class="tagline-en">Action Alliance on Basic Education · Policy Knowledge Hub</p>
-      <span class="hero-divider"></span>
-    </div>
-  </header>
+  <main>
 
-  <!-- ─── Intro ─── -->
-  <section class="intro">
-    <p><span class="highlight">國教行動聯盟</span>自 2012 年起，推動教育政策改革與兒少權益倡議。本知識庫彙整組織在校園安全、兒少保護、教育改革、健康政策等議題上的深度分析與政策建議，為家長、教育工作者與政策制定者提供可檢核、可引用的政策資源。</p>
-    <div class="stats">
-      <div class="stat-item"><span class="stat-num">25</span>篇政策專題</div>
-      <div class="stat-item"><span class="stat-num">8</span>大議題主軸</div>
-      <div class="stat-item"><span class="stat-num">13+</span>年倡議歷程</div>
-      <div class="stat-item"><span class="stat-num">173+</span>合作組織</div>
-    </div>
-  </section>
+    <!-- ─── Hero ─── -->
+    <header class="hero">
+      <img class="hero-logo" src="https://naer-tw.github.io/policy/images/logo-naer.png" alt="國教行動聯盟">
+      <h1 class="hero-title">政策知識庫</h1>
+      <p class="hero-sub">教育政策深度分析・倡議紀錄・家長發聲平台</p>
+      <p class="hero-en">Action Alliance on Basic Education</p>
+      <span class="hero-mark"></span>
+    </header>
 
-  <!-- ─── Category Grid ─── -->
-  <h2 class="section-title">主題分類</h2>
-  <div class="category-grid">
-
-    <a href="campus-safety/" class="category-card" style="--card-color: var(--c-campus-safety); text-decoration:none;">
-      <h2>校園安全</h2>
-      <span class="count">5 篇</span>
-      <p>校園霸凌防制、少年司法改革、轉介教育條例、倡議成果追蹤、校園唾液快篩檢測機制</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="child-rights/" class="category-card" style="--card-color: var(--c-child-rights); text-decoration:none;">
-      <h2>兒少權益</h2>
-      <span class="count">8 篇</span>
-      <p>剴剴案修法、兒少保護五大工程、少事法矯正教育、未來帳戶、育兒支持政策、數位性暴力預防</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="education-reform/" class="category-card" style="--card-color: var(--c-education-reform); text-decoration:none;">
-      <h2>教育改革</h2>
-      <span class="count">5 篇</span>
-      <p>偏鄉公校轉型實驗教育、偽實驗與弱勢學生權益、實驗教育國際比較、性平法再校準、家長立場公聽會</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="child-health/" class="category-card" style="--card-color: var(--c-child-health); text-decoration:none;">
-      <h2>兒童健康</h2>
-      <span class="count">2 篇</span>
-      <p>人工生殖法修法風險、早產兒低體重、兒童消失危機、育兒津貼翻倍倡議</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="school-lunch/" class="category-card" style="--card-color: var(--c-school-lunch); text-decoration:none;">
-      <h2>校園午餐</h2>
-      <span class="count">2 篇</span>
-      <p>免費營養午餐配套、食育力城市大調查、國民教育平權、教科書補助差距</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="teacher-affairs/" class="category-card" style="--card-color: var(--c-teacher-affairs); text-decoration:none;">
-      <h2>教師事務</h2>
-      <span class="count">1 篇</span>
-      <p>校事會議修法、分流檢舉、受理層級提升、外部專業強化、小案大辦防治</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="health/" class="category-card" style="--card-color: var(--c-health); text-decoration:none;">
-      <h2>健康政策</h2>
-      <span class="count">1 篇</span>
-      <p>無菸城市推動、電子煙與加熱菸防制、青少年菸害預防、公共健康治理</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-    <a href="youth-health/" class="category-card" style="--card-color: var(--c-youth-health); text-decoration:none;">
-      <h2>青少年健康</h2>
-      <span class="count">1 篇</span>
-      <p>青少年自殺通報、心理健康評估、學生健康檢查、銜接路徑制度化</p>
-      <span class="more">查看所有文章 →</span>
-    </a>
-
-  </div>
-
-  <!-- ─── Latest Articles ─── -->
-  <section class="latest">
-    <h2 class="section-title">最新專題</h2>
-
-    <div class="article-item">
-      <a href="child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html" class="title">剴剴案社工一審判刑後，台灣兒少保護制度該如何修補？</a>
-      <div class="article-meta">
-        <span class="tag new">最新</span>
-        <span class="tag category" style="--tag-color: var(--c-child-rights);">兒少權益</span>
-        2026-04-17
+    <!-- ─── Stats ─── -->
+    <section class="stats">
+      <div class="stat">
+        <div class="stat-num">25</div>
+        <div class="stat-label">POLICY BRIEFS</div>
       </div>
-    </div>
-
-    <div class="article-item">
-      <a href="child-rights/2026-04-17-兒少保護體系改革五大修法工程.html" class="title">社工保證人地位入法後，台灣兒少保護體系需要哪些制度改革？</a>
-      <div class="article-meta">
-        <span class="tag new">最新</span>
-        <span class="tag category" style="--tag-color: var(--c-child-rights);">兒少權益</span>
-        2026-04-17
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">TOPIC AREAS</div>
       </div>
-    </div>
-
-    <div class="article-item">
-      <a href="education-reform/2026-04-15-性平法再校準-國教盟公聽會.html" class="title">性平法該不該無限擴張？國教盟三大修法主張守住教育本位</a>
-      <div class="article-meta">
-        <span class="tag category" style="--tag-color: var(--c-education-reform);">教育改革</span>
-        2026-04-15
+      <div class="stat">
+        <div class="stat-num">13<span class="plus">+</span></div>
+        <div class="stat-label">YEARS ACTIVE</div>
       </div>
-    </div>
-
-    <div class="article-item">
-      <a href="education-reform/2026-04-12-偏鄉公校轉型實驗教育.html" class="title">台灣偏鄉公校為何大量轉型實驗教育？</a>
-      <div class="article-meta">
-        <span class="tag category" style="--tag-color: var(--c-education-reform);">教育改革</span>
-        2026-04-12
+      <div class="stat">
+        <div class="stat-num">173<span class="plus">+</span></div>
+        <div class="stat-label">PARTNERS</div>
       </div>
+    </section>
+
+    <!-- ─── Mission ─── -->
+    <section class="mission">
+      <span class="mission-kicker">Our Mission</span>
+      <p><span class="brand">國教行動聯盟</span>自 2012 年起推動教育政策改革，為每個孩子爭取<span class="accent">更好的學習與成長環境</span>。</p>
+    </section>
+
+    <!-- ─── Category Grid ─── -->
+    <div class="section-head">
+      <h2 class="section-title">主題分類</h2>
+      <span class="section-hint">8 TOPICS</span>
+    </div>
+    <div class="cats">
+      <a href="campus-safety/" class="cat" style="--card-color: var(--c-campus);">
+        <div class="cat-num">01　5 篇</div>
+        <div class="cat-title">校園安全</div>
+        <div class="cat-desc">霸凌防制、少年司法、轉介教育</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="child-rights/" class="cat" style="--card-color: var(--c-rights);">
+        <div class="cat-num">02　8 篇</div>
+        <div class="cat-title">兒少權益</div>
+        <div class="cat-desc">剴剴案修法、育兒支持、少事法改革</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="education-reform/" class="cat" style="--card-color: var(--c-reform);">
+        <div class="cat-num">03　5 篇</div>
+        <div class="cat-title">教育改革</div>
+        <div class="cat-desc">實驗教育、偏鄉公校、性平法修法</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="child-health/" class="cat" style="--card-color: var(--c-health2);">
+        <div class="cat-num">04　2 篇</div>
+        <div class="cat-title">兒童健康</div>
+        <div class="cat-desc">人工生殖法、育兒津貼、少子化</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="school-lunch/" class="cat" style="--card-color: var(--c-lunch);">
+        <div class="cat-num">05　2 篇</div>
+        <div class="cat-title">校園午餐</div>
+        <div class="cat-desc">免費營養午餐、食育力、教科書補助</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="teacher-affairs/" class="cat" style="--card-color: var(--c-teacher);">
+        <div class="cat-num">06　1 篇</div>
+        <div class="cat-title">教師事務</div>
+        <div class="cat-desc">校事會議修法、分流檢舉</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="health/" class="cat" style="--card-color: var(--c-health);">
+        <div class="cat-num">07　1 篇</div>
+        <div class="cat-title">健康政策</div>
+        <div class="cat-desc">無菸城市、電子煙防制、菸害預防</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="youth-health/" class="cat" style="--card-color: var(--c-youth);">
+        <div class="cat-num">08　1 篇</div>
+        <div class="cat-title">青少年健康</div>
+        <div class="cat-desc">自殺防治、心理健康、銜接路徑</div>
+        <span class="cat-more">查看 →</span>
+      </a>
     </div>
 
-    <div class="article-item">
-      <a href="child-rights/2026-04-01-兒童節育兒支持政策.html" class="title">政府少子化政策為何無效？八年 4,484 億元為何救不了台灣生育率？</a>
-      <div class="article-meta">
-        <span class="tag category" style="--tag-color: var(--c-child-rights);">兒少權益</span>
-        2026-04-01
-      </div>
+    <!-- ─── Latest ─── -->
+    <div class="section-head">
+      <h2 class="section-title">最新專題</h2>
+      <span class="section-hint">LATEST</span>
+    </div>
+    <div class="articles">
+      <a href="child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html" class="article">
+        <span class="article-date">04.17.2026</span>
+        <span class="article-title">剴剴案社工一審判刑後，台灣兒少保護制度該如何修補？</span>
+        <span class="article-cat" style="--tag-color: var(--c-rights);">兒少權益</span>
+      </a>
+      <a href="child-rights/2026-04-17-兒少保護體系改革五大修法工程.html" class="article">
+        <span class="article-date">04.17.2026</span>
+        <span class="article-title">社工保證人地位入法後，台灣兒少保護體系需要哪些制度改革？</span>
+        <span class="article-cat" style="--tag-color: var(--c-rights);">兒少權益</span>
+      </a>
+      <a href="education-reform/2026-04-15-性平法再校準-國教盟公聽會.html" class="article">
+        <span class="article-date">04.15.2026</span>
+        <span class="article-title">性平法該不該無限擴張？國教盟三大修法主張守住教育本位</span>
+        <span class="article-cat" style="--tag-color: var(--c-reform);">教育改革</span>
+      </a>
+      <a href="education-reform/2026-04-12-偏鄉公校轉型實驗教育.html" class="article">
+        <span class="article-date">04.12.2026</span>
+        <span class="article-title">台灣偏鄉公校為何大量轉型實驗教育？</span>
+        <span class="article-cat" style="--tag-color: var(--c-reform);">教育改革</span>
+      </a>
+      <a href="child-rights/2026-04-01-兒童節育兒支持政策.html" class="article">
+        <span class="article-date">04.01.2026</span>
+        <span class="article-title">政府少子化政策為何無效？八年 4,484 億元為何救不了台灣生育率？</span>
+        <span class="article-cat" style="--tag-color: var(--c-rights);">兒少權益</span>
+      </a>
+      <a href="campus-safety/2026-03-25-永和國中霸凌案.html" class="article">
+        <span class="article-date">03.25.2026</span>
+        <span class="article-title">面對校園霸凌頻傳，我們還可以做什麼？</span>
+        <span class="article-cat" style="--tag-color: var(--c-campus);">校園安全</span>
+      </a>
+      <a href="campus-safety/2026-03-23-轉介教育條例.html" class="article">
+        <span class="article-date">03.23.2026</span>
+        <span class="article-title">國民轉介教育條例——國教盟的立場與政策建議</span>
+        <span class="article-cat" style="--tag-color: var(--c-campus);">校園安全</span>
+      </a>
     </div>
 
-    <div class="article-item">
-      <a href="campus-safety/2026-03-25-永和國中霸凌案.html" class="title">面對校園霸凌頻傳，我們還可以做什麼？</a>
-      <div class="article-meta">
-        <span class="tag category" style="--tag-color: var(--c-campus-safety);">校園安全</span>
-        2026-03-25
-      </div>
-    </div>
+    <footer>
+      <div class="footer-main">© 2026 <a href="https://www.facebook.com/twedumove/" target="_blank" rel="noopener">國教行動聯盟</a></div>
+      <div class="footer-tagline">ACTION ALLIANCE ON BASIC EDUCATION</div>
+    </footer>
 
-    <div class="article-item">
-      <a href="campus-safety/2026-03-23-轉介教育條例.html" class="title">國民轉介教育條例——國教盟的立場與政策建議</a>
-      <div class="article-meta">
-        <span class="tag category" style="--tag-color: var(--c-campus-safety);">校園安全</span>
-        2026-03-23
-      </div>
-    </div>
-
-  </section>
-
-  <footer>
-    <p>© 2026 <a href="https://www.facebook.com/twedumove/" target="_blank" rel="noopener">國教行動聯盟</a>　政策知識庫</p>
-    <p style="margin-top:4px;font-size:0.92em;opacity:0.85;">推動教育改革　捍衛每個孩子的權利</p>
-  </footer>
+  </main>
 
 </body>
 </html>
