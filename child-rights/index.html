@@ -4,106 +4,376 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>兒少權益 — 國教行動聯盟政策知識庫</title>
-  <meta name="description" content="國教盟兒少權益議題專區：少子化對策、育兒政策、托育制度、兒童福利等深度分析與政策建議。">
+  <meta name="description" content="兒少權益議題專區：剴剴案修法・育兒支持・少事法改革・未來帳戶。國教行動聯盟政策分析與建議。">
   <link rel="canonical" href="https://naer-tw.github.io/policy/child-rights/">
+
+  <meta property="og:title" content="兒少權益 — 國教行動聯盟政策知識庫">
+  <meta property="og:description" content="剴剴案修法・育兒支持・少事法改革・未來帳戶">
+  <meta property="og:image" content="https://naer-tw.github.io/policy/images/logo-naer.png">
+  <meta property="og:url" content="https://naer-tw.github.io/policy/child-rights/">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cat:        #D97706;
+      --brand-teal: #2FA598;
+
+      --ink:       #111418;
+      --ink-2:     #4a5058;
+      --ink-3:     #8a9099;
+      --line:      #e8eaed;
+      --line-soft: #f2f4f6;
+      --bg:        #ffffff;
+
+      --fs-hero:   3.4rem;
+      --fs-h2:     2rem;
+      --fs-body:   1.08rem;
+      --fs-small:  0.82rem;
+    }
+
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', 'Noto Sans TC', sans-serif;
-      max-width: 900px; margin: 0 auto; padding: 40px 20px;
-      line-height: 1.8; color: #2C323C; background: #fff;
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--ink); background: var(--bg);
+      font-size: var(--fs-body); line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
-    .breadcrumb { color: #888; font-size: 0.9em; margin-bottom: 24px; }
-    .breadcrumb a { color: #D97706; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    h1 { font-size: 1.8em; margin-bottom: 16px; }
-    .intro { color: #666; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid #eee; }
-    .article-list { margin: 24px 0; }
-    .article-card {
-      background: #f8f9fa; border-radius: 12px; padding: 24px;
-      margin-bottom: 16px; border: 1px solid #e0e0e0;
-      transition: all 0.2s;
+    main { max-width: 1040px; margin: 0 auto; padding: 56px 32px 64px; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Top Bar ─── */
+    .topbar {
+      display: flex; align-items: center; gap: 14px;
+      padding-bottom: 24px; margin-bottom: 48px;
+      border-bottom: 1px solid var(--line);
     }
-    .article-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-    .article-card h2 { font-size: 1.2em; margin-bottom: 8px; }
-    .article-card h2 a { color: #2C323C; text-decoration: none; }
-    .article-card h2 a:hover { color: #D97706; }
-    .article-card p { color: #666; font-size: 0.95em; margin-bottom: 12px; }
-    .article-meta { color: #888; font-size: 0.85em; }
-    .tag { background: #FFFBEB; color: #D97706; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 6px; }
-    .breaking { background: #D97706; color: white; }
-    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee; color: #888; font-size: 0.9em; }
-    footer a { color: #D97706; }
+    .topbar img { height: 40px; }
+    .topbar-nav {
+      margin-left: auto;
+      font-size: 0.82rem; color: var(--ink-3);
+      letter-spacing: 0.05em;
+    }
+    .topbar-nav a { color: var(--ink-2); font-weight: 500; }
+    .topbar-nav a:hover { color: var(--cat); }
+    .topbar-nav .sep { margin: 0 8px; color: var(--ink-3); }
+
+    /* ─── Category Hero ─── */
+    .hero {
+      padding: 20px 0 64px;
+      margin-bottom: 80px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+    .hero-kicker {
+      display: inline-block;
+      font-size: 0.72rem; letter-spacing: 0.3em;
+      color: var(--cat); font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: var(--fs-hero); font-weight: 900;
+      line-height: 1.15; letter-spacing: 0.02em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .hero-tagline {
+      font-size: 1.05rem; color: var(--ink-2);
+      letter-spacing: 0.04em; max-width: 640px;
+      line-height: 1.8;
+    }
+    .hero-mark {
+      display: inline-block; width: 36px; height: 3px;
+      background: var(--cat);
+      margin-top: 32px; border-radius: 2px;
+    }
+
+    /* ─── Stats ─── */
+    .stats {
+      display: flex; gap: 48px;
+      margin-bottom: 80px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+    }
+    .stat { }
+    .stat-num {
+      font-size: 2.8rem; font-weight: 800;
+      line-height: 1; color: var(--ink);
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+      margin-top: 10px; font-size: 0.78rem;
+      color: var(--ink-3); letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* ─── Section Head ─── */
+    .section-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 32px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-title {
+      font-size: var(--fs-h2); font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .section-hint {
+      font-size: var(--fs-small); color: var(--ink-3);
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+
+    /* ─── Articles ─── */
+    .articles { margin-bottom: 80px; }
+    .article {
+      display: grid; grid-template-columns: 100px 1fr 14px;
+      gap: 24px; align-items: baseline;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+      transition: background 0.2s ease;
+      position: relative;
+    }
+    .article:hover { background: var(--line-soft); margin: 0 -16px; padding: 24px 16px; }
+    .article::before {
+      content: ''; position: absolute; left: 0; top: 50%;
+      width: 0; height: 2px; background: var(--cat);
+      transition: width 0.3s ease;
+    }
+    .article:hover::before { width: 4px; }
+    .article-date {
+      font-size: 0.78rem; color: var(--ink-3);
+      letter-spacing: 0.08em; font-variant-numeric: tabular-nums;
+      font-weight: 500;
+    }
+    .article-title {
+      font-size: 1.08rem; font-weight: 600;
+      color: var(--ink); line-height: 1.55;
+    }
+    .article:hover .article-title { color: var(--cat); }
+    .article::after {
+      content: '→'; font-size: 1rem; color: var(--ink-3);
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .article:hover::after { color: var(--cat); transform: translateX(4px); }
+
+    /* ─── Other Cats ─── */
+    .other-cats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 56px;
+    }
+    .other-cat {
+      display: block;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--other-color);
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .other-cat:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    }
+    .other-cat-label {
+      font-size: 0.92rem; font-weight: 700; color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+    .other-cat-meta {
+      font-size: 0.68rem; color: var(--ink-3);
+      letter-spacing: 0.15em; text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      margin-top: 80px; padding: 40px 0 16px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+    .footer-main {
+      font-size: 0.95rem; color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+    .footer-main a { color: var(--cat); font-weight: 600; }
+    .footer-tagline {
+      font-size: 0.78rem; color: var(--ink-3);
+      letter-spacing: 0.2em;
+    }
+
+    /* ─── Mobile ─── */
+    @media (max-width: 768px) {
+      :root {
+        --fs-hero: 2.2rem;
+        --fs-h2: 1.4rem;
+        --fs-body: 1rem;
+      }
+      main { padding: 32px 20px 40px; }
+      .topbar { padding-bottom: 16px; margin-bottom: 32px; }
+      .topbar img { height: 32px; }
+      .topbar-nav { font-size: 0.72rem; }
+
+      .hero { padding: 12px 0 40px; margin-bottom: 48px; }
+      .hero-kicker { font-size: 0.64rem; letter-spacing: 0.25em; margin-bottom: 14px; }
+      .hero-title { font-size: 2rem; margin-bottom: 14px; letter-spacing: 0.01em; }
+      .hero-tagline { font-size: 0.92rem; }
+      .hero-mark { margin-top: 20px; width: 28px; height: 2px; }
+
+      .stats { gap: 32px; margin-bottom: 48px; padding-bottom: 28px; }
+      .stat-num { font-size: 2rem; }
+      .stat-label { font-size: 0.68rem; }
+
+      .section-head { margin-bottom: 20px; }
+      .section-hint { display: none; }
+
+      .article {
+        grid-template-columns: 1fr;
+        gap: 4px; padding: 16px 0;
+      }
+      .article::after { display: none; }
+      .article:hover { margin: 0; padding: 16px 0; background: transparent; }
+      .article-date { order: 2; font-size: 0.72rem; }
+      .article-title { order: 1; font-size: 0.98rem; }
+
+      .other-cats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+      .other-cat { padding: 12px 14px; }
+      .other-cat-label { font-size: 0.85rem; }
+      .other-cat-meta { font-size: 0.62rem; }
+
+      footer { margin-top: 48px; padding: 28px 0 12px; }
+    }
+
+    @media (max-width: 420px) {
+      main { padding: 28px 16px 32px; }
+      .hero-title { font-size: 1.7rem; }
+      .stat-num { font-size: 1.7rem; }
+      .other-cats { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  
-  <div class="org-banner" style="background:#D97706;color:white;padding:12px 24px;font-size:0.9rem;display:flex;align-items:center;gap:10px;">
-    <img src="https://naer-tw.github.io/policy/images/logo-naer-200.png" alt="國教行動聯盟" height="32" style="background:white;padding:4px 8px;border-radius:4px;">
-    <a href="https://naer-tw.github.io/policy/" style="color:white;text-decoration:none;font-weight:600;">政策知識庫</a>
-    <span style="opacity:0.7;">｜</span>
-    <span>兒少權益</span>
-  </div>
-<nav class="breadcrumb">
-    <a href="../">首頁</a> › <span>兒少權益</span>
-  </nav>
 
-  <h1>👶 兒少權益</h1>
-  <p class="intro">國教盟持續關注少子化對策、育兒政策、托育制度、兒童福利等議題，透過政策研究與實證分析推動家庭友善制度改革。</p>
+  <main>
 
-  <div class="article-list">
-    <div class="article-card">
-      <h2><a href="2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html">剴剴案社工一審判刑後，台灣兒少保護制度該如何修補？</a></h2>
-      <p>2026年4月16日剴剴案社工陳尚潔一審遭判過失致死2年，成為台灣首例。國教盟提出三大修法訴求：召開公聽會、修訂兒少權法與社工師法，讓責任鏈與制度配套回歸法律明文。</p>
-      <div class="article-meta">
-        <span class="tag breaking">即時</span>
-        <span class="tag">剴剴案</span>
-        <span class="tag">社工判刑</span>
-        2026-04-17
+    <!-- ─── Top Bar ─── -->
+    <nav class="topbar">
+      <a href="../"><img src="https://naer-tw.github.io/policy/images/logo-naer.png" alt="國教行動聯盟"></a>
+      <div class="topbar-nav">
+        <a href="../">政策知識庫</a><span class="sep">/</span><span>兒少權益</span>
       </div>
-    </div>
-    <div class="article-card">
-      <h2><a href="2026-04-17-兒少保護體系改革五大修法工程.html">社工保證人地位入法後，台灣兒少保護體系需要哪些制度改革？</a></h2>
-      <p>國教盟提出五大修法工程：明定社工義務邊界、建立組織共同責任、訂定程序合規推定、高風險案件強制配套、刑事責任前置專業審查。跨國比較德美英日韓經驗。</p>
-      <div class="article-meta">
-        <span class="tag breaking">即時</span>
-        <span class="tag">五大修法</span>
-        <span class="tag">國際比較</span>
-        2026-04-17
-      </div>
-    </div>
-    <div class="article-card">
-      <h2><a href="2026-04-02-台灣未來帳戶.html">臺灣未來帳戶4500億該怎麼花？國教盟提四大優化建議</a></h2>
-      <p>國教盟出席立法院公聽會，針對首年1,130億元、13年4,500億元的特別預算規模，提出財政永續、積極型公義、彈性支用、跨部會治理四大建議，主張從齊頭式撒錢轉向有配套的資產建設政策。</p>
-      <div class="article-meta">
-        <span class="tag breaking">最新</span>
-        <span class="tag">台灣未來帳戶</span>
-        <span class="tag">兒童發展帳戶</span>
-        2026-04-02 發布
-      </div>
-    </div>
-    <div class="article-card">
-      <h2><a href="2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html">少事法矯正教育、假釋追蹤與塗銷制度如何改革？</a></h2>
-      <p>國教盟提出矯正教育法制化、假釋追蹤入法至少半年、塗銷制度分級（3至10年）及被害人權益保障等四大修法訴求。全國僅4所矯正學校，2023年新北割頸案凸顯制度缺口。</p>
-      <div class="article-meta">
-        <span class="tag">少事法</span>
-        <span class="tag">矯正教育</span>
-        2026-04-01 發布
-      </div>
-    </div>
-    <div class="article-card">
-      <h2><a href="2026-04-01-兒童節育兒支持政策.html">政府少子化政策為何無效？八年4,484億元為何救不了台灣生育率？</a></h2>
-      <p>全國婦兒團體聯盟與全家盟聯合分析：2025年新生兒僅107,812人、年減20%，八年少子化預算超過4,484億元，87%流向現金補助，友善職場僅佔3%。國際實證顯示托育服務投資才能提升生育率。</p>
-      <div class="article-meta">
-        <span class="tag">少子化</span>
-        <span class="tag">托育政策</span>
-        2026-04-01 發布
-      </div>
-    </div>
-  </div>
+    </nav>
 
-  <footer>
-    <p>© 2026 <a href="../">國教行動聯盟政策知識庫</a> · 回到<a href="../">首頁</a></p>
-  </footer>
+    <!-- ─── Hero ─── -->
+    <header class="hero">
+      <span class="hero-kicker">Child Rights</span>
+      <h1 class="hero-title">兒少權益</h1>
+      <p class="hero-tagline">剴剴案修法・育兒支持・少事法改革・未來帳戶</p>
+      <span class="hero-mark"></span>
+    </header>
+
+    <!-- ─── Stats ─── -->
+    <section class="stats">
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">POLICY BRIEFS</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" style="font-size:1.2rem;line-height:1.8;font-weight:700;">04.17.2026</div>
+        <div class="stat-label">LATEST UPDATE</div>
+      </div>
+    </section>
+
+    <!-- ─── Articles ─── -->
+    <div class="section-head">
+      <h2 class="section-title">政策專題</h2>
+      <span class="section-hint">ALL BRIEFS</span>
+    </div>
+    <div class="articles">
+      <a href="2026-04-17-兒少保護體系改革五大修法工程.html" class="article">
+        <span class="article-date">04.17.2026</span>
+        <span class="article-title">從保證人地位法理到五大修法工程：台灣兒少保護體系如何重建？</span>
+      </a>
+      <a href="2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html" class="article">
+        <span class="article-date">04.17.2026</span>
+        <span class="article-title">剴剴案社工一審判刑後，台灣兒少保護制度該如何修補？</span>
+      </a>
+      <a href="2026-04-02-台灣未來帳戶.html" class="article">
+        <span class="article-date">04.02.2026</span>
+        <span class="article-title">臺灣未來帳戶4500億該怎麼花？國教盟提四大優化建議</span>
+      </a>
+      <a href="2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html" class="article">
+        <span class="article-date">04.01.2026</span>
+        <span class="article-title">少事法矯正教育、假釋追蹤與塗銷制度如何改革？</span>
+      </a>
+      <a href="2026-04-01-兒童節育兒支持政策.html" class="article">
+        <span class="article-date">04.01.2026</span>
+        <span class="article-title">政府少子化政策為何無效？八年4,484億元為何救不了台灣生育率？</span>
+      </a>
+      <a href="2025-12-24-少年重大暴力案件量刑透明化.html" class="article">
+        <span class="article-date">12.24.2025</span>
+        <span class="article-title">少年重大暴力案件的量刑應如何建立透明基準？</span>
+      </a>
+      <a href="20251208-sexual-violence-prevention-education.html" class="article">
+        <span class="article-date">12.08.2025</span>
+        <span class="article-title">8742名青少年票選第三名：遇到性騷擾該怎麼辦？</span>
+      </a>
+      <a href="2025-12-06-兒童成長需求總體檢論壇.html" class="article">
+        <span class="article-date">12.06.2025</span>
+        <span class="article-title">「生育·養育·教育—兒童成長需求總體檢」論壇</span>
+      </a>
+    </div>
+
+    <!-- ─── Other Categories ─── -->
+    <div class="section-head">
+      <h2 class="section-title">其他主題</h2>
+      <span class="section-hint">EXPLORE</span>
+    </div>
+    <div class="other-cats">
+      <a href="../campus-safety/" class="other-cat" style="--other-color: #8B2631;">
+        <div class="other-cat-label">校園安全</div>
+        <div class="other-cat-meta">5 BRIEFS</div>
+      </a>
+      <a href="../education-reform/" class="other-cat" style="--other-color: #1E40AF;">
+        <div class="other-cat-label">教育改革</div>
+        <div class="other-cat-meta">5 BRIEFS</div>
+      </a>
+      <a href="../child-health/" class="other-cat" style="--other-color: #EA580C;">
+        <div class="other-cat-label">兒童健康</div>
+        <div class="other-cat-meta">2 BRIEFS</div>
+      </a>
+      <a href="../school-lunch/" class="other-cat" style="--other-color: #15803D;">
+        <div class="other-cat-label">校園午餐</div>
+        <div class="other-cat-meta">2 BRIEFS</div>
+      </a>
+      <a href="../teacher-affairs/" class="other-cat" style="--other-color: #4338CA;">
+        <div class="other-cat-label">教師事務</div>
+        <div class="other-cat-meta">1 BRIEFS</div>
+      </a>
+      <a href="../health/" class="other-cat" style="--other-color: #0F766E;">
+        <div class="other-cat-label">健康政策</div>
+        <div class="other-cat-meta">1 BRIEFS</div>
+      </a>
+      <a href="../youth-health/" class="other-cat" style="--other-color: #0369A1;">
+        <div class="other-cat-label">青少年健康</div>
+        <div class="other-cat-meta">1 BRIEFS</div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="footer-main">© 2026 <a href="https://www.facebook.com/twedumove/" target="_blank" rel="noopener">國教行動聯盟</a></div>
+      <div class="footer-tagline">ACTION ALLIANCE ON BASIC EDUCATION</div>
+    </footer>
+
+  </main>
+
 </body>
 </html>
