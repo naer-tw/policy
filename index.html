@@ -55,13 +55,18 @@
       --c-health:    #0F766E;
       --c-youth:     #0369A1;
 
-      /* 中性色 — 主要用灰階 */
-      --ink:        #111418;
-      --ink-2:      #4a5058;
-      --ink-3:      #8a9099;
-      --line:       #e8eaed;
-      --line-soft:  #f2f4f6;
+      /* 中性色 — 主要用灰階（加深提升氣勢）*/
+      --ink:        #0a0a0a;
+      --ink-2:      #3a3f48;
+      --ink-3:      #7a8089;
+      --line:       #e5e7eb;
+      --line-soft:  #f4f5f7;
       --bg:         #ffffff;
+
+      /* 深色氣勢帶 */
+      --dark:       #0a0a0a;
+      --dark-2:     #1a1a1a;
+      --dark-line:  #2a2a2a;
 
       /* 文字黃金比例（55/34/21/13）轉 web */
       --fs-hero:    3.4rem;   /* 55pt equiv */
@@ -240,6 +245,92 @@
       text-transform: uppercase; white-space: nowrap;
     }
 
+    /* ─── Advocacy Dark Band ─── */
+    .advocacy {
+      position: relative;
+      background: var(--dark);
+      color: #fafafa;
+      margin: 96px calc(50% - 50vw) 96px;
+      padding: 96px calc(50vw - 50%);
+      overflow: hidden;
+    }
+    .advocacy::before {
+      content: ''; position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: min(1040px, calc(100vw - 64px));
+      height: 1px; background: var(--dark-line);
+    }
+    .advocacy-inner {
+      max-width: 1040px; margin: 0 auto;
+      padding: 0 32px;
+    }
+    .advocacy-head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 56px;
+    }
+    .advocacy-kicker {
+      font-size: 0.72rem; letter-spacing: 0.3em;
+      color: var(--brand-orange); font-weight: 600;
+      text-transform: uppercase;
+    }
+    .advocacy-term {
+      font-size: 0.72rem; letter-spacing: 0.25em;
+      color: var(--ink-3); font-weight: 500;
+      text-transform: uppercase;
+    }
+    .advocacy-title {
+      font-size: 3.6rem; font-weight: 900;
+      letter-spacing: -0.01em; line-height: 1.1;
+      margin-bottom: 20px;
+      color: #fafafa;
+    }
+    .advocacy-sub {
+      font-size: 1.08rem; color: #b8bcc3;
+      letter-spacing: 0.03em; line-height: 1.7;
+      max-width: 640px; margin-bottom: 56px;
+    }
+    .advocacy-stats {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; margin-bottom: 56px;
+      border-top: 1px solid var(--dark-line);
+      border-bottom: 1px solid var(--dark-line);
+      padding: 40px 0;
+    }
+    .advocacy-stat {
+      padding: 0 24px; border-left: 1px solid var(--dark-line);
+    }
+    .advocacy-stat:first-child { border-left: none; padding-left: 0; }
+    .advocacy-stat-num {
+      font-size: 3.6rem; font-weight: 800;
+      line-height: 1; color: #fafafa;
+      letter-spacing: -0.03em;
+      font-variant-numeric: tabular-nums;
+    }
+    .advocacy-stat-num .plus { color: var(--brand-orange); font-weight: 700; }
+    .advocacy-stat-label {
+      margin-top: 14px; font-size: 0.78rem;
+      color: var(--ink-3); letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .advocacy-stat-hint {
+      margin-top: 4px; font-size: 0.86rem;
+      color: #b8bcc3; letter-spacing: 0.02em;
+    }
+    .advocacy-cta {
+      display: inline-flex; align-items: center; gap: 12px;
+      padding: 16px 28px;
+      background: #fafafa; color: var(--dark);
+      font-size: 0.92rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+    .advocacy-cta:hover {
+      background: var(--brand-orange); color: #fafafa;
+      transform: translateX(4px);
+    }
+    .advocacy-cta .arrow { font-size: 1.2em; line-height: 1; }
+
     /* ─── Footer ─── */
     footer {
       margin-top: 80px; padding: 40px 0 16px;
@@ -304,6 +395,24 @@
       .article-title { order: 1; font-size: 0.98rem; }
       .article-cat { order: 3; font-size: 0.66rem; }
 
+      .advocacy { margin: 56px calc(50% - 50vw); padding: 56px calc(50vw - 50%); }
+      .advocacy-inner { padding: 0 20px; }
+      .advocacy-head { flex-direction: column; align-items: flex-start; gap: 6px; margin-bottom: 32px; }
+      .advocacy-kicker, .advocacy-term { font-size: 0.64rem; letter-spacing: 0.22em; }
+      .advocacy-title { font-size: 2rem; line-height: 1.2; margin-bottom: 14px; }
+      .advocacy-sub { font-size: 0.95rem; margin-bottom: 36px; }
+      .advocacy-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 0; padding: 28px 0; margin-bottom: 36px;
+      }
+      .advocacy-stat { padding: 0 16px; border-left: none; border-right: 1px solid var(--dark-line); }
+      .advocacy-stat:nth-child(2n) { border-right: none; }
+      .advocacy-stat:first-child { padding-left: 0; }
+      .advocacy-stat-num { font-size: 2.4rem; }
+      .advocacy-stat-label { font-size: 0.68rem; letter-spacing: 0.15em; margin-top: 10px; }
+      .advocacy-stat-hint { font-size: 0.78rem; margin-top: 3px; }
+      .advocacy-cta { padding: 14px 22px; font-size: 0.84rem; }
+
       footer { margin-top: 56px; padding: 32px 0 12px; }
       .footer-main { font-size: 0.88rem; }
       .footer-tagline { font-size: 0.7rem; letter-spacing: 0.15em; }
@@ -354,6 +463,45 @@
     <section class="mission">
       <span class="mission-kicker">Our Mission</span>
       <p><span class="brand">國教行動聯盟</span>自 2012 年起推動教育政策改革，為每個孩子爭取<span class="accent">更好的學習與成長環境</span>。</p>
+    </section>
+
+    <!-- ─── Advocacy Dark Band ─── -->
+    <section class="advocacy">
+      <div class="advocacy-inner">
+        <div class="advocacy-head">
+          <span class="advocacy-kicker">Advocacy Database</span>
+          <span class="advocacy-term">Term IV · 2023–2025</span>
+        </div>
+        <h2 class="advocacy-title">倡議成果全紀錄</h2>
+        <p class="advocacy-sub">第四屆理監事會三年間的政策倡議行動全紀錄：從新聞稿、公聽會到媒體聲量，國教盟如何把論述轉化為實際影響。</p>
+
+        <div class="advocacy-stats">
+          <div class="advocacy-stat">
+            <div class="advocacy-stat-num">113</div>
+            <div class="advocacy-stat-label">Press Releases</div>
+            <div class="advocacy-stat-hint">新聞稿累積發布</div>
+          </div>
+          <div class="advocacy-stat">
+            <div class="advocacy-stat-num">286</div>
+            <div class="advocacy-stat-label">Events</div>
+            <div class="advocacy-stat-hint">公聽會・論壇・記者會</div>
+          </div>
+          <div class="advocacy-stat">
+            <div class="advocacy-stat-num">7,917<span class="plus">+</span></div>
+            <div class="advocacy-stat-label">Media Mentions</div>
+            <div class="advocacy-stat-hint">媒體聲量總計</div>
+          </div>
+          <div class="advocacy-stat">
+            <div class="advocacy-stat-num">168<span class="plus">+</span></div>
+            <div class="advocacy-stat-label">Collaborations</div>
+            <div class="advocacy-stat-hint">跨部會・學者・團體</div>
+          </div>
+        </div>
+
+        <a href="https://naer-tw.github.io/advocacy-database/" class="advocacy-cta">
+          探索完整資料庫 <span class="arrow">→</span>
+        </a>
+      </div>
     </section>
 
     <!-- ─── Category Grid ─── -->
