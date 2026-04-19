@@ -8,6 +8,14 @@
   <meta name="keywords" content="國教行動聯盟,國教盟,教育政策,校園安全,兒少權益,教育改革,青少年健康,政策倡議">
   <link rel="canonical" href="https://naer-tw.github.io/policy/">
 
+  <!-- Favicon set -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="apple-mobile-web-app-title" content="國教盟政策庫">
+
   <meta property="og:title" content="國教行動聯盟政策知識庫">
   <meta property="og:description" content="教育政策深度分析・倡議紀錄・家長發聲平台。8 大主題、25 篇專題，國教盟 2012 年起的倡議行動全紀錄。">
   <meta property="og:image" content="https://naer-tw.github.io/policy/images/logo-naer.png">
@@ -77,6 +85,37 @@
 
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ─── A11y: Skip to content ─── */
+    .skip-link {
+      position: absolute; top: -100px; left: 0;
+      background: #0a0a0a; color: #fff;
+      padding: 12px 20px; font-size: 0.92rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      z-index: 9999; text-decoration: none;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ─── A11y: Focus visible ─── */
+    :focus { outline: none; }
+    :focus-visible {
+      outline: 2px solid #2FA598;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ─── A11y: Reduced motion ─── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .cat:hover { transform: none; }
+      .article:hover { transform: none; }
+    }
 
     :root {
       /* 品牌主色（logo）— 強調色只用這兩種 */
@@ -466,7 +505,9 @@
 </head>
 <body>
 
-  <main>
+  <a href="#main" class="skip-link">跳至主內容</a>
+
+  <main id="main">
 
     <!-- ─── Hero ─── -->
     <header class="hero">

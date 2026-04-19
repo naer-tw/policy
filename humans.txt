@@ -1,0 +1,23 @@
+/* TEAM */
+組織：國教行動聯盟（National Alliance for Education Action, NAER）
+理事長：王瀚陽
+成立：2012-06-26
+Site：https://naer-tw.github.io/policy/
+Twitter / Facebook：https://www.facebook.com/twedumove/
+
+/* CONTRIBUTORS */
+本知識庫文章撰寫團隊涵蓋國教盟理監事會、青年部、合作專家學者與家長代表。
+詳見倡議資料庫合作夥伴名錄：https://naer-tw.github.io/advocacy-database/
+
+/* SISTER SITE */
+倡議成果資料庫：https://naer-tw.github.io/advocacy-database/
+（113 篇新聞稿、286 場活動、7,917+ 媒體聲量、168+ 合作組織）
+
+/* THANKS */
+感謝所有跨黨派立委、政府機關、民團、基金會與學校單位的支持與合作。
+
+/* SITE */
+Last update: 2026-04-19
+Standards: HTML5, CSS3, JSON-LD (Schema.org)
+Components: Inter + Noto Sans TC, vanilla JS
+Hosting: GitHub Pages
