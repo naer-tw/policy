@@ -9,6 +9,11 @@
 <meta name="author" content="國教行動聯盟">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://naer-tw.github.io/policy/campus-safety/2026-03-23-倡議成果追蹤.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://naer-tw.github.io/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://naer-tw.github.io/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://naer-tw.github.io/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="https://naer-tw.github.io/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
 <meta property="og:type" content="article">
 <meta property="og:title" content="國教盟校園安全與少年司法倡議成果追蹤｜兩年倡議全記錄">
 <meta property="og:description" content="從2023年割頸案到2026年323公聽會，國教盟8項訴求中6項獲正面回應。完整倡議時間軸、官方回應對照表、證據對照區、持續追蹤清單。">
@@ -281,9 +286,21 @@
     .response-table th, .response-table td, .evidence-table th, .evidence-table td, .track-table th, .track-table td { padding: 10px 10px; }
     .structure-box .compare-row { flex-direction: column; }
   }
+
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+/* A11y skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
+.skip-link:focus{top:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #2FA598;outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
 </style>
 </head>
 <body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">跳至主內容</a>
+
 
 <div class="org-banner" style="background:#8B2631;color:white;padding:12px 24px;font-size:0.9rem;">
   <img src="https://naer-tw.github.io/policy/images/logo-naer-200.png" alt="國教行動聯盟" height="32" style="vertical-align:middle;margin-right:10px;background:white;padding:4px 8px;border-radius:4px;">
@@ -560,5 +577,18 @@
   <span style="font-size:0.8rem;opacity:0.6;">本頁為倡議組織觀點記錄，非中立新聞報導。內文以標籤區分事實、官方回應與倡議立場。</span>
 </footer>
 
+
+<!-- Reading progress -->
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+  },{passive:true});
+})();
+</script>
 </body>
 </html>

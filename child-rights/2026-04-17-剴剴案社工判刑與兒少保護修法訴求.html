@@ -8,6 +8,11 @@
   <meta name="keywords" content="剴剴案, 社工判刑, 保證人地位, 不真正不作為犯, 兒少保護, 國教行動聯盟, 兒少權法修法, 社工師法, 過失致死, 刑法第15條, 等價性原則, 保護者保證人, 王瀚陽">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://naer-tw.github.io/policy/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://naer-tw.github.io/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://naer-tw.github.io/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://naer-tw.github.io/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="https://naer-tw.github.io/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
   <meta property="og:title" content="剴剴案社工一審判刑後，台灣兒少保護制度該如何修補？">
   <meta property="og:description" content="法院三層論據認定社工保證人地位，判決法理可成立，但制度漏洞更需立法填補。">
   <meta property="og:image" content="https://naer-tw.github.io/policy/images/og-剴剴案社工判刑修法訴求.jpg">
@@ -339,9 +344,21 @@
   @media (max-width: 480px) {
     h1 { font-size: 1.2rem; } main { padding: 8px; }
   }
-  </style>
+  
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+/* A11y skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
+.skip-link:focus{top:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #2FA598;outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+</style>
 </head>
 <body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">跳至主內容</a>
+
 
   <div class="org-banner">
     <div class="banner-content">
@@ -508,5 +525,18 @@
     </div>
   </main>
 
+
+<!-- Reading progress -->
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+  },{passive:true});
+})();
+</script>
 </body>
 </html>

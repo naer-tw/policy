@@ -18,6 +18,11 @@
   <meta name="twitter:description" content="國教盟倡議用科技反制科技：唾液快篩＋液相層析串聯質譜兩層式檢測">
   <meta name="twitter:image" content="https://naer-tw.github.io/policy/images/og-校園菸毒與毒駕.jpg">
   <link rel="canonical" href="https://naer-tw.github.io/policy/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://naer-tw.github.io/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://naer-tw.github.io/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://naer-tw.github.io/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="https://naer-tw.github.io/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
   <meta name="robots" content="index, follow">
   <title>校園菸毒與毒駕源頭相同　新興毒品快速變形　毒駕年增8倍 - 國教行動聯盟</title>
 
@@ -432,7 +437,16 @@
         font-size: 0.8rem;
       }
     }
-  </style>
+  
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+/* A11y skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
+.skip-link:focus{top:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #2FA598;outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+</style>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -597,6 +611,9 @@
 </head>
 
 <body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">跳至主內容</a>
+
   <header class="org-banner">
     <div class="banner-content">
       【<img src="https://naer-tw.github.io/policy/images/logo-naer-200.png" alt="國教行動聯盟" height="32" style="vertical-align:middle;margin-right:10px;">國教行動聯盟新聞稿】<span class="separator">·</span>2025年12月16日
@@ -800,6 +817,19 @@
       <p>本文最後更新於 2025年12月16日。文中統計數據截至 2025年9月。本文採用 APA7 引用格式。</p>
     </footer>
   </main>
+
+<!-- Reading progress -->
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+  },{passive:true});
+})();
+</script>
 </body>
 
 </html>

@@ -10,6 +10,11 @@
   <meta name="keywords" content="性別平等教育法, 性平法修法, 校園性別事件, 強制通報, 案件分級分流, 情感教育, 性健康教育, 國教行動聯盟, 2026公聽會, 準司法化">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://naer-tw.github.io/policy/education-reform/2026-04-15-性平法再校準-國教盟公聽會.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://naer-tw.github.io/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://naer-tw.github.io/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://naer-tw.github.io/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="https://naer-tw.github.io/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
 
   <meta property="og:title" content="性平法該不該無限擴張？國教盟三大修法主張守住教育本位">
   <meta property="og:description" content="2023 修法後性平法成為一部同時處理課程、調查、懲處、跨法銜接的複合型法律。國教盟主張釐清邊界、分級分流、讓法律回到教育本位。">
@@ -327,9 +332,21 @@
   @media (max-width: 480px) {
     h1 { font-size: 1.2rem; } main { padding: 8px; }
   }
-  </style>
+  
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+/* A11y skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
+.skip-link:focus{top:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #2FA598;outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+</style>
 </head>
 <body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">跳至主內容</a>
+
 
 <div class="org-banner">
   <div class="banner-content">
@@ -524,5 +541,18 @@
 
 </main>
 
+
+<!-- Reading progress -->
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+  },{passive:true});
+})();
+</script>
 </body>
 </html>

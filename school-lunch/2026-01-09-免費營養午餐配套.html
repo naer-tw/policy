@@ -11,6 +11,11 @@
     <meta name="keywords" content="免費營養午餐,食育力,健康飲食教育,國教盟,國教行動聯盟,食力城市大調查,校園午餐,營養午餐配套,成本透明,物價連動機制,廚餘管理,食農教育">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="https://naer-tw.github.io/policy/school-lunch/2026-01-09-免費營養午餐配套.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://naer-tw.github.io/policy/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://naer-tw.github.io/policy/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://naer-tw.github.io/policy/images/apple-touch-icon.png">
+  <link rel="manifest" href="https://naer-tw.github.io/policy/manifest.json">
+  <meta name="theme-color" content="#0a0a0a">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="免費營養午餐等於食育力嗎？國教盟呼籲三項配套讓午餐成為健康飲食教育">
@@ -351,9 +356,21 @@
             a { color: #22C55E; text-decoration: underline; }
             .faq-section .faq-item.closed .faq-answer { max-height: none; }
         }
-    </style>
+    
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+/* A11y skip link */
+.skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
+.skip-link:focus{top:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #2FA598;outline-offset:3px;border-radius:2px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+</style>
 </head>
 <body>
+<div class="reading-progress" aria-hidden="true"></div>
+<a href="#main" class="skip-link">跳至主內容</a>
+
     <!-- Organization Banner -->
     <div class="org-banner">
         <div class="container">
@@ -667,5 +684,18 @@
             });
         });
     </script>
+
+<!-- Reading progress -->
+<script>
+(function(){
+  var bar=document.querySelector('.reading-progress');if(!bar)return;
+  window.addEventListener('scroll',function(){
+    var h=document.documentElement,b=document.body;
+    var st=h.scrollTop||b.scrollTop;
+    var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+  },{passive:true});
+})();
+</script>
 </body>
 </html>
