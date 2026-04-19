@@ -425,6 +425,24 @@ blockquote cite { display: block; font-weight: 600; font-style: normal; color: #
   .faq-item,.pillar-card{page-break-inside:avoid;margin-bottom:8pt}
   img{max-width:100% !important;page-break-inside:avoid}
 }
+
+/* Reading time badge */
+.reading-time{display:inline-flex;align-items:center;gap:10px;font-size:0.84rem;color:#7a8089;letter-spacing:0.08em;margin:-8px 0 24px;font-variant-numeric:tabular-nums;font-weight:500}
+.reading-time::before{content:"";display:inline-block;width:20px;height:1px;background:#E89143}
+.reading-time .dot{opacity:0.5}
+
+/* Sticky TOC (desktop only) */
+.toc{position:fixed;top:120px;right:24px;width:240px;max-height:calc(100vh - 160px);overflow-y:auto;padding:20px 16px 20px 18px;font-size:0.82rem;line-height:1.55;border-left:2px solid #e5e7eb;display:none;z-index:100;background:rgba(255,255,255,0.95)}
+.toc-title{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:#7a8089;margin-bottom:14px;font-weight:700}
+.toc ol{list-style:none;padding:0;margin:0;counter-reset:toc-item}
+.toc li{counter-increment:toc-item;margin-bottom:10px;padding-left:22px;position:relative}
+.toc li::before{content:counter(toc-item,decimal-leading-zero);position:absolute;left:0;top:1px;font-size:0.68rem;color:#b8bcc3;font-weight:600;font-variant-numeric:tabular-nums}
+.toc a{color:#4a5058;text-decoration:none;transition:color 0.15s;display:block}
+.toc a:hover{color:#0a0a0a}
+.toc a.active{color:#E89143;font-weight:600}
+.toc a.active::before{content:"";position:absolute;left:-18px;top:8px;width:2px;height:calc(100% - 8px);background:#E89143}
+@media(max-width:1340px){.toc{display:none !important}}
+@media print{.toc{display:none !important}}
 </style>
 </head>
 <body>
@@ -588,6 +606,64 @@ blockquote cite { display: block; font-weight: 600; font-style: normal; color: #
     var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;
     bar.style.width=(sh>0?(st/sh*100):0)+'%';
   },{passive:true});
+})();
+</script>
+
+<!-- Reading time badge -->
+<script>
+(function(){
+  var h1=document.querySelector('h1');if(!h1)return;
+  var article=document.querySelector('article, main, body');if(!article)return;
+  var txt=(article.innerText||article.textContent||'').replace(/\s+/g,'');
+  var chars=txt.length;
+  var mins=Math.max(1,Math.round(chars/300));
+  var b=document.createElement('div');
+  b.className='reading-time';
+  b.innerHTML='<span>'+mins+' 分鐘閱讀</span> <span class="dot">·</span> <span>'+chars.toLocaleString()+' 字</span>';
+  h1.parentNode.insertBefore(b,h1.nextSibling);
+})();
+</script>
+
+<!-- Sticky TOC -->
+<script>
+(function(){
+  if(window.innerWidth<1340)return;
+  var h2s=document.querySelectorAll('article h2, main h2, body>h2');
+  if(!h2s.length||h2s.length<3)return;
+  // Filter out h2s in specific containers we don't want in TOC
+  h2s=Array.from(h2s).filter(function(h){
+    var p=h.closest('.faq-section,.faq-item,.sources,.related-links,footer,nav,aside');
+    return !p;
+  });
+  if(h2s.length<3)return;
+  var toc=document.createElement('aside');
+  toc.className='toc';
+  toc.setAttribute('aria-label','目錄');
+  var html='<div class="toc-title">Contents</div><ol>';
+  h2s.forEach(function(h,i){
+    if(!h.id)h.id='toc-'+i;
+    var text=(h.textContent||'').trim().replace(/^[\d\.\s]+/,'');
+    html+='<li><a href="#'+h.id+'">'+text+'</a></li>';
+  });
+  html+='</ol>';
+  toc.innerHTML=html;
+  document.body.appendChild(toc);
+  // Scroll spy
+  var links=toc.querySelectorAll('a');
+  function onScroll(){
+    var y=window.scrollY+160;
+    var current=null;
+    h2s.forEach(function(h){
+      if(h.offsetTop<=y)current=h;
+    });
+    links.forEach(function(a){a.classList.remove('active')});
+    if(current){
+      var l=toc.querySelector('a[href="#'+current.id+'"]');
+      if(l)l.classList.add('active');
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
 })();
 </script>
 </body>
