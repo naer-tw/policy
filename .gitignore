@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Office lock & temp files
+.~lock.*
+~$*
+*.tmp
+
+# Editor backups
+*.bak
+*.swp
+*~
+
+# Working drafts
+*_v[0-9].html
+*_v[0-9][0-9].html
+草稿_*
+WIP_*
+
+# Node / build
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log

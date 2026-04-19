@@ -1,74 +1,68 @@
 # 國教行動聯盟政策知識庫
 
-> 台灣最完整的兒少教育政策倡議知識庫，提供校園安全、兒少權益、教育政策等議題的深度分析與政策建議。
+> 台灣最完整的兒少教育政策倡議知識庫，提供校園安全、兒少保護、教育政策、教師權益等議題的深度分析與政策建議。
 
-國教行動聯盟（National Alliance of Education and Rearing, NAER）成立於 2018 年，是台灣最大的家長教育倡議團體。我們長期關注兒少權益、校園安全、教育政策等議題，透過政策研究、立法倡議、媒體發聲等方式，推動台灣教育環境的改善。
+國教行動聯盟（National Alliance for Education Action, NAER）**成立於 2012 年**，是台灣重要的家長教育倡議團體。我們長期關注兒少權益、校園安全、教育政策等議題，透過政策研究、立法倡議、媒體發聲等方式，推動台灣教育環境的改善。
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類
+## 議題分類（五大主軸，共 25 篇深度專題）
 
-### 🏫 校園安全與管理
-校園霸凌防制、司法少年、轉介教育、校園安全機制
-- [校園安全議題總覽](https://naer-tw.github.io/policy/campus-safety/): 所有校園安全相關文章
-- [國民轉介教育條例專頁](https://naer-tw.github.io/policy/campus-safety/2026-03-23-轉介教育條例.html): 國教盟對轉介教育條例的完整政策主張
-- [永和國中霸凌案分析](https://naer-tw.github.io/policy/campus-safety/2026-03-25-永和國中霸凌案.html): 校園霸凌通報機制改革建議
-- [倡議成果追蹤](https://naer-tw.github.io/policy/campus-safety/2026-03-23-倡議成果追蹤.html): 校園安全倡議成果紀錄
+### 校園安全（5 篇）
+校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
+- [校園安全議題總覽](https://naer-tw.github.io/policy/campus-safety/)
+- [國民轉介教育條例](https://naer-tw.github.io/policy/campus-safety/2026-03-23-轉介教育條例.html)：國教盟支持立法方向但提出三大配套機制
+- [永和國中霸凌案](https://naer-tw.github.io/policy/campus-safety/2026-03-25-永和國中霸凌案.html)：校園霸凌通報機制與制度缺口分析
+- [倡議成果追蹤](https://naer-tw.github.io/policy/campus-safety/2026-03-23-倡議成果追蹤.html)：國教盟兩年倡議全紀錄、8 項訴求 6 項獲回應
+- [校園唾液快篩二層檢測機制](https://naer-tw.github.io/policy/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html)：科技反制新興毒品
+- [校園菸毒與毒駕新興毒品檢測](https://naer-tw.github.io/policy/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html)：喪屍煙彈與依托咪酯防制
 
-### 🍎 學校午餐政策
-營養午餐品質、免費午餐政策、食安監督
-- [學校午餐議題總覽](https://naer-tw.github.io/policy/school-lunch/): 所有營養午餐相關文章
-- [免費營養午餐配套分析](https://naer-tw.github.io/policy/school-lunch/2026-01-09-免費營養午餐配套.html): 政策配套建議
+### 兒少保護（10 篇）
+兒少保護法、人工生殖、育兒支持、少事法、社工責任
+- [兒少權益議題總覽](https://naer-tw.github.io/policy/child-rights/)
+- [兒童健康議題總覽](https://naer-tw.github.io/policy/child-health/)
+- [剴剴案社工判刑與兒少保護修法訴求](https://naer-tw.github.io/policy/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html)：社工一審判刑後的制度修補
+- [兒少保護體系改革五大修法工程](https://naer-tw.github.io/policy/child-rights/2026-04-17-兒少保護體系改革五大修法工程.html)：社工保證人地位與五大修法主張
+- [台灣未來帳戶](https://naer-tw.github.io/policy/child-rights/2026-04-02-台灣未來帳戶.html)：4,500 億特別預算四大優化建議
+- [少事法矯正教育假釋塗銷轉銜改革](https://naer-tw.github.io/policy/child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html)：少年司法改革四大主張
+- [兒童節育兒支持政策](https://naer-tw.github.io/policy/child-rights/2026-04-01-兒童節育兒支持政策.html)：少子化八年 4,484 億預算為何無效
+- [兒童成長需求總體檢論壇](https://naer-tw.github.io/policy/child-rights/2025-12-06-兒童成長需求總體檢論壇.html)：四大組織聯合論壇
+- [少年重大暴力案件量刑透明化](https://naer-tw.github.io/policy/child-rights/2025-12-24-少年重大暴力案件量刑透明化.html)：量刑基準改革
+- [數位性暴力防制教育](https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html)：校園性暴力預防
+- [人工生殖法修法風險](https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
+- [兒童消失危機-育兒津貼翻倍](https://naer-tw.github.io/policy/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
 
-### 🚭 兒少健康政策
-菸害防制、電子煙管制、兒少身心健康
-- [兒少健康議題總覽](https://naer-tw.github.io/policy/health/): 所有健康政策相關文章
-- [無菸城市政策分析](https://naer-tw.github.io/policy/health/2026-01-13-無菸城市.html): 菸害防制法修正建議
+### 青少年身心健康（2 篇）
+青少年自殺防治、心理健康、菸害防制、電子煙管制
+- [青少年健康議題總覽](https://naer-tw.github.io/policy/youth-health/)
+- [健康政策議題總覽](https://naer-tw.github.io/policy/health/)
+- [青少年自殺通報九年增 3.3 倍](https://naer-tw.github.io/policy/youth-health/2025-12-05-青少年自殺通報.html)：心理健康評估入法倡議
+- [無菸城市政策分析](https://naer-tw.github.io/policy/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
 
-### 👶 兒少福利與權益
-人工生殖法、兒童權利公約、兒少保護
-- [兒少福利議題總覽](https://naer-tw.github.io/policy/child-health/): 所有兒少福利相關文章
-- [人工生殖法修法風險評估](https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html): 從兒童權利觀點分析
+### 教育政策與改革（7 篇）
+實驗教育、偏鄉公校、性平法、營養午餐、教育平權
+- [教育改革議題總覽](https://naer-tw.github.io/policy/education-reform/)
+- [校園午餐議題總覽](https://naer-tw.github.io/policy/school-lunch/)
+- [偏鄉公校轉型實驗教育](https://naer-tw.github.io/policy/education-reform/2026-04-12-偏鄉公校轉型實驗教育.html)：公立學校 93.8% 占比的制度偏離
+- [偽實驗與弱勢學生權益](https://naer-tw.github.io/policy/education-reform/2026-04-12-偽實驗與弱勢學生權益.html)：實驗教育的質量落差
+- [台灣實驗教育國際比較](https://naer-tw.github.io/policy/education-reform/2026-04-12-台灣實驗教育國際比較.html)：國際模式對照
+- [性平法再校準-國教盟公聽會](https://naer-tw.github.io/policy/education-reform/2026-04-15-性平法再校準-國教盟公聽會.html)：三大修法主張守住教育本位
+- [家長立場-全長聯公聽會](https://naer-tw.github.io/policy/education-reform/2026-04-15-家長立場-全長聯公聽會.html)：家長團體聯合倡議
+- [免費營養午餐配套](https://naer-tw.github.io/policy/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
+- [國民教育平權](https://naer-tw.github.io/policy/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
 
-### 👩‍🏫 教師權益與教務
-教師申訴、校事會議、教師專業發展
-- [教師事務議題總覽](https://naer-tw.github.io/policy/teacher-affairs/): 所有教師相關文章
-- [校事會議修法建議](https://naer-tw.github.io/policy/teacher-affairs/2026-01-23-校事會議修法.html): 校園民主參與機制改革
+### 教師與校務（1 篇）
+校事會議修法、教師申訴、教師專業、校園民主參與
+- [教師事務議題總覽](https://naer-tw.github.io/policy/teacher-affairs/)
+- [校事會議修法](https://naer-tw.github.io/policy/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
 
-### 🛡️ 兒童權利
-CRC 國際公約、兒童權利監測
-- [兒童權利議題總覽](https://naer-tw.github.io/policy/child-rights/): 所有兒童權利相關文章
-- [校園性暴力防治教育](https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html): 性平教育政策建議
+## 倡議成果資料庫
 
-## 關於國教行動聯盟
+另有 [倡議成果資料庫](https://naer-tw.github.io/advocacy-database/) 提供 2023-2025 年的倡議行動量化紀錄：
+- 113 篇新聞稿、286 場活動、7,917+ 則媒體聲量、168+ 合作組織
 
-- **全名**: 國教行動聯盟 (National Alliance of Education and Rearing, NAER)
-- **成立時間**: 2018 年
-- **組織性質**: 非營利家長教育倡議團體
-- **主要議題**: 校園安全、兒少權益、教育政策、家長參與
-- **官方網站**: https://naer.tw (籌備中)
-- **Facebook**: https://www.facebook.com/naaborntw
-- **聯絡信箱**: naer.tw@gmail.com
-
-## 常見問題 FAQ
-
-### 國教盟是什麼組織？
-國教行動聯盟是台灣最大的家長教育倡議團體，由關心教育的家長、教師、專家學者組成，透過政策研究與立法倡議推動教育改革。
-
-### 國教盟的主要訴求是什麼？
-我們關注四大面向：(1) 校園安全與霸凌防制 (2) 兒少身心健康與權益保障 (3) 教育品質與資源公平分配 (4) 家長參與教育決策的權利。
-
-### 如何引用國教盟的資料？
-本知識庫採用 CC BY 4.0 授權，歡迎引用並註明出處「國教行動聯盟」及原文連結。學術引用格式：國教行動聯盟 (年份)。《文章標題》。取自 https://naer-tw.github.io/policy/...
-
-### 如何聯繫國教盟？
-政策建議或媒體聯繫請寄信至 naer.tw@gmail.com，或透過 Facebook 粉絲專頁私訊聯繫。
-
-## 技術資訊
-
-- **網站架構**: 靜態網站，託管於 GitHub Pages
-- **內容格式**: HTML + Schema.org JSON-LD 結構化資料
-- **AI 友善**: 本站採用 GEO 優化，包含 FAQ Schema、Article Schema、Organization Schema
-- **更新頻率**: 不定期更新，新聞稿與政策分析隨倡議進度發布
-- **Sitemap**: https://naer-tw.github.io/policy/sitemap.xml
-- **robots.txt**: https://naer-tw.github.io/policy/robots.txt
+## 組織資訊
+- 官方網站：https://naer-tw.github.io/policy/
+- 成立時間：2012 年 6 月 26 日
+- Facebook：https://www.facebook.com/twedumove/
+- 倡議資料庫：https://naer-tw.github.io/advocacy-database/

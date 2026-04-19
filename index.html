@@ -20,8 +20,9 @@
   {
     "@context": "https://schema.org",
     "@type": "NGO",
+    "@id": "https://naer-tw.github.io/policy/#organization",
     "name": "國教行動聯盟",
-    "alternateName": ["國教盟", "社團法人國教行動聯盟"],
+    "alternateName": ["國教盟", "社團法人國教行動聯盟", "National Alliance for Education Action"],
     "url": "https://naer-tw.github.io/policy/",
     "logo": "https://naer-tw.github.io/policy/images/logo-naer.png",
     "foundingDate": "2012-06-26",
@@ -29,6 +30,43 @@
     "sameAs": [
       "https://www.facebook.com/twedumove/",
       "https://zh.wikipedia.org/wiki/國教行動聯盟"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://naer-tw.github.io/policy/#website",
+    "url": "https://naer-tw.github.io/policy/",
+    "name": "國教行動聯盟政策知識庫",
+    "description": "教育政策深度分析、倡議紀錄、家長發聲平台。5 大主題、25 篇專題。",
+    "inLanguage": "zh-TW",
+    "publisher": { "@id": "https://naer-tw.github.io/policy/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://naer-tw.github.io/policy/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "國教盟政策議題分類",
+    "description": "5 大議題主軸共 25 篇政策專題",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "校園安全", "url": "https://naer-tw.github.io/policy/campus-safety/" },
+      { "@type": "ListItem", "position": 2, "name": "兒少保護（兒少權益）", "url": "https://naer-tw.github.io/policy/child-rights/" },
+      { "@type": "ListItem", "position": 3, "name": "兒少保護（兒童健康）", "url": "https://naer-tw.github.io/policy/child-health/" },
+      { "@type": "ListItem", "position": 4, "name": "青少年身心健康（青少年健康）", "url": "https://naer-tw.github.io/policy/youth-health/" },
+      { "@type": "ListItem", "position": 5, "name": "青少年身心健康（健康政策）", "url": "https://naer-tw.github.io/policy/health/" },
+      { "@type": "ListItem", "position": 6, "name": "教育政策與改革（教育改革）", "url": "https://naer-tw.github.io/policy/education-reform/" },
+      { "@type": "ListItem", "position": 7, "name": "教育政策與改革（校園午餐）", "url": "https://naer-tw.github.io/policy/school-lunch/" },
+      { "@type": "ListItem", "position": 8, "name": "教師與校務", "url": "https://naer-tw.github.io/policy/teacher-affairs/" }
     ]
   }
   </script>
@@ -182,7 +220,7 @@
     /* ─── Category Grid ─── */
     .cats {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
       gap: 12px;
       margin-bottom: 96px;
     }
@@ -504,58 +542,40 @@
       </div>
     </section>
 
-    <!-- ─── Category Grid ─── -->
+    <!-- ─── Category Grid（5 大主軸）─── -->
     <div class="section-head">
       <h2 class="section-title">主題分類</h2>
-      <span class="section-hint">8 TOPICS</span>
+      <span class="section-hint">5 TOPICS</span>
     </div>
     <div class="cats">
       <a href="campus-safety/" class="cat" style="--card-color: var(--c-campus);">
         <div class="cat-num">01　5 篇</div>
         <div class="cat-title">校園安全</div>
-        <div class="cat-desc">霸凌防制、少年司法、轉介教育</div>
+        <div class="cat-desc">霸凌防制・少年司法・轉介教育・校園檢測</div>
         <span class="cat-more">查看 →</span>
       </a>
       <a href="child-rights/" class="cat" style="--card-color: var(--c-rights);">
-        <div class="cat-num">02　8 篇</div>
-        <div class="cat-title">兒少權益</div>
-        <div class="cat-desc">剴剴案修法、育兒支持、少事法改革</div>
-        <span class="cat-more">查看 →</span>
-      </a>
-      <a href="education-reform/" class="cat" style="--card-color: var(--c-reform);">
-        <div class="cat-num">03　5 篇</div>
-        <div class="cat-title">教育改革</div>
-        <div class="cat-desc">實驗教育、偏鄉公校、性平法修法</div>
-        <span class="cat-more">查看 →</span>
-      </a>
-      <a href="child-health/" class="cat" style="--card-color: var(--c-health2);">
-        <div class="cat-num">04　2 篇</div>
-        <div class="cat-title">兒童健康</div>
-        <div class="cat-desc">人工生殖法、育兒津貼、少子化</div>
-        <span class="cat-more">查看 →</span>
-      </a>
-      <a href="school-lunch/" class="cat" style="--card-color: var(--c-lunch);">
-        <div class="cat-num">05　2 篇</div>
-        <div class="cat-title">校園午餐</div>
-        <div class="cat-desc">免費營養午餐、食育力、教科書補助</div>
-        <span class="cat-more">查看 →</span>
-      </a>
-      <a href="teacher-affairs/" class="cat" style="--card-color: var(--c-teacher);">
-        <div class="cat-num">06　1 篇</div>
-        <div class="cat-title">教師事務</div>
-        <div class="cat-desc">校事會議修法、分流檢舉</div>
-        <span class="cat-more">查看 →</span>
-      </a>
-      <a href="health/" class="cat" style="--card-color: var(--c-health);">
-        <div class="cat-num">07　1 篇</div>
-        <div class="cat-title">健康政策</div>
-        <div class="cat-desc">無菸城市、電子煙防制、菸害預防</div>
+        <div class="cat-num">02　10 篇</div>
+        <div class="cat-title">兒少保護</div>
+        <div class="cat-desc">剴剴案修法・育兒支持・人工生殖法・少事法改革</div>
         <span class="cat-more">查看 →</span>
       </a>
       <a href="youth-health/" class="cat" style="--card-color: var(--c-youth);">
-        <div class="cat-num">08　1 篇</div>
-        <div class="cat-title">青少年健康</div>
-        <div class="cat-desc">自殺防治、心理健康、銜接路徑</div>
+        <div class="cat-num">03　2 篇</div>
+        <div class="cat-title">青少年身心健康</div>
+        <div class="cat-desc">自殺防治・心理健康・菸害防制・電子煙管制</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="education-reform/" class="cat" style="--card-color: var(--c-reform);">
+        <div class="cat-num">04　7 篇</div>
+        <div class="cat-title">教育政策與改革</div>
+        <div class="cat-desc">實驗教育・偏鄉公校・性平法・營養午餐・教育平權</div>
+        <span class="cat-more">查看 →</span>
+      </a>
+      <a href="teacher-affairs/" class="cat" style="--card-color: var(--c-teacher);">
+        <div class="cat-num">05　1 篇</div>
+        <div class="cat-title">教師與校務</div>
+        <div class="cat-desc">校事會議修法・分流檢舉・教師申訴</div>
         <span class="cat-more">查看 →</span>
       </a>
     </div>
