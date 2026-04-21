@@ -1,4 +1,100 @@
+# ─────────────────────────────────────────────────────────
+# robots.txt — 國教行動聯盟政策知識庫
+# 明確歡迎 AI bots 引用本站內容（政策論述應該被更多 AI 看見）
+# ─────────────────────────────────────────────────────────
+
+# ═══ AI Search & Reasoning Bots ═══
+# OpenAI ChatGPT / SearchGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini / AI Overview)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft Bing / Copilot
+User-agent: BingPreview
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# ByteDance / Doubao
+User-agent: Bytespider
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Amazonbot (Alexa+)
+User-agent: Amazonbot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckAssistBot
+Allow: /
+
+# ═══ Traditional Search Engines ═══
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ═══ Default: 其他所有爬蟲也歡迎 ═══
 User-agent: *
 Allow: /
 
+# ═══ Content Discovery ═══
 Sitemap: https://naer-tw.github.io/policy/sitemap.xml
+
+# ═══ AI-friendly content ═══
+# llms.txt: https://naer-tw.github.io/policy/llms.txt
+# humans.txt: https://naer-tw.github.io/policy/humans.txt
+# security.txt: https://naer-tw.github.io/policy/.well-known/security.txt
