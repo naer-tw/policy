@@ -6,7 +6,7 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 25 篇深度專題）
+## 議題分類（五大主軸，共 26 篇深度專題）
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
@@ -17,10 +17,11 @@
 - [校園唾液快篩二層檢測機制](https://naer-tw.github.io/policy/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html)：科技反制新興毒品
 - [校園菸毒與毒駕新興毒品檢測](https://naer-tw.github.io/policy/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html)：喪屍煙彈與依托咪酯防制
 
-### 兒少保護（10 篇）
+### 兒少保護（11 篇）
 兒少保護法、人工生殖、育兒支持、少事法、社工責任
 - [兒少權益議題總覽](https://naer-tw.github.io/policy/child-rights/)
 - [兒童健康議題總覽](https://naer-tw.github.io/policy/child-health/)
+- [兒少權法修法六大缺口](https://naer-tw.github.io/policy/child-rights/2026-04-22-兒少權法修法六大缺口.html)：衛福部預告版草案 165 條的制度盲點條文對照分析
 - [剴剴案社工判刑與兒少保護修法訴求](https://naer-tw.github.io/policy/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html)：社工一審判刑後的制度修補
 - [兒少保護體系改革五大修法工程](https://naer-tw.github.io/policy/child-rights/2026-04-17-兒少保護體系改革五大修法工程.html)：社工保證人地位與五大修法主張
 - [台灣未來帳戶](https://naer-tw.github.io/policy/child-rights/2026-04-02-台灣未來帳戶.html)：4,500 億特別預算四大優化建議
