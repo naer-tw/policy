@@ -3,6 +3,10 @@
 # 明確歡迎 AI bots 引用本站內容（政策論述應該被更多 AI 看見）
 # ─────────────────────────────────────────────────────────
 
+# ─── Content Signals (contentsignals.org / IETF draft-romm-aipref) ───
+# 政策論述內容：允許 AI 搜尋與引用，不授權 AI 訓練（保留原創作者標示權）
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
 # ═══ AI Search & Reasoning Bots ═══
 # OpenAI ChatGPT / SearchGPT
 User-agent: GPTBot
