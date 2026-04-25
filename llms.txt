@@ -6,7 +6,7 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 26 篇深度專題）
+## 議題分類（五大主軸，共 27 篇深度專題）
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
@@ -33,12 +33,13 @@
 - [人工生殖法修法風險](https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
 - [兒童消失危機-育兒津貼翻倍](https://naer-tw.github.io/policy/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
 
-### 青少年身心健康（2 篇）
-青少年自殺防治、心理健康、菸害防制、電子煙管制
+### 青少年身心健康（3 篇）
+青少年自殺防治、心理健康、菸害防制、電子煙管制、世代禁菸
 - [青少年健康議題總覽](https://naer-tw.github.io/policy/youth-health/)
 - [健康政策議題總覽](https://naer-tw.github.io/policy/health/)
 - [青少年自殺通報九年增 3.3 倍](https://naer-tw.github.io/policy/youth-health/2025-12-05-青少年自殺通報.html)：心理健康評估入法倡議
 - [無菸城市政策分析](https://naer-tw.github.io/policy/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
+- [健康台灣無菸品世代](https://naer-tw.github.io/policy/health/2026-04-24-健康台灣無菸品世代.html)：英國世代禁菸法 vs 台灣應推動全面禁絕新型菸品（含電子煙、加熱菸、尼古丁袋）
 
 ### 教育政策與改革（7 篇）
 實驗教育、偏鄉公校、性平法、營養午餐、教育平權
