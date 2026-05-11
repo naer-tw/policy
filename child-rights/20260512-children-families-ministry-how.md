@@ -438,6 +438,12 @@ source: 國教行動聯盟政策知識庫
 
  - [為什麼台灣需要把兒少主管機關升格為「兒童家庭部」?(WHY 篇)](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-why.html)
 
+ - **[ 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://naer-tw.github.io/policy/cwa-reform/)**
+
+ - [6 大缺口完整立法草案(RP-G01~G06,可作為立委版獨立提案文字基礎)](https://naer-tw.github.io/policy/cwa-reform/reform-proposals/)
+
+ - [21 國國際對標卡(strength / weakness / applicability 三欄齊全)](https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/)
+
  - [全國法規資料庫——兒童及少年福利與權益保障法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001)
 
  - [全國法規資料庫——中央行政機關組織基準法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0010036)
@@ -446,7 +452,7 @@ source: 國教行動聯盟政策知識庫
 
  - [監察院國家人權委員會——兒童權利監測指標](https://nhrc.cy.gov.tw/)
 
- - [國教行動聯盟臉書——兒童家庭部組織法草案完整版](https://www.facebook.com/twedumove/)
+ - [國教行動聯盟臉書](https://www.facebook.com/twedumove/)
 
  
 

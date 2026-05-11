@@ -398,7 +398,13 @@ source: 國教行動聯盟政策知識庫
 
  - [兒童家庭部組織法該怎麼寫?16 條草案與修正第 3 條法律承諾解析](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-how.html)
 
- - [國教行動聯盟臉書專頁——兒少權法修法六大缺口政策論述](https://www.facebook.com/twedumove/)
+ - **[ 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://naer-tw.github.io/policy/cwa-reform/)**
+
+ - [6 大缺口完整立法草案(RP-G01~G06)](https://naer-tw.github.io/policy/cwa-reform/reform-proposals/)
+
+ - [21 國國際對標卡(三欄齊全)](https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/)
+
+ - [國教行動聯盟臉書專頁](https://www.facebook.com/twedumove/)
 
  - [全國法規資料庫——兒童及少年福利與權益保障法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001)
 
@@ -445,8 +451,6 @@ source: 國教行動聯盟政策知識庫
  - 대한민국 여성가족부 (2025). 여성가족부 → 성평등가족부 개편안. 대한민국 정부. [https://www.mogef.go.kr/](https://www.mogef.go.kr/)
 
  - 林嘉慧(2026年5月12日)。家庭韌性角度:家庭不能繼續被卡在不同主管機關之間。國教行動聯盟 × 台灣心理健康聯盟聯合記者會發言稿。
-
- - 黃雅羚(2026年5月12日)。兒少心理健康跨 5 部會:沒有部級機關能整合。國教行動聯盟 × 台灣心理健康聯盟聯合記者會發言稿(諮商心理師、全國諮商心理師公會全國聯合會顧問)。
 
  
 
