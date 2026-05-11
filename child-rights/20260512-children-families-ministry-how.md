@@ -1,13 +1,28 @@
 ---
-title: "兒童家庭部組織法該怎麼寫?16 條草案與第 7 條法律承諾解析"
+title: "兒童家庭部組織法該怎麼寫?16 條草案與修正第 3 條法律承諾解析"
 description: "兒童家庭部組織法草案 16 條 5 章完整要點:法定勸告權、兒少代表 1/3、預算追蹤特別會計、獨立監督——對標日本こども家庭庁、挪威 Barneombudet、CRC GC2/19。"
 date: 2026-05-12
-keywords: "兒童家庭部組織法, 兒少權法第7條, 法定勸告權, 兒少預算特別會計, CRC GC2, 獨立兒少權利監督, 兒童權益促進委員會, 兒少代表參與, 國教行動聯盟"
+keywords: "兒童家庭部組織法, 兒少權法修正第3條, 法定勸告權, 兒少預算特別會計, CRC GC2, 獨立兒少權利監督, 兒童權益促進委員會, 兒少代表參與, 國教行動聯盟"
 url: https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-how.html
 source: 國教行動聯盟政策知識庫
 ---
 
-# 兒童家庭部組織法該怎麼寫?16 條草案與第 7 條法律承諾解析
+國教行動聯盟
+ |
+ 政策知識庫
+ |
+ 兒少權益
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+# 兒童家庭部組織法該怎麼寫?16 條草案與修正第 3 條法律承諾解析
 
  
  
@@ -27,7 +42,7 @@ source: 國教行動聯盟政策知識庫
 
  - **16 條 5 章草案:**包含法定勸告權、兒少代表至少 1/3 強制條款、預算特別會計、獨立監督。
 
- - **第 7 條是承諾載體:**業務法可以寫升格方向,要求行政院限期提出組織法草案。
+ - **修正第 3 條是承諾載體:**業務法可以寫升格方向,要求行政院限期提出組織法草案。
 
  - **三軌並進:**升格 × 預算追蹤(對標日本特別會計)× 獨立監督(對標挪威 Barneombudet),缺一不可。
 
@@ -40,7 +55,7 @@ source: 國教行動聯盟政策知識庫
  
 
  **兒童家庭部組織法草案應寫入「法定勸告權」、「兒少代表 1/3 強制參與」、「預算特別會計」與「獨立監督」四大核心。**
- 借兒少權法第 7 條作為法律承諾載體,要求行政院於修法施行後一定期限內提出組織法草案[[1]](#source-1)。設計核心對標日本こども家庭庁(2023)、挪威Barneombudet(1981)、與聯合國兒童權利委員會 General Comment No. 2(獨立人權機構)及 No. 19(兒少預算)[[7]](#source-7)。
+ 借兒少權法修正第 3 條(對應現行修正第 3 條)作為法律承諾載體,要求行政院於修法施行後一定期限內提出組織法草案[[1]](#source-1)。設計核心對標日本こども家庭庁(2023)、挪威Barneombudet(1981)、與聯合國兒童權利委員會 General Comment No. 2(獨立人權機構)及 No. 19(兒少預算)[[7]](#source-7)。
  
 
  
@@ -52,7 +67,7 @@ source: 國教行動聯盟政策知識庫
 
  
 
- 國教行動聯盟版「兒童家庭部組織法草案」共 5 章 16 條[[10]](#source-10),規範事項涵蓋設置、職權、組織、人事與預算。本部負責業務,以「兒少權法第 7 條所列原 16 類目的事業主管機關之兒少政策統籌」為核心:
+ 國教行動聯盟版「兒童家庭部組織法草案」共 5 章 16 條[[10]](#source-10),規範事項涵蓋設置、職權、組織、人事與預算。本部負責業務,以「兒少權法修正第 3 條(對應現行修正第 3 條)所列原 19 款目的事業主管機關之兒少政策統籌」為核心:
  
 
  
@@ -140,7 +155,7 @@ source: 國教行動聯盟政策知識庫
  
  
 
- 此條款設計直接對標日本こども家庭庁設置法第 4 條規定的「勧告権」[[2]](#source-2)。沒有此條款,即使升至二級部,亦無法解決「16 部會分散」的結構性問題。
+ 此條款設計直接對標日本こども家庭庁設置法第 4 條規定的「勧告権」[[2]](#source-2)。沒有此條款,即使升至二級部,亦無法解決「19 款主管機關分散」的結構性問題。
  
 
  | 勸告權設計 | 日本こども家庭庁(2023) | 台灣兒童家庭部(本草案) |
@@ -271,11 +286,11 @@ source: 國教行動聯盟政策知識庫
  
  
 
-## 為什麼一定要在第 7 條寫進升格方向?
+## 為什麼一定要在修正第 3 條寫進升格方向?
 
  
 
- 這是本倡議最常被質疑的問題:「兒少權法是業務法,可以寫組織升格嗎?」答案是:**第 7 條本身就是規定中央主管機關的條文,在第 7 條明定升格方向完全合法、合理**。
+ 這是本倡議最常被質疑的問題:「兒少權法是業務法,可以寫組織升格嗎?」答案是:**修正第 3 條本身就是規定中央主管機關的條文,在修正第 3 條明定升格方向完全合法、合理**。
  
 
  
@@ -286,16 +301,16 @@ source: 國教行動聯盟政策知識庫
 | --- | --- | --- |
 | 精神衛生法 | 第 2 條 | 明定中央主管機關為衛生福利部,並列舉中央與地方權責[8] |
 | 兒童權利公約施行法 | 第 6 條 | 明定行政院應設兒童及少年福利與權益推動小組,以協調及審議落實兒童權利公約事項[9] |
-| 兒少權法(現行) | 第 7 條 | 列舉 16 類目的事業主管機關,但僅以「應全力配合」作為跨部會基礎(本次需補強) |
+| 兒少權法(現行) | 修正第 3 條 | 列舉 19 款目的事業主管機關,但僅以「應全力配合」作為跨部會基礎(本次需補強) |
 
  
 
-### 本倡議建議第 7 條補強條款
+### 本倡議建議修正第 3 條補強條款
 
  
  
 
-#### 第 7 條建議新增第 X 項
+#### 修正第 3 條建議新增第 X 項
 
  
 
@@ -310,7 +325,7 @@ source: 國教行動聯盟政策知識庫
  
  
 
-「兒少權法修到 165 條,不能只問多了哪些責任,更要問誰有權限整合。孩子不能再被卡在 16 個主管機關之間——這次修法真正要補的,是能在行政院層級為孩子負責的兒童家庭部。」
+「兒少權法修到 165 條,不能只問多了哪些責任,更要問誰有權限整合。孩子不能再被卡在 19 款主管機關之間——這次修法真正要補的,是能在行政院層級為孩子負責的兒童家庭部。」
 
  —— 王瀚陽,國教行動聯盟理事長(2026.05.12 兩會聯合記者會)
  
@@ -328,7 +343,7 @@ source: 國教行動聯盟政策知識庫
 
  
 
-可以。兒少權法第 7 條本來就是「規定中央主管機關」的條文,在第 7 條明定升格方向,並要求行政院於修法施行後一定期限內提出組織法草案,完全是業務法可以做的事。實際上《精神衛生法》第 2 條、《兒童權利公約施行法》第 6 條等都有類似條款,前者明定中央主管機關為衛福部,後者直接規定行政院應設兒童及少年福利與權益推動小組。
+可以。兒少權法修正第 3 條(對應現行修正第 3 條)本來就是「規定中央主管機關」的條文,在修正第 3 條明定升格方向,並要求行政院於修法施行後一定期限內提出組織法草案,完全是業務法可以做的事。實際上《精神衛生法》第 2 條、《兒童權利公約施行法》第 6 條等都有類似條款,前者明定中央主管機關為衛福部,後者直接規定行政院應設兒童及少年福利與權益推動小組。
 
  
  
@@ -338,7 +353,7 @@ source: 國教行動聯盟政策知識庫
 
  
 
-不需要。本倡議是「不是反兒家署,而是反以三級署為終點」。兒家署可以是短期過渡的整合起點,但本次第 7 條應同時明定升格方向。倡議建議:兒家署於成立後 3 年內,行政院應提出兒童家庭部組織法草案。
+不需要。本倡議是「不是反兒家署,而是反以三級署為終點」。兒家署可以是短期過渡的整合起點,但本次修正第 3 條應同時明定升格方向。倡議建議:兒家署於成立後 3 年內,行政院應提出兒童家庭部組織法草案。
 
  
  
@@ -378,7 +393,7 @@ source: 國教行動聯盟政策知識庫
 
  
 
-本倡議建議分兩階段:第一階段(2026-2028)兒少及家庭支持署成立並運作;第二階段(2028-2030)行政院依本次第 7 條法律承諾,提出兒童家庭部組織法草案,完成升格。3-4 年的過渡期,讓兒家署的整合經驗能轉化為兒童家庭部的組織基礎。
+本倡議建議分兩階段:第一階段(2026-2028)兒少及家庭支持署成立並運作;第二階段(2028-2030)行政院依本次修正第 3 條法律承諾,提出兒童家庭部組織法草案,完成升格。3-4 年的過渡期,讓兒家署的整合經驗能轉化為兒童家庭部的組織基礎。
 
  
  
@@ -445,25 +460,25 @@ source: 國教行動聯盟政策知識庫
 
  
 
- - 立法院(無日期)。兒童及少年福利與權益保障法第 7 條。全國法規資料庫。[https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001)
+ - 立法院(無日期)。兒童及少年福利與權益保障法修正第 3 條。全國法規資料庫。[https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001)
 
- - こども家庭庁 (2023). *こども家庭庁設置法*. 日本內閣府. [https://www.cfa.go.jp/about/](https://www.cfa.go.jp/about/)
+ - こども家庭庁 (2023). こども家庭庁設置法. 日本內閣府. [https://www.cfa.go.jp/about/](https://www.cfa.go.jp/about/)
 
- - 財務省 (2024). *子ども・子育て支援特別会計*. 日本財務省. [https://www.mof.go.jp/](https://www.mof.go.jp/)
+ - 財務省 (2024). 子ども・子育て支援特別会計. 日本財務省. [https://www.mof.go.jp/](https://www.mof.go.jp/)
 
- - Barneombudet. (n.d.). *About the Norwegian Ombudsman for Children*. Norwegian Ombudsman for Children. [https://www.barneombudet.no/english](https://www.barneombudet.no/english)
+ - Barneombudet. (n.d.). About the Norwegian Ombudsman for Children. Norwegian Ombudsman for Children. [https://www.barneombudet.no/english](https://www.barneombudet.no/english)
 
- - 監察院國家人權委員會(2024)。*兒童權利公約獨立評估意見書(兒童權利監測指標)*。監察院。[https://nhrc.cy.gov.tw/](https://nhrc.cy.gov.tw/)
+ - 監察院國家人權委員會(2024)。兒童權利公約獨立評估意見書(兒童權利監測指標)。監察院。[https://nhrc.cy.gov.tw/](https://nhrc.cy.gov.tw/)
 
- - UN Committee on the Rights of the Child. (2002). *General Comment No. 2: The role of independent national human rights institutions in the promotion and protection of the rights of the child* (CRC/GC/2002/2). United Nations. [https://www.ohchr.org/en/treaty-bodies/crc/general-comments](https://www.ohchr.org/en/treaty-bodies/crc/general-comments)
+ - UN Committee on the Rights of the Child. (2002). General Comment No. 2: The role of independent national human rights institutions in the promotion and protection of the rights of the child (CRC/GC/2002/2). United Nations. [https://www.ohchr.org/en/treaty-bodies/crc/general-comments](https://www.ohchr.org/en/treaty-bodies/crc/general-comments)
 
- - UN Committee on the Rights of the Child. (2016). *General Comment No. 19 on public budgeting for the realization of children's rights (art. 4)* (CRC/C/GC/19). United Nations. [https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-19-2016-public-budgeting](https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-19-2016-public-budgeting)
+ - UN Committee on the Rights of the Child. (2016). General Comment No. 19 on public budgeting for the realization of children's rights (art. 4) (CRC/C/GC/19). United Nations. [https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-19-2016-public-budgeting](https://www.ohchr.org/en/documents/general-comments-and-recommendations/general-comment-no-19-2016-public-budgeting)
 
  - 立法院(無日期)。精神衛生法第 2 條。全國法規資料庫。[https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020030](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020030)
 
  - 立法院(無日期)。兒童權利公約施行法第 6 條。全國法規資料庫。[https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050193](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050193)
 
- - 國教行動聯盟(2026年5月10日)。*兒童家庭部組織法草案(國教盟版)*。國教行動聯盟政策資料庫。[https://www.facebook.com/twedumove/](https://www.facebook.com/twedumove/)
+ - 國教行動聯盟(2026年5月10日)。兒童家庭部組織法草案(國教盟版)。國教行動聯盟政策資料庫。[https://www.facebook.com/twedumove/](https://www.facebook.com/twedumove/)
 
  
 
