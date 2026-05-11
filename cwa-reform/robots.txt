@@ -1,0 +1,5 @@
+# 國教行動聯盟兒少權法修法知識庫
+User-agent: *
+Allow: /policy/cwa-reform/
+
+Sitemap: https://naer-tw.github.io/policy/cwa-reform/sitemap.xml
