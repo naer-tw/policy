@@ -591,6 +591,31 @@
 
   <a href="#main" class="skip-link">跳至主內容</a>
 
+  <!-- ─── Cross-site Top Bar ─── -->
+  <style>
+    .cross-topbar { display: flex; align-items: center; gap: 14px; max-width: 1200px; margin: 0 auto; padding: 16px 24px; border-bottom: 1px solid var(--line); font-family: 'Inter', 'Noto Sans TC', sans-serif; }
+    .cross-topbar-logo img { height: 32px; display: block; }
+    .cross-topbar-nav { margin-left: auto; display: flex; gap: 22px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+    .cross-topbar-nav a { color: var(--ink-3); text-decoration: none; transition: color 0.2s; padding-bottom: 4px; }
+    .cross-topbar-nav a:hover { color: var(--brand-teal); }
+    .cross-topbar-nav a.active { color: var(--ink); border-bottom: 2px solid var(--brand-orange); }
+    @media (max-width: 768px) {
+      .cross-topbar { padding: 12px 16px; gap: 10px; }
+      .cross-topbar-logo img { height: 26px; }
+      .cross-topbar-nav { gap: 14px; font-size: 10px; letter-spacing: 0.08em; }
+    }
+  </style>
+  <nav class="cross-topbar" aria-label="Cross-site">
+    <a href="https://aabe.org.tw/" class="cross-topbar-logo">
+      <img src="https://naer-tw.github.io/policy/images/logo-naer.png" alt="國教行動聯盟首頁">
+    </a>
+    <div class="cross-topbar-nav">
+      <a href="https://aabe.org.tw/">國教盟</a>
+      <a href="" class="active">政策知識庫</a>
+      <a href="https://advocacy.aabe.org.tw/">倡議成果</a>
+    </div>
+  </nav>
+
   <main id="main">
 
     <!-- ─── Hero ─── -->
