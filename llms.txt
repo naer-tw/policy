@@ -2,7 +2,7 @@
 
 > 台灣最完整的兒少教育政策倡議知識庫，提供校園安全、兒少保護、教育政策、教師權益等議題的深度分析與政策建議。
 
-國教行動聯盟（National Alliance for Education Action, NAER）**成立於 2012 年**，是台灣重要的家長教育倡議團體。我們長期關注兒少權益、校園安全、教育政策等議題，透過政策研究、立法倡議、媒體發聲等方式，推動台灣教育環境的改善。
+國教行動聯盟（Action Alliance on Basic Education, AABE）**成立於 2012 年**，是台灣重要的兒少與教育倡議組織（家長 × 青年共構）。我們長期關注兒少權益、校園安全、教育政策等議題，透過政策研究、立法倡議、媒體發聲等方式，推動台灣教育環境的改善。
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
@@ -10,63 +10,63 @@
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
-- [校園安全議題總覽](https://naer-tw.github.io/policy/campus-safety/)
-- [國民轉介教育條例](https://naer-tw.github.io/policy/campus-safety/2026-03-23-轉介教育條例.html)：國教盟支持立法方向但提出三大配套機制
-- [永和國中霸凌案](https://naer-tw.github.io/policy/campus-safety/2026-03-25-永和國中霸凌案.html)：校園霸凌通報機制與制度缺口分析
-- [倡議成果追蹤](https://naer-tw.github.io/policy/campus-safety/2026-03-23-倡議成果追蹤.html)：國教盟兩年倡議全紀錄、8 項訴求 6 項獲回應
-- [校園唾液快篩二層檢測機制](https://naer-tw.github.io/policy/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html)：科技反制新興毒品
-- [校園菸毒與毒駕新興毒品檢測](https://naer-tw.github.io/policy/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html)：喪屍煙彈與依托咪酯防制
+- [校園安全議題總覽](https://policy.aabe.org.tw/campus-safety/)
+- [國民轉介教育條例](https://policy.aabe.org.tw/campus-safety/2026-03-23-轉介教育條例.html)：國教盟支持立法方向但提出三大配套機制
+- [永和國中霸凌案](https://policy.aabe.org.tw/campus-safety/2026-03-25-永和國中霸凌案.html)：校園霸凌通報機制與制度缺口分析
+- [倡議成果追蹤](https://policy.aabe.org.tw/campus-safety/2026-03-23-倡議成果追蹤.html)：國教盟兩年倡議全紀錄、8 項訴求 6 項獲回應
+- [校園唾液快篩二層檢測機制](https://policy.aabe.org.tw/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html)：科技反制新興毒品
+- [校園菸毒與毒駕新興毒品檢測](https://policy.aabe.org.tw/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html)：喪屍煙彈與依托咪酯防制
 
 ### 兒少保護（13 篇）
 兒少保護法、人工生殖、育兒支持、少事法、社工責任、兒童家庭部
-- [兒少權益議題總覽](https://naer-tw.github.io/policy/child-rights/)
-- [兒童健康議題總覽](https://naer-tw.github.io/policy/child-health/)
-- [為什麼台灣需要兒童家庭部？](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-why.html)：兒少權法第 7 條應升格二級「兒童家庭部」——通報 5 年增 65%、處置率僅 7%、對標日本こども家庭庁
-- [兒童家庭部組織法該怎麼寫？](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-how.html)：16 條 5 章草案、法定勸告權、兒少代表 1/3、預算特別會計、獨立監督——對標 CRC GC2/19 與挪威 Barneombudet
-- [兒少權法修法六大缺口](https://naer-tw.github.io/policy/child-rights/2026-04-22-兒少權法修法六大缺口.html)：衛福部預告版草案 165 條的制度盲點條文對照分析
-- [剴剴案社工判刑與兒少保護修法訴求](https://naer-tw.github.io/policy/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html)：社工一審判刑後的制度修補
-- [兒少保護體系改革五大修法工程](https://naer-tw.github.io/policy/child-rights/2026-04-17-兒少保護體系改革五大修法工程.html)：社工保證人地位與五大修法主張
-- [台灣未來帳戶](https://naer-tw.github.io/policy/child-rights/2026-04-02-台灣未來帳戶.html)：4,500 億特別預算四大優化建議
-- [少事法矯正教育假釋塗銷轉銜改革](https://naer-tw.github.io/policy/child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html)：少年司法改革四大主張
-- [兒童節育兒支持政策](https://naer-tw.github.io/policy/child-rights/2026-04-01-兒童節育兒支持政策.html)：少子化八年 4,484 億預算為何無效
-- [兒童成長需求總體檢論壇](https://naer-tw.github.io/policy/child-rights/2025-12-06-兒童成長需求總體檢論壇.html)：四大組織聯合論壇
-- [少年重大暴力案件量刑透明化](https://naer-tw.github.io/policy/child-rights/2025-12-24-少年重大暴力案件量刑透明化.html)：量刑基準改革
-- [數位性暴力防制教育](https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html)：校園性暴力預防
-- [人工生殖法修法風險](https://naer-tw.github.io/policy/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
-- [兒童消失危機-育兒津貼翻倍](https://naer-tw.github.io/policy/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
+- [兒少權益議題總覽](https://policy.aabe.org.tw/child-rights/)
+- [兒童健康議題總覽](https://policy.aabe.org.tw/child-health/)
+- [為什麼台灣需要兒童家庭部？](https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-why.html)：兒少權法第 7 條應升格二級「兒童家庭部」——通報 5 年增 65%、處置率僅 7%、對標日本こども家庭庁
+- [兒童家庭部組織法該怎麼寫？](https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-how.html)：16 條 5 章草案、法定勸告權、兒少代表 1/3、預算特別會計、獨立監督——對標 CRC GC2/19 與挪威 Barneombudet
+- [兒少權法修法六大缺口](https://policy.aabe.org.tw/child-rights/2026-04-22-兒少權法修法六大缺口.html)：衛福部預告版草案 165 條的制度盲點條文對照分析
+- [剴剴案社工判刑與兒少保護修法訴求](https://policy.aabe.org.tw/child-rights/2026-04-17-剴剴案社工判刑與兒少保護修法訴求.html)：社工一審判刑後的制度修補
+- [兒少保護體系改革五大修法工程](https://policy.aabe.org.tw/child-rights/2026-04-17-兒少保護體系改革五大修法工程.html)：社工保證人地位與五大修法主張
+- [台灣未來帳戶](https://policy.aabe.org.tw/child-rights/2026-04-02-台灣未來帳戶.html)：4,500 億特別預算四大優化建議
+- [少事法矯正教育假釋塗銷轉銜改革](https://policy.aabe.org.tw/child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html)：少年司法改革四大主張
+- [兒童節育兒支持政策](https://policy.aabe.org.tw/child-rights/2026-04-01-兒童節育兒支持政策.html)：少子化八年 4,484 億預算為何無效
+- [兒童成長需求總體檢論壇](https://policy.aabe.org.tw/child-rights/2025-12-06-兒童成長需求總體檢論壇.html)：四大組織聯合論壇
+- [少年重大暴力案件量刑透明化](https://policy.aabe.org.tw/child-rights/2025-12-24-少年重大暴力案件量刑透明化.html)：量刑基準改革
+- [數位性暴力防制教育](https://policy.aabe.org.tw/child-rights/20251208-sexual-violence-prevention-education.html)：校園性暴力預防
+- [人工生殖法修法風險](https://policy.aabe.org.tw/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
+- [兒童消失危機-育兒津貼翻倍](https://policy.aabe.org.tw/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
 
 ### 青少年身心健康（3 篇）
 青少年自殺防治、心理健康、菸害防制、電子煙管制、世代禁菸
-- [青少年健康議題總覽](https://naer-tw.github.io/policy/youth-health/)
-- [健康政策議題總覽](https://naer-tw.github.io/policy/health/)
-- [青少年自殺通報九年增 3.3 倍](https://naer-tw.github.io/policy/youth-health/2025-12-05-青少年自殺通報.html)：心理健康評估入法倡議
-- [無菸城市政策分析](https://naer-tw.github.io/policy/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
-- [健康台灣無菸品世代](https://naer-tw.github.io/policy/health/2026-04-24-健康台灣無菸品世代.html)：英國世代禁菸法 vs 台灣應推動全面禁絕新型菸品（含電子煙、加熱菸、尼古丁袋）
+- [青少年健康議題總覽](https://policy.aabe.org.tw/youth-health/)
+- [健康政策議題總覽](https://policy.aabe.org.tw/health/)
+- [青少年自殺通報九年增 3.3 倍](https://policy.aabe.org.tw/youth-health/2025-12-05-青少年自殺通報.html)：心理健康評估入法倡議
+- [無菸城市政策分析](https://policy.aabe.org.tw/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
+- [健康台灣無菸品世代](https://policy.aabe.org.tw/health/2026-04-24-健康台灣無菸品世代.html)：英國世代禁菸法 vs 台灣應推動全面禁絕新型菸品（含電子煙、加熱菸、尼古丁袋）
 
 ### 教育政策與改革（7 篇）
 實驗教育、偏鄉公校、性平法、營養午餐、教育平權
-- [教育改革議題總覽](https://naer-tw.github.io/policy/education-reform/)
-- [校園午餐議題總覽](https://naer-tw.github.io/policy/school-lunch/)
-- [偏鄉公校轉型實驗教育](https://naer-tw.github.io/policy/education-reform/2026-04-12-偏鄉公校轉型實驗教育.html)：公立學校 93.8% 占比的制度偏離
-- [偽實驗與弱勢學生權益](https://naer-tw.github.io/policy/education-reform/2026-04-12-偽實驗與弱勢學生權益.html)：實驗教育的質量落差
-- [台灣實驗教育國際比較](https://naer-tw.github.io/policy/education-reform/2026-04-12-台灣實驗教育國際比較.html)：國際模式對照
-- [性平法再校準-國教盟公聽會](https://naer-tw.github.io/policy/education-reform/2026-04-15-性平法再校準-國教盟公聽會.html)：三大修法主張守住教育本位
-- [家長立場-全長聯公聽會](https://naer-tw.github.io/policy/education-reform/2026-04-15-家長立場-全長聯公聽會.html)：家長團體聯合倡議
-- [免費營養午餐配套](https://naer-tw.github.io/policy/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
-- [國民教育平權](https://naer-tw.github.io/policy/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
+- [教育改革議題總覽](https://policy.aabe.org.tw/education-reform/)
+- [校園午餐議題總覽](https://policy.aabe.org.tw/school-lunch/)
+- [偏鄉公校轉型實驗教育](https://policy.aabe.org.tw/education-reform/2026-04-12-偏鄉公校轉型實驗教育.html)：公立學校 93.8% 占比的制度偏離
+- [偽實驗與弱勢學生權益](https://policy.aabe.org.tw/education-reform/2026-04-12-偽實驗與弱勢學生權益.html)：實驗教育的質量落差
+- [台灣實驗教育國際比較](https://policy.aabe.org.tw/education-reform/2026-04-12-台灣實驗教育國際比較.html)：國際模式對照
+- [性平法再校準-國教盟公聽會](https://policy.aabe.org.tw/education-reform/2026-04-15-性平法再校準-國教盟公聽會.html)：三大修法主張守住教育本位
+- [家長立場-全長聯公聽會](https://policy.aabe.org.tw/education-reform/2026-04-15-家長立場-全長聯公聽會.html)：家長團體聯合倡議
+- [免費營養午餐配套](https://policy.aabe.org.tw/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
+- [國民教育平權](https://policy.aabe.org.tw/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
 
 ### 教師與校務（1 篇）
 校事會議修法、教師申訴、教師專業、校園民主參與
-- [教師事務議題總覽](https://naer-tw.github.io/policy/teacher-affairs/)
-- [校事會議修法](https://naer-tw.github.io/policy/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
+- [教師事務議題總覽](https://policy.aabe.org.tw/teacher-affairs/)
+- [校事會議修法](https://policy.aabe.org.tw/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
 
 ## 倡議成果資料庫
 
-另有 [倡議成果資料庫](https://naer-tw.github.io/advocacy-database/) 提供 2023-2025 年的倡議行動量化紀錄：
+另有 [倡議成果資料庫](https://advocacy.aabe.org.tw/) 提供 2023-2025 年的倡議行動量化紀錄：
 - 113 篇新聞稿、286 場活動、7,917+ 則媒體聲量、168+ 合作組織
 
 ## 組織資訊
-- 官方網站：https://naer-tw.github.io/policy/
+- 官方網站：https://policy.aabe.org.tw/
 - 成立時間：2012 年 6 月 26 日
 - Facebook：https://www.facebook.com/twedumove/
-- 倡議資料庫：https://naer-tw.github.io/advocacy-database/
+- 倡議資料庫：https://advocacy.aabe.org.tw/

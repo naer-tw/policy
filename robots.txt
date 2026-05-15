@@ -96,9 +96,9 @@ User-agent: *
 Allow: /
 
 # ═══ Content Discovery ═══
-Sitemap: https://naer-tw.github.io/policy/sitemap.xml
+Sitemap: https://policy.aabe.org.tw/sitemap.xml
 
 # ═══ AI-friendly content ═══
-# llms.txt: https://naer-tw.github.io/policy/llms.txt
-# humans.txt: https://naer-tw.github.io/policy/humans.txt
-# security.txt: https://naer-tw.github.io/policy/.well-known/security.txt
+# llms.txt: https://policy.aabe.org.tw/llms.txt
+# humans.txt: https://policy.aabe.org.tw/humans.txt
+# security.txt: https://policy.aabe.org.tw/.well-known/security.txt
