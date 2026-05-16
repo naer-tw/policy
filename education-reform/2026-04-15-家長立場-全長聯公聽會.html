@@ -218,6 +218,13 @@
     font-family: 'Inter', 'Noto Sans TC', -apple-system, sans-serif;
     line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0;
   }
+  /* Reading enhancement (Phase 7 一致性更新) */
+  p { margin-bottom: 1.4em; }
+  h2, h3, h4 { margin-top: 1.8em; margin-bottom: 0.6em; }
+  ul, ol { margin-bottom: 1.4em; padding-left: 1.4em; }
+  li { margin-bottom: 0.5em; line-height: 1.8; }
+  blockquote { margin: 1.5em 0; padding-left: 1em; border-left: 3px solid #EB9B31; color: #3a3f48; }
+
   
   main { max-width: 900px; margin: 0 auto; padding: 20px; }
   p { margin: 16px 0; line-height: 1.7; }
@@ -334,7 +341,7 @@
   }
   
 /* Reading progress bar */
-.reading-progress{position:fixed;top:0;left:0;height:2px;background:#E89143;z-index:10000;transition:width 0.1s ease-out;width:0%}
+.reading-progress{position:fixed;top:0;left:0;height:2px;background:#EB9B31;z-index:10000;transition:width 0.1s ease-out;width:0%}
 /* A11y skip link */
 .skip-link{position:absolute;top:-100px;left:0;background:#0a0a0a;color:#fff;padding:12px 20px;font-size:0.9rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;z-index:9999;text-decoration:none;transition:top 0.2s}
 .skip-link:focus{top:0}
@@ -363,7 +370,7 @@
 
 /* Reading time badge */
 .reading-time{display:inline-flex;align-items:center;gap:10px;font-size:0.84rem;color:#7a8089;letter-spacing:0.08em;margin:-8px 0 24px;font-variant-numeric:tabular-nums;font-weight:500}
-.reading-time::before{content:"";display:inline-block;width:20px;height:1px;background:#E89143}
+.reading-time::before{content:"";display:inline-block;width:20px;height:1px;background:#EB9B31}
 .reading-time .dot{opacity:0.5}
 
 /* Sticky TOC (desktop only) */
@@ -374,8 +381,8 @@
 .toc li::before{content:counter(toc-item,decimal-leading-zero);position:absolute;left:0;top:1px;font-size:0.68rem;color:#b8bcc3;font-weight:600;font-variant-numeric:tabular-nums}
 .toc a{color:#4a5058;text-decoration:none;transition:color 0.15s;display:block}
 .toc a:hover{color:#0a0a0a}
-.toc a.active{color:#E89143;font-weight:600}
-.toc a.active::before{content:"";position:absolute;left:-18px;top:8px;width:2px;height:calc(100% - 8px);background:#E89143}
+.toc a.active{color:#EB9B31;font-weight:600}
+.toc a.active::before{content:"";position:absolute;left:-18px;top:8px;width:2px;height:calc(100% - 8px);background:#EB9B31}
 @media(max-width:1340px){.toc{display:none !important}}
 @media print{.toc{display:none !important}}
 </style>
