@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>跨出牆外的服事 — 國教行動聯盟</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Noto+Serif+TC:wght@400;500;700;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   Design tokens
+===================================================================== */
+:root{
+  --navy:       #0b2b4a;
+  --navy-2:     #143a60;
+  --navy-deep:  #051d35;
+  --gold:       #c9a247;
+  --gold-soft:  #e8d9a8;
+  --gold-light: #f5ebc8;
+  --cream:      #f7f3ea;
+  --cream-2:    #fbf8f0;
+  --ink:        #1a1a1a;
+  --ink-soft:   #3a3a3a;
+  --gray:       #6b6b6b;
+  --gray-light: #b8b8b8;
+  --red:        #b23a3a;
+  --red-soft:   #e9b8b8;
+  --white:      #ffffff;
+  --line:       rgba(201,162,71,.35);
+
+  --font-sans:  'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif;
+  --font-serif: 'Noto Serif TC','LiSong Pro','Songti TC',serif;
+  --font-mono:  'Manrope','Inter',ui-sans-serif,system-ui,sans-serif;
+
+  --slide-w: 1920;
+  --slide-h: 1080;
+}
+
+/* =====================================================================
+   Reset & global
+===================================================================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#000;color:var(--ink);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow:hidden}
+img,video{max-width:100%;display:block}
+
+/* =====================================================================
+   Stage — keeps fixed 16:9 ratio, letterboxed
+===================================================================== */
+.stage{
+  position:fixed;inset:0;display:grid;place-items:center;background:#000;
+}
+.deck{
+  width:100vw;height:100vh;max-width:calc(100vh * 16 / 9);max-height:calc(100vw * 9 / 16);
+  position:relative;background:var(--cream);
+  overflow:hidden;
+  /* Scale child slide based on width; use container query units */
+}
+
+/* All slides absolutely positioned, only active shown */
+.slide{
+  position:absolute;inset:0;
+  display:none;
+  padding:0;
+  font-size: calc(100cqw * 1 / 100); /* 1cqw == 1% width — used inside slides */
+  container-type: size;
+}
+.deck{container-type: size;}
+.slide.active{display:block;animation:fadein .35s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* =====================================================================
+   Indicator (minimal slide number, bottom right)
+===================================================================== */
+.indicator{
+  position:fixed;right:14px;bottom:10px;
+  color:rgba(255,255,255,.55);font-family:var(--font-mono);font-size:13px;font-weight:600;letter-spacing:.05em;
+  z-index:50;user-select:none;text-shadow:0 1px 3px rgba(0,0,0,.4);
+}
+
+/* =====================================================================
+   Common slide elements
+===================================================================== */
+.slide{
+  /* fluid type unit relative to slide width */
+}
+.slide .chrome-top, .slide .chrome-bot{
+  position:absolute;left:0;right:0;display:flex;align-items:center;justify-content:space-between;
+  padding:0 4cqw;color:var(--gray);font-size:1.1cqw;letter-spacing:.05em;
+}
+.slide .chrome-top{top:2cqh}
+.slide .chrome-bot{bottom:2cqh}
+.slide.theme-dark .chrome-top, .slide.theme-dark .chrome-bot{color:rgba(255,255,255,.55)}
+
+.chip{
+  display:inline-flex;align-items:center;gap:.6em;
+  padding:.45em 1.1em;border-radius:999px;
+  font-weight:700;font-size:1.25cqw;letter-spacing:.08em;
+  background:var(--navy);color:var(--white);
+}
+.chip.gold{background:var(--gold);color:var(--navy)}
+.chip.red{background:var(--red);color:var(--white)}
+.chip .dot{width:.5em;height:.5em;border-radius:999px;background:currentColor;opacity:.5}
+
+.section-title{font-weight:900;color:var(--navy);line-height:1.18;letter-spacing:.02em}
+.section-sub{color:var(--gray);font-weight:400;letter-spacing:.06em}
+
+.divider{display:inline-block;width:80px;height:3px;background:var(--gold);margin:1.6cqh auto;border-radius:2px}
+
+/* Slide themes */
+.theme-navy{background:linear-gradient(180deg,#0b2b4a 0%,#072138 100%)}
+.theme-navy-flat{background:#0b2b4a}
+.theme-cream{background:linear-gradient(180deg,#fbf8f0 0%,#f3eedf 100%)}
+.theme-gold{background:linear-gradient(180deg,#f0d77a 0%,#e6c660 100%)}
+.theme-dark *{color:var(--white)}
+.theme-dark .section-title{color:var(--white)}
+
+/* Side gold band */
+.side-band{position:absolute;top:0;bottom:0;left:0;width:.6cqw;background:var(--gold);box-shadow:2px 0 18px rgba(201,162,71,.18)}
+
+/* Scripture body */
+.scripture{font-family:var(--font-serif);line-height:1.5;letter-spacing:.04em}
+
+/* =====================================================================
+   COVER (Slide 1)
+===================================================================== */
+.cover{
+  display:grid;grid-template-rows:1fr auto auto auto 1fr;
+  padding:6cqh 6cqw;color:var(--white);
+}
+.cover .brand{font-size:1.1cqw;letter-spacing:.16em;color:var(--gold-soft);align-self:end}
+.cover h1{
+  font-size:7.4cqw;font-weight:900;line-height:1.06;letter-spacing:.04em;color:var(--white);
+  margin:.5cqh 0 1.6cqh;
+}
+.cover .subtitle{font-size:2.6cqw;color:var(--cream);line-height:1.4;font-weight:300;letter-spacing:.04em}
+.cover .subtitle b{font-weight:600;color:var(--gold-soft)}
+.cover .scripture-strip{
+  margin-top:auto;background:linear-gradient(90deg,rgba(20,58,96,.85),rgba(20,58,96,.5),rgba(20,58,96,.85));
+  border-top:1px solid rgba(201,162,71,.4);border-bottom:1px solid rgba(201,162,71,.4);
+  padding:2.4cqh 0;text-align:center;
+}
+.cover .scripture-strip p{font-family:var(--font-serif);font-size:2.1cqw;color:var(--gold-soft);font-weight:500;letter-spacing:.06em}
+.cover .scripture-strip small{display:block;margin-top:.6cqh;font-family:var(--font-sans);font-size:1.1cqw;color:var(--gold);letter-spacing:.18em}
+.cover .meta{margin-top:2cqh;color:var(--gold-soft);font-size:1.1cqw;letter-spacing:.18em;text-align:center}
+
+/* =====================================================================
+   VIDEO SLIDE
+===================================================================== */
+.video-slide{
+  background:#000;
+  display:grid;place-items:center;position:relative;
+}
+.video-slide video{
+  width:100%;height:100%;object-fit:contain;background:#000;
+}
+.video-slide .video-overlay{
+  position:absolute;top:3cqh;left:0;right:0;text-align:center;color:rgba(255,255,255,.8);
+  pointer-events:none;letter-spacing:.16em;font-size:1.2cqw;font-weight:500;
+  opacity:0;transition:opacity .25s ease;
+}
+.video-slide.show-overlay .video-overlay{opacity:1}
+.video-slide .play-hint{
+  position:absolute;left:0;right:0;bottom:6cqh;text-align:center;color:rgba(255,255,255,.7);font-size:1cqw;
+  letter-spacing:.16em;pointer-events:none;animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* =====================================================================
+   CASE SLIDES (剴剴 / 性平 / 兩道呼喊)
+===================================================================== */
+.case{padding:8cqh 9cqw;display:grid;grid-template-rows:auto 1fr auto;gap:2cqh}
+.case .case-title{font-size:8cqw;text-align:center;font-weight:900;letter-spacing:.12em}
+.case .case-sub{text-align:center;font-size:2.4cqw;color:var(--gold-soft);font-weight:300;letter-spacing:.16em}
+.case .case-body{display:grid;place-items:center;text-align:center}
+.case .case-body p{font-size:3.4cqw;line-height:1.7;color:var(--white);font-weight:300;letter-spacing:.04em}
+.case .case-body p.hi{font-weight:700;color:var(--gold);font-size:3.6cqw}
+
+/* split layout for 性平 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3cqw;padding:0 7cqw;height:100%}
+.split-card{padding:3cqh 3.2cqw;border-radius:14px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 40px rgba(11,43,74,.08)}
+.split-card.light{background:var(--white);border:1.5px solid var(--gold-soft)}
+.split-card.dark{background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white)}
+.split-card .lbl{font-size:1.5cqw;color:var(--gray);letter-spacing:.12em;margin-bottom:1.2cqh}
+.split-card.dark .lbl{color:var(--gold-soft)}
+.split-card .q{font-size:3.4cqw;font-weight:700;line-height:1.4;color:var(--navy)}
+.split-card.dark .q{color:var(--white)}
+.split-card .q b{color:var(--gold)}
+
+/* two-call (Slide 4) */
+.two-call{display:grid;grid-template-columns:1fr 1fr;gap:2.4cqw;padding:0 7cqw}
+.two-call .col{background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white);border-radius:14px;padding:3.5cqh 3cqw;box-shadow:0 18px 40px rgba(11,43,74,.18)}
+.two-call .col h3{font-size:2cqw;color:var(--gold);font-weight:700;margin-bottom:1.2cqh;letter-spacing:.1em}
+.two-call .col .big{font-size:3.4cqw;font-weight:700;margin-bottom:1.6cqh}
+.two-call .col .arrow{font-size:1.7cqw;color:var(--gold-soft);font-weight:300}
+
+.question-bar{
+  margin:0 7cqw;padding:2.2cqh 0;background:var(--gold);color:var(--navy);
+  border-radius:12px;text-align:center;font-size:3cqw;font-weight:800;letter-spacing:.06em;
+  box-shadow:0 10px 30px rgba(201,162,71,.3);
+}
+
+/* =====================================================================
+   NUMBER SLIDE (三個數字 / 兒童家庭部)
+===================================================================== */
+.numbers{padding:7cqh 6cqw 3cqh;display:grid;grid-template-rows:auto auto 1fr auto}
+.numbers .head{text-align:center;margin-bottom:2cqh}
+.numbers .head h2{font-size:4.4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.numbers .head .h-sub{font-size:1.6cqw;color:var(--gray);font-weight:400;letter-spacing:.14em;margin-top:.6cqh}
+.num-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.5cqw;align-items:center}
+.num-card{
+  background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white);border-radius:18px;
+  padding:4.5cqh 1.5cqw;text-align:center;box-shadow:0 24px 50px rgba(11,43,74,.2);
+  position:relative;overflow:hidden;
+}
+.num-card::before{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:30%;height:4px;background:var(--gold);border-radius:0 0 4px 4px;
+}
+.num-card .num{font-family:var(--font-mono);font-size:8.5cqw;font-weight:800;color:var(--gold);line-height:1;letter-spacing:-.02em}
+.num-card .lbl{font-size:1.7cqw;color:var(--gold-soft);margin-top:1.8cqh;letter-spacing:.12em;font-weight:400}
+.numbers .foot{text-align:center;margin-top:2cqh}
+.numbers .foot .ref{font-size:1.3cqw;color:var(--gray);letter-spacing:.1em}
+.numbers .foot .pull{font-size:2.2cqw;color:var(--navy);font-weight:700;margin-top:1cqh;letter-spacing:.04em}
+.numbers .foot .pull-gold{display:inline-block;padding:1.4cqh 3cqw;background:var(--gold);color:var(--navy);border-radius:10px;font-size:2.3cqw;font-weight:800;letter-spacing:.04em;margin-top:1.5cqh}
+
+/* =====================================================================
+   SCRIPTURE SLIDE (尼希米 / 箴言 / 以斯帖 / 約瑟)
+===================================================================== */
+.scripture-slide{display:grid;grid-template-rows:auto 1fr auto;padding:6cqh 8cqw;position:relative}
+.scripture-slide .verse{
+  align-self:center;text-align:center;
+  font-family:var(--font-serif);color:var(--white);
+  font-size:4.2cqw;line-height:1.55;font-weight:500;letter-spacing:.05em;
+}
+.scripture-slide .verse .em{color:var(--gold);font-weight:700;font-size:4.6cqw}
+.scripture-slide .verse .quote{display:block;margin:0 auto}
+.scripture-slide .attribution{text-align:center;color:var(--gold-soft);font-size:1.6cqw;letter-spacing:.2em;margin-top:1.6cqh}
+.scripture-slide .application{text-align:center;color:var(--cream);font-size:1.7cqw;margin-top:2cqh;letter-spacing:.06em;font-weight:300}
+
+/* Joseph climactic — even bigger */
+.scripture-slide.climax .verse{font-size:5cqw;line-height:1.5}
+.scripture-slide.climax .verse .em{font-size:5.6cqw}
+.scripture-slide.climax .twin{margin-top:3.5cqh;text-align:center;border-top:1px solid rgba(201,162,71,.4);padding-top:3cqh}
+.scripture-slide.climax .twin .line{font-size:3.2cqw;font-weight:700;letter-spacing:.06em;color:var(--white);line-height:1.7}
+.scripture-slide.climax .twin .line:last-child{color:var(--gold)}
+
+/* =====================================================================
+   DISCUSSION SLIDES
+===================================================================== */
+.discussion{padding:5cqh 7cqw;display:grid;grid-template-rows:auto auto 1fr auto;gap:1.5cqh}
+.discussion .d-head{text-align:center}
+.discussion .d-head h2{font-size:4.4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.discussion .d-head .d-tag{font-family:var(--font-mono);font-size:1.4cqw;color:var(--navy);opacity:.7;margin-top:.6cqh;letter-spacing:.2em;font-weight:600}
+.discussion .d-card{
+  background:var(--white);border-radius:18px;padding:5cqh 5cqw;
+  box-shadow:0 30px 60px rgba(11,43,74,.18),0 2px 4px rgba(0,0,0,.04);
+  align-self:center;
+}
+.discussion .d-card p{font-size:2.3cqw;line-height:1.6;color:var(--ink);letter-spacing:.04em}
+.discussion .d-card p.q{font-size:3cqw;font-weight:800;color:var(--navy);margin:1.5cqh 0;letter-spacing:.04em}
+.discussion .d-foot{text-align:center;font-size:1.4cqw;color:var(--navy);font-weight:700;letter-spacing:.1em}
+
+/* numbered list for discussion 2 */
+.d-list{list-style:none;display:flex;flex-direction:column;gap:1.8cqh;margin-top:2cqh}
+.d-list li{display:flex;align-items:flex-start;gap:1.6cqw;font-size:2.2cqw;line-height:1.5}
+.d-list li .n{
+  flex:0 0 auto;width:3cqw;height:3cqw;border-radius:50%;background:var(--navy);
+  color:var(--gold);display:grid;place-items:center;font-family:var(--font-mono);font-weight:800;font-size:1.6cqw;
+}
+.d-list li b{color:var(--navy)}
+.d-list li.hi{font-weight:800;color:var(--navy)}
+
+/* =====================================================================
+   PILL GRID (六大缺口)
+===================================================================== */
+.pills-page{padding:6cqh 6cqw;display:grid;grid-template-rows:auto auto 1fr auto;gap:1.6cqh}
+.pills-page .head{text-align:center}
+.pills-page .head h2{font-size:4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.pills-page .head .sub{margin-top:.8cqh;color:var(--gray);font-size:1.5cqw;letter-spacing:.14em}
+.pills-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:1.6cqw;align-content:center}
+.pill{
+  background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white);
+  border-radius:14px;padding:2.5cqh 1.2cqw;display:grid;place-items:center;
+  font-size:2.4cqw;font-weight:700;letter-spacing:.04em;
+  box-shadow:0 14px 32px rgba(11,43,74,.18);
+  position:relative;
+}
+.pill.hi{background:linear-gradient(160deg,var(--gold),#b8902c);color:var(--navy);box-shadow:0 14px 32px rgba(201,162,71,.35)}
+.pill.hi::after{content:"關鍵";position:absolute;top:-1cqh;right:-1cqw;background:var(--red);color:#fff;font-size:1cqw;padding:.3em .8em;border-radius:999px;letter-spacing:.1em;font-weight:700}
+.pills-page .foot{text-align:center}
+.pills-page .foot .sub{color:var(--gray);font-size:1.4cqw;letter-spacing:.06em}
+.pills-page .foot .pull{margin-top:.6cqh;font-size:2.1cqw;color:var(--navy);font-weight:700;letter-spacing:.04em}
+
+/* =====================================================================
+   HEXAGON ROW (家庭韌性)
+===================================================================== */
+.hex-page{padding:6cqh 6cqw;display:grid;grid-template-rows:auto auto 1fr auto;gap:1.5cqh}
+.hex-page .head{text-align:center}
+.hex-page .head h2{font-size:4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.hex-page .head .sub{margin-top:.8cqh;color:var(--gray);font-size:1.7cqw;letter-spacing:.14em}
+.hex-row{display:flex;justify-content:center;gap:1.2cqw;align-items:center}
+.hex{
+  width:11cqw;height:12.7cqw;background:var(--navy);
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  display:grid;place-items:center;color:var(--white);font-size:2.8cqw;font-weight:800;letter-spacing:.06em;
+  position:relative;
+}
+.hex::before{
+  content:"";position:absolute;inset:.5cqw;
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  background:linear-gradient(160deg,var(--navy),#0a2440);
+  z-index:0;
+}
+.hex span{position:relative;z-index:1}
+.hex.outline{background:var(--gold)}
+.hex-page .pull{
+  margin:0 5cqw;padding:2.4cqh 2cqw;background:linear-gradient(90deg,var(--gold-light),var(--gold-soft),var(--gold-light));
+  border-radius:10px;text-align:center;
+}
+.hex-page .pull .l1{font-size:2.3cqw;color:var(--navy);font-weight:600;letter-spacing:.04em}
+.hex-page .pull .l2{font-size:2.5cqw;color:var(--navy);font-weight:800;margin-top:.4cqh;letter-spacing:.04em}
+
+/* =====================================================================
+   DRUG CARDS
+===================================================================== */
+.cards-page{padding:6cqh 6cqw;display:grid;grid-template-rows:auto auto 1fr auto;gap:1.5cqh}
+.cards-page .head{text-align:center}
+.cards-page .head h2{font-size:4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.cards-page .head .sub{margin-top:.8cqh;color:var(--gray);font-size:1.7cqw;letter-spacing:.14em}
+.cards-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2cqw}
+.card-tall{
+  background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white);border-radius:16px;padding:3.5cqh 1.5cqw;
+  text-align:center;box-shadow:0 22px 48px rgba(11,43,74,.2);position:relative;overflow:hidden;
+}
+.card-tall .ribbon{position:absolute;top:0;left:0;right:0;height:.7cqh;background:var(--red)}
+.card-tall.gold .ribbon{background:var(--gold)}
+.card-tall .title{font-size:3.2cqw;font-weight:800;letter-spacing:.06em;margin-top:2cqh}
+.card-tall .title.split-2{font-size:2.8cqw;line-height:1.25}
+.card-tall .lbl{font-size:1.4cqw;color:var(--gold-soft);margin-top:2cqh;letter-spacing:.16em}
+.cards-page .pull{text-align:center;font-size:2.3cqw;font-weight:800;color:var(--navy);letter-spacing:.04em}
+
+/* =====================================================================
+   QUADRANT (公共政策小組)
+===================================================================== */
+.quad-page{padding:5cqh 6cqw;display:grid;grid-template-rows:auto auto 1fr auto;gap:1.2cqh}
+.quad-page .head{text-align:center}
+.quad-page .head h2{font-size:3.4cqw;font-weight:900;color:var(--navy);letter-spacing:.04em}
+.quad-page .head .sub{margin-top:.6cqh;color:var(--gray);font-size:1.4cqw;letter-spacing:.14em}
+.quad-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.6cqw}
+.quad{
+  background:linear-gradient(160deg,var(--navy),#0a2440);color:var(--white);border-radius:16px;padding:3cqh 2.5cqw;
+  display:grid;grid-template-columns:auto 1fr;align-items:center;gap:1.8cqw;box-shadow:0 16px 36px rgba(11,43,74,.18);
+}
+.quad .ic{font-size:5cqw;line-height:1}
+.quad .body{display:flex;flex-direction:column;gap:1cqh}
+.quad .body .t{font-size:3cqw;font-weight:800;color:var(--gold);letter-spacing:.06em;display:flex;align-items:center;gap:1cqw}
+.quad .body .t::after{content:"";flex:0 0 2cqw;height:3px;background:var(--gold);border-radius:2px}
+.quad .body .s{font-size:1.5cqw;color:rgba(255,255,255,.85);line-height:1.5;letter-spacing:.04em;font-weight:300}
+.quad-page .foot{text-align:center;font-size:1.5cqw;color:var(--navy);font-weight:700;letter-spacing:.08em}
+
+/* =====================================================================
+   PRAYER (closing)
+===================================================================== */
+.prayer{padding:5cqh 8cqw;display:grid;grid-template-rows:auto 1fr auto;gap:1.6cqh}
+.prayer .head{text-align:center;color:var(--white)}
+.prayer .head h2{font-size:3.4cqw;font-weight:800;letter-spacing:.06em;color:var(--white)}
+.prayer .card{
+  background:linear-gradient(180deg,rgba(20,58,96,.7),rgba(11,43,74,.85));
+  border:1px solid rgba(201,162,71,.3);border-radius:18px;padding:5cqh 4cqw;
+  align-self:center;
+  display:flex;flex-direction:column;justify-content:center;gap:1.4cqh;text-align:center;
+  font-family:var(--font-serif);
+}
+.prayer .card p{color:var(--white);font-size:2.6cqw;line-height:1.6;letter-spacing:.04em}
+.prayer .card p.em{color:var(--gold);font-weight:700;font-size:2.9cqw}
+.prayer .amen{text-align:center;font-family:var(--font-serif);font-size:1.7cqw;color:var(--gold-soft);letter-spacing:.2em}
+
+/* =====================================================================
+   Print
+===================================================================== */
+@media print{
+  html,body{background:#fff;height:auto;overflow:visible}
+  .stage{position:static;display:block}
+  .deck{width:297mm;height:auto;max-width:none;max-height:none;background:#fff}
+  .slide{position:relative;display:block!important;width:297mm;height:167mm;page-break-after:always;break-after:page}
+  .indicator{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+<div class="deck" id="deck">
+
+<!-- ============================================================== -->
+<!-- SLIDE 1: COVER                                                  -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark active cover" data-section="封面">
+  <div class="side-band"></div>
+  <div class="brand">國教行動聯盟  ·  Action Alliance on Basic Education</div>
+  <div>
+    <h1>跨出牆外的服事</h1>
+    <p class="subtitle">從家庭崩解的呼喊<br>到公共政策的呼召</p>
+  </div>
+  <div class="scripture-strip">
+    <p>「約瑟……他的枝條探出牆外。」</p>
+    <small>—— 創世記 49:22</small>
+  </div>
+  <div class="meta">牧者聚集  ·  30 分鐘簡報  ·  2026</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 2: VIDEO                                                  -->
+<!-- ============================================================== -->
+<section class="slide video-slide" data-section="影片開場" id="videoSlide">
+  <div class="video-overlay">2023 — 2025 國教盟倡議成果</div>
+  <video id="introVideo" preload="metadata" controls playsinline>
+    <source src="國教盟2023-2025倡議成果-橫式-4K60fps-音樂.mp4" type="video/mp4">
+    您的瀏覽器不支援 video 標籤。
+  </video>
+  <div class="play-hint">按 ▶ 開始播放　·　按 → 進入下一張</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 3: 剴剴                                                  -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark case" data-section="現場真實 ①">
+  <div>
+    <span class="chip red"><span class="dot"></span>現場真實  ①</span>
+  </div>
+  <div class="case-body">
+    <div>
+      <p class="case-title" style="color:var(--white)">剴剴</p>
+      <p class="case-sub">那個沒有人來抱起他的孩子</p>
+      <span class="divider"></span>
+      <p>他只有 1 歲。</p>
+      <p>他活下來的機會，</p>
+      <p class="hi">本來叫做「社會安全網」。</p>
+    </div>
+  </div>
+  <div></div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 4: 性平法                                                -->
+<!-- ============================================================== -->
+<section class="slide theme-cream" data-section="現場真實 ②">
+  <div class="chrome-top"><span class="chip red"><span class="dot"></span>現場真實  ②</span><span></span></div>
+  <div style="padding:9cqh 0 4cqh;text-align:center">
+    <h2 class="section-title" style="font-size:6cqw">性平法</h2>
+    <p class="section-sub" style="font-size:2.2cqw;margin-top:1cqh">當父母不再被允許說話</p>
+  </div>
+  <div class="split" style="height:48cqh">
+    <div class="split-card light">
+      <span class="lbl">家長想問：</span>
+      <p class="q">「我的孩子<br>　在學什麼？」</p>
+    </div>
+    <div class="split-card dark">
+      <span class="lbl">制度卻說：</span>
+      <p class="q">「這不是<br>　<b>你的事。</b>」</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:5cqh;font-size:2.1cqw;color:var(--red);font-weight:800;letter-spacing:.06em">
+    誰來定義我們的孩子，應該長成什麼樣子？
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 5: 兩道呼喊                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-cream" data-section="兩道呼喊">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>現場真實  ③</span><span></span></div>
+  <div style="padding:8cqh 0 4cqh;text-align:center">
+    <p style="font-size:3.2cqw;color:var(--gray);font-weight:300">這不是兩個個案</p>
+    <h2 class="section-title" style="font-size:5.4cqw;margin-top:1cqh">是兩道呼喊</h2>
+  </div>
+  <div class="two-call">
+    <div class="col">
+      <h3>剴剴</h3>
+      <div class="big">兒少保護崩落</div>
+      <div class="arrow">→ 系統的牆破了</div>
+    </div>
+    <div class="col">
+      <h3>性平法</h3>
+      <div class="big">教育價值傾斜</div>
+      <div class="arrow">→ 文化的牆斜了</div>
+    </div>
+  </div>
+  <div class="question-bar" style="margin-top:4.5cqh">
+    教會還能只在牆內服事嗎？
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 6: 三個數字                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-cream numbers" data-section="成果聚焦 ①">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>成果聚焦  ①</span><span></span></div>
+  <div class="head" style="margin-top:3.5cqh">
+    <h2>神已經動工了</h2>
+    <p class="h-sub">2023 — 2025　三個數字</p>
+  </div>
+  <div class="num-grid">
+    <div class="num-card"><div class="num">113</div><div class="lbl">篇新聞稿</div></div>
+    <div class="num-card"><div class="num">286</div><div class="lbl">場活動</div></div>
+    <div class="num-card"><div class="num">168<sup style="font-size:.4em">+</sup></div><div class="lbl">合作組織</div></div>
+  </div>
+  <div class="foot">
+    <div class="ref">7,917+ 媒體聲量　·　校園安全 8 項訴求，6 項獲政府回應</div>
+    <div class="pull">當有人願意跨出牆外，神就讓果子結出來。</div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 7: 尼希米記                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark scripture-slide" data-section="尼希米 4:6">
+  <div class="chrome-top"><span class="chip gold"><span class="dot"></span>成果聚焦  ②</span><span></span></div>
+  <div class="verse">
+    <span class="quote">「這樣，我們修造城牆，</span>
+    <span class="quote">城牆就都連絡，</span>
+    <span class="quote em">因為百姓齊心做工。」</span>
+  </div>
+  <div>
+    <span class="divider" style="background:var(--gold)"></span>
+    <p class="attribution">—— 尼希米記 4:6</p>
+    <p class="application">國教盟做的，是把「願意修牆的人」連起來。</p>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 8: 討論題 1                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-gold discussion" data-section="小組討論 ①">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>小組討論  ①</span><span></span></div>
+  <div class="d-head" style="margin-top:2.5cqh">
+    <h2>先停下來，聽神在說什麼</h2>
+    <div class="d-tag">DISCUSSION  ·  3 MINUTES</div>
+  </div>
+  <div class="d-card">
+    <p>剛剛影片裡的孩子、剴剴的案件、性平法的張力——</p>
+    <p class="q">哪一個畫面最觸動你？</p>
+    <p>身為牧者，神正在如何透過這些「牆外」的呼喊，</p>
+    <p>對你和你的會眾說話？</p>
+  </div>
+  <div class="d-foot">一個畫面  ＋  一句感動　·　每位約 30 秒　·　共 3 分鐘</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 9: 兒童家庭部                                            -->
+<!-- ============================================================== -->
+<section class="slide theme-cream numbers" data-section="2026 重點 ①">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>2026 重點  ①</span><span></span></div>
+  <div class="head" style="margin-top:2.5cqh">
+    <h2 style="font-size:3.8cqw">2026 第一個戰場：兒童家庭部</h2>
+  </div>
+  <div class="num-grid">
+    <div class="num-card"><div class="num">65<span style="font-size:.5em">%</span></div><div class="lbl">通報 5 年增加</div></div>
+    <div class="num-card"><div class="num">7<span style="font-size:.5em">%</span></div><div class="lbl">處置率僅</div></div>
+    <div class="num-card"><div class="num">0</div><div class="lbl">台灣專責部會</div></div>
+  </div>
+  <div class="foot">
+    <div class="ref">對標：日本こども家庭庁　·　韓國保健福祉部</div>
+    <div class="pull-gold">兒少權法第 7 條應升格二級「兒童家庭部」</div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 10: 兒少權法六大缺口                                     -->
+<!-- ============================================================== -->
+<section class="slide theme-cream pills-page" data-section="2026 重點 ②">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>2026 重點  ②</span><span></span></div>
+  <div class="head">
+    <h2>2026 第二個戰場：兒少權法六大缺口</h2>
+    <div class="sub">165 條草案  ×  六大制度盲點</div>
+  </div>
+  <div class="pills-grid">
+    <div class="pill">通報認定</div>
+    <div class="pill hi">社工保證人地位</div>
+    <div class="pill">安置責任</div>
+    <div class="pill">兒少代表權</div>
+    <div class="pill">資訊揭露</div>
+    <div class="pill">跨部會權責</div>
+  </div>
+  <div class="foot">
+    <div class="sub">剴剴案之後，整個社工體系在崩潰——</div>
+    <div class="pull">因為法律對她們的責任邊界沒有寫清楚。</div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 11: 箴言                                                  -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark scripture-slide" data-section="箴言 31:8">
+  <div class="chrome-top"><span class="chip gold"><span class="dot"></span>2026 重點  ③</span><span></span></div>
+  <div class="verse">
+    <span class="quote">「你當為不能自辯的開口，</span>
+    <span class="quote em">為一切孤獨的伸冤。」</span>
+  </div>
+  <div>
+    <span class="divider" style="background:var(--gold)"></span>
+    <p class="attribution">—— 箴言 31:8</p>
+    <p class="application">兒少在公共政策桌上，永遠是不能自辯的那一群。</p>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 12: 家庭韌性                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-cream hex-page" data-section="2026 重點 ④">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>2026 重點  ④</span><span></span></div>
+  <div class="head">
+    <h2>橫向：家庭韌性行動聯盟</h2>
+    <div class="sub">從單一議題  →  家庭總體戰略</div>
+  </div>
+  <div class="hex-row">
+    <div class="hex"><span>婚姻</span></div>
+    <div class="hex"><span>生育</span></div>
+    <div class="hex"><span>教養</span></div>
+    <div class="hex"><span>照顧</span></div>
+    <div class="hex"><span>經濟</span></div>
+    <div class="hex"><span>信仰</span></div>
+  </div>
+  <div class="pull">
+    <div class="l1">「家庭不會因為議題分散就崩解，</div>
+    <div class="l2">它是被『整個生活擠垮的』。」</div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 13: 藥物濫用國際研討會                                    -->
+<!-- ============================================================== -->
+<section class="slide theme-cream cards-page" data-section="2026 重點 ⑤">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>2026 重點  ⑤</span><span></span></div>
+  <div class="head">
+    <h2>縱向：藥物濫用防制國際研討會</h2>
+    <div class="sub">校園新興毒品  ×  國際對話</div>
+  </div>
+  <div class="cards-grid">
+    <div class="card-tall"><div class="ribbon"></div><div class="title">依托咪酯</div><div class="lbl">校園新興毒品</div></div>
+    <div class="card-tall"><div class="ribbon"></div><div class="title">喪屍煙彈</div><div class="lbl">化學戰等級攻擊</div></div>
+    <div class="card-tall gold"><div class="ribbon"></div><div class="title split-2">唾液快篩<br>二層檢測</div><div class="lbl">國際對話桌</div></div>
+  </div>
+  <div class="pull">這不是技術問題，這是為這個世代築牆。</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 14: 公共政策小組                                          -->
+<!-- ============================================================== -->
+<section class="slide theme-cream quad-page" data-section="呼籲教會 ①">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>呼籲教會  ①</span><span></span></div>
+  <div class="head">
+    <h2>邀請：每一間教會的「公共政策小組」</h2>
+    <div class="sub">沒有教會需要做全部，但每一間教會都可以做一塊</div>
+  </div>
+  <div class="quad-grid">
+    <div class="quad">
+      <div class="body">
+        <div class="t">代禱</div>
+        <div class="s">為立法者、社工、教師守望</div>
+      </div>
+    </div>
+    <div class="quad">
+      <div class="body">
+        <div class="t">研究</div>
+        <div class="s">聖經倫理 × 政策分析</div>
+      </div>
+    </div>
+    <div class="quad">
+      <div class="body">
+        <div class="t">發聲</div>
+        <div class="s">公聽會、媒體、聯署</div>
+      </div>
+    </div>
+    <div class="quad">
+      <div class="body">
+        <div class="t">陪伴</div>
+        <div class="s">受害家庭、第一線實務工作者</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">找一塊您的教會最能委身的——這就是第一步</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 15: 以斯帖                                                -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark scripture-slide" data-section="以斯帖 4:14">
+  <div class="chrome-top"><span class="chip gold"><span class="dot"></span>呼籲教會  ②</span><span></span></div>
+  <div class="verse">
+    <span class="quote">「焉知你得了王后的位分，</span>
+    <span class="quote em">不是為現今的機會嗎？」</span>
+  </div>
+  <div>
+    <span class="divider" style="background:var(--gold)"></span>
+    <p class="attribution">—— 以斯帖記 4:14</p>
+    <p class="application">教會被神放在這個時代——不是為了安全，是為了現今的機會。</p>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 16: 約瑟金句（全場高點）                                  -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark scripture-slide climax" data-section="創世記 49:22 ★">
+  <div class="side-band"></div>
+  <div class="chrome-top"><span class="chip gold"><span class="dot"></span>呼籲教會  ③</span><span></span></div>
+  <div class="verse" style="align-self:end">
+    <span class="quote">「約瑟……</span>
+    <span class="quote em">他的枝條探出牆外。」</span>
+  </div>
+  <div>
+    <p class="attribution" style="margin-top:2cqh">—— 創世記 49:22</p>
+    <div class="twin">
+      <div class="line">教會的根，留在泉旁；</div>
+      <div class="line">教會的果子，必須探出牆外。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 17: 討論題 2                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-gold discussion" data-section="小組討論 ②">
+  <div class="chrome-top"><span class="chip"><span class="dot"></span>小組討論  ②</span><span></span></div>
+  <div class="d-head" style="margin-top:2.5cqh">
+    <h2>這一步，我們從哪裡開始？</h2>
+    <div class="d-tag">DISCUSSION  ·  3 MINUTES</div>
+  </div>
+  <div class="d-card">
+    <p>如果您的教會要踏出第一步參與公共政策——</p>
+    <ul class="d-list">
+      <li><span class="n">1</span><span>是先從「代禱／研究／發聲／陪伴」哪一塊開始？</span></li>
+      <li><span class="n">2</span><span>最大的攔阻是什麼？</span></li>
+      <li class="hi"><span class="n">3</span><span>您願意帶<b>　誰　</b>一起？</span></li>
+    </ul>
+  </div>
+  <div class="d-foot">挑一題回應就好  ·  讓你想到的那個人，等一下你會打給他</div>
+</section>
+
+<!-- ============================================================== -->
+<!-- SLIDE 18: 結語禱告                                              -->
+<!-- ============================================================== -->
+<section class="slide theme-navy theme-dark prayer" data-section="結語禱告">
+  <div class="side-band"></div>
+  <div class="chrome-top"><span class="chip gold"><span class="dot"></span>結語禱告</span><span></span></div>
+  <div class="head">
+    <h2>為「探出牆外」的呼召禱告</h2>
+  </div>
+  <div class="card">
+    <p>主，求祢讓台灣教會的枝條，</p>
+    <p class="em">長出牆外，</p>
+    <p>結出剴剴等不到的果子，</p>
+    <p>結出下一代需要的盼望。</p>
+  </div>
+  <div class="amen">奉主耶穌的名禱告，阿們。</div>
+</section>
+
+</div><!-- /deck -->
+</div><!-- /stage -->
+
+<div class="indicator"><span id="curIdx">1</span> / <span id="total">18</span></div>
+
+<script>
+(function(){
+  const deck = document.getElementById('deck');
+  const slides = Array.from(deck.querySelectorAll('.slide'));
+  const total = slides.length;
+  document.getElementById('total').textContent = total;
+
+  let idx = 0;
+  const video = document.getElementById('introVideo');
+
+  function show(i){
+    if(i<0) i=0;
+    if(i>=total) i=total-1;
+    if(i===idx) return;
+    // pause video if leaving video slide
+    const leaving = slides[idx];
+    if(leaving && leaving.id==='videoSlide' && video && !video.paused){
+      video.pause();
+    }
+    slides[idx].classList.remove('active');
+    slides[i].classList.add('active');
+    idx = i;
+    document.getElementById('curIdx').textContent = (i+1);
+    document.title = slides[i].dataset.section + ' — 跨出牆外的服事';
+  }
+
+  // Keyboard
+  window.addEventListener('keydown', (e)=>{
+    // don't capture if user is interacting with video controls (space toggles play)
+    const tgt = e.target;
+    const onVideo = tgt && (tgt.tagName === 'VIDEO');
+    if(onVideo) return;
+
+    if(e.key==='ArrowRight' || e.key==='PageDown'){ show(idx+1); e.preventDefault(); }
+    else if(e.key==='ArrowLeft' || e.key==='PageUp'){ show(idx-1); e.preventDefault(); }
+    else if(e.key===' '){ show(idx+1); e.preventDefault(); }
+    else if(e.key==='Home'){ show(0); e.preventDefault(); }
+    else if(e.key==='End'){ show(total-1); e.preventDefault(); }
+    else if(e.key==='f' || e.key==='F'){
+      if(!document.fullscreenElement){ document.documentElement.requestFullscreen(); }
+      else { document.exitFullscreen(); }
+      e.preventDefault();
+    }
+  });
+
+  // Show overlay only when video paused or ended
+  if(video){
+    const slide = document.getElementById('videoSlide');
+    const showOverlay = ()=>slide.classList.add('show-overlay');
+    const hideOverlay = ()=>slide.classList.remove('show-overlay');
+    video.addEventListener('play', hideOverlay);
+    video.addEventListener('pause', showOverlay);
+    video.addEventListener('ended', showOverlay);
+    showOverlay();
+  }
+})();
+</script>
+
+</body>
+</html>
