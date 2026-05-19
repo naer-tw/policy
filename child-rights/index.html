@@ -252,6 +252,69 @@
       footer { margin-top: 48px; padding: 28px 0 12px; }
     }
 
+    /* ─── Active Campaign Card（最新倡議活動） ─── */
+    .active-campaign {
+      display: block;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border: 2px solid #D97706;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+    }
+    .active-campaign:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.25);
+    }
+    .active-campaign-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: #7f1d1d;
+      color: white;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.15em;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+    .active-campaign-title {
+      font-size: 1.45rem; font-weight: 800;
+      color: #7f1d1d;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .active-campaign-desc {
+      font-size: 0.95rem; color: #4a5058;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+    .active-campaign-pages {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 14px;
+    }
+    .active-campaign-page {
+      padding: 6px 12px;
+      background: white;
+      border: 1px solid #D97706;
+      color: #B45309;
+      font-size: 0.82rem; font-weight: 600;
+      border-radius: 6px;
+    }
+    .active-campaign-cta {
+      font-size: 0.92rem; font-weight: 700;
+      color: #B45309;
+      letter-spacing: 0.05em;
+    }
+    .active-campaign-cta::after {
+      content: ' →';
+    }
+    @media (max-width: 768px) {
+      .active-campaign { padding: 20px 18px; margin-bottom: 32px; }
+      .active-campaign-title { font-size: 1.2rem; }
+      .active-campaign-desc { font-size: 0.88rem; }
+      .active-campaign-pages { gap: 6px; }
+      .active-campaign-page { font-size: 0.75rem; padding: 4px 10px; }
+    }
+
     @media (max-width: 420px) {
       main { padding: 28px 16px 32px; }
       .hero-title { font-size: 1.7rem; }
@@ -283,14 +346,30 @@
     <!-- ─── Stats ─── -->
     <section class="stats">
       <div class="stat">
-        <div class="stat-num">11</div>
+        <div class="stat-num">12</div>
         <div class="stat-label">POLICY BRIEFS</div>
       </div>
       <div class="stat">
-        <div class="stat-num" style="font-size:1.2rem;line-height:1.8;font-weight:700;">04.22.2026</div>
+        <div class="stat-num" style="font-size:1.2rem;line-height:1.8;font-weight:700;">05.19.2026</div>
         <div class="stat-label">LATEST UPDATE</div>
       </div>
     </section>
+
+    <!-- ─── Active Campaign（最新倡議活動） ─── -->
+    <a href="cwa-reform/" class="active-campaign" aria-label="進入兒少權法 165 條修法子站">
+      <span class="active-campaign-tag">🔴 進行中倡議</span>
+      <h2 class="active-campaign-title">兒少權法 165 條怎麼修？國教盟主張雙條同修升格兒童家庭部</h2>
+      <p class="active-campaign-desc">
+        兒少權法 15 年來最大幅度全文修正（118→165 條）。國教盟發布 v2 深度版書面意見書 69 頁，主張修正第 2 條與第 3 條「雙條同修」、A 級核心 22 條深度評估、五場公聽會發言參考（5/20 南、5/22 北、5/23 兒少、5/28 中、6/4 東）。
+      </p>
+      <div class="active-campaign-pages">
+        <span class="active-campaign-page">📄 完整修法主張</span>
+        <span class="active-campaign-page">🎤 公聽會發言參考</span>
+        <span class="active-campaign-page">👥 兒少工作者管理</span>
+        <span class="active-campaign-page">💚 心理健康+數位環境</span>
+      </div>
+      <span class="active-campaign-cta">進入子站</span>
+    </a>
 
     <!-- ─── Articles ─── -->
     <div class="section-head">
