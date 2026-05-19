@@ -438,31 +438,32 @@ add_text(s, Inches(0.6), Inches(1.0), Inches(12.2), Inches(0.7),
 stats = [
     ("65%", "通報 5 年增加"),
     ("7%", "處置率僅"),
-    ("こども", "對標日本\n家庭庁"),
+    ("0", "台灣專責部會"),
 ]
 positions = [(Inches(1.0), Inches(2.3)), (Inches(5.0), Inches(2.3)), (Inches(9.0), Inches(2.3))]
 for (x, y), (n, lbl) in zip(positions, stats):
-    add_rect(s, x, y, Inches(3.3), Inches(2.8), fill=NAVY)
-    if n == "こども":
-        add_text(s, x, y + Inches(0.4), Inches(3.3), Inches(1.4),
-                 [{"text": n, "size": 48, "bold": True, "color": GOLD,
-                   "align": PP_ALIGN.CENTER}], align=PP_ALIGN.CENTER)
-    else:
-        add_text(s, x, y + Inches(0.3), Inches(3.3), Inches(1.5),
-                 [{"text": n, "size": 72, "bold": True, "color": GOLD,
-                   "align": PP_ALIGN.CENTER}], align=PP_ALIGN.CENTER)
-    add_text(s, x, y + Inches(1.95), Inches(3.3), Inches(0.8),
-             [{"text": lbl, "size": 16, "color": WHITE,
+    add_rect(s, x, y, Inches(3.3), Inches(2.6), fill=NAVY)
+    add_text(s, x, y + Inches(0.3), Inches(3.3), Inches(1.5),
+             [{"text": n, "size": 84, "bold": True, "color": GOLD,
+               "align": PP_ALIGN.CENTER}], align=PP_ALIGN.CENTER)
+    add_text(s, x, y + Inches(1.85), Inches(3.3), Inches(0.7),
+             [{"text": lbl, "size": 18, "color": WHITE,
                "align": PP_ALIGN.CENTER}], align=PP_ALIGN.CENTER)
 
-add_rect(s, Inches(1.0), Inches(5.45), Inches(11.3), Inches(1.0), fill=GOLD)
-add_text(s, Inches(1.0), Inches(5.45), Inches(11.3), Inches(1.0),
+# Reference line
+add_text(s, Inches(1.0), Inches(5.1), Inches(11.3), Inches(0.4),
+         [{"text": "對標：日本こども家庭庁  ·  韓國保健福祉部",
+           "size": 14, "color": GRAY, "align": PP_ALIGN.CENTER}],
+         align=PP_ALIGN.CENTER)
+
+add_rect(s, Inches(1.0), Inches(5.65), Inches(11.3), Inches(0.9), fill=GOLD)
+add_text(s, Inches(1.0), Inches(5.65), Inches(11.3), Inches(0.9),
          [{"text": "兒少權法第 7 條應升格二級「兒童家庭部」",
            "size": 24, "bold": True, "color": NAVY, "align": PP_ALIGN.CENTER}],
          align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
 
 add_footer(s, 8, TOTAL, "2026 重點 一")
-add_notes(s, "【講稿｜75 秒】\n\n兒少通報案件五年內增加 65%，但實際處置率只有 7%——這代表 93% 的求救聲被吞掉了。\n\n日本去年成立了『こども家庭庁』，韓國也有。台灣呢？我們連一個專責部會都沒有。\n\n國教盟正在推動的，是讓兒少權法第 7 條那個只是『會報』的層級，升格為二級『兒童家庭部』——這是國家對下一代的態度宣告。")
+add_notes(s, "【講稿｜75 秒】\n\n兒少通報案件五年內增加 65%，但實際處置率只有 7%——這代表 93% 的求救聲被吞掉了。\n\n而台灣現在有幾個專責的兒少部會？(停一秒) 零個。\n\n日本去年成立了『こども家庭庁』，韓國有保健福祉部專責處。台灣呢？我們連一個專責部會都沒有。\n\n國教盟正在推動的，是讓兒少權法第 7 條那個只是『會報』的層級，升格為二級『兒童家庭部』——這是國家對下一代的態度宣告。")
 
 # =============================================================
 # Slide 9 — 兒少權法六大缺口
@@ -611,19 +612,20 @@ add_text(s, Inches(0.6), Inches(1.75), Inches(12.2), Inches(0.5),
 
 # Three cards
 items = [
-    ("依托咪酯", "校園新興毒品", RED),
-    ("喪屍煙彈", "化學戰等級攻擊", RED),
-    ("唾液快篩\n二層檢測", "國際對話桌", GOLD),
+    (["依托咪酯"], "校園新興毒品", RED),
+    (["喪屍煙彈"], "化學戰等級攻擊", RED),
+    (["唾液快篩", "二層檢測"], "國際對話桌", GOLD),
 ]
 x0 = Inches(0.9); card_w = Inches(3.85); gap = Inches(0.3)
-for i, (n, lbl, accent) in enumerate(items):
+for i, (name_lines, lbl, accent) in enumerate(items):
     x = Emu(int(x0) + i * (int(card_w) + int(gap)))
     add_rect(s, x, Inches(2.7), card_w, Inches(3.0), fill=NAVY)
     # Top accent bar
     add_rect(s, x, Inches(2.7), card_w, Inches(0.18), fill=accent)
+    name_paras = [{"text": t, "size": 32, "bold": True, "color": WHITE,
+                   "align": PP_ALIGN.CENTER} for t in name_lines]
     add_text(s, x, Inches(3.0), card_w, Inches(1.7),
-             [{"text": n, "size": 32, "bold": True, "color": WHITE,
-               "align": PP_ALIGN.CENTER}],
+             name_paras,
              align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE)
     add_text(s, x, Inches(4.8), card_w, Inches(0.7),
              [{"text": lbl, "size": 16, "color": LIGHT_GOLD,
