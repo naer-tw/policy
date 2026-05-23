@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>[內部草稿] 成少共犯修法工作筆記｜2026-05-23</title>
+  <style>
+    :root {
+      --bg: #fafaf7;
+      --bg-card: #ffffff;
+      --ink: #1a1a1a;
+      --ink-soft: #555;
+      --line: #e5e3dc;
+      --accent: #b22222;
+      --accent-soft: #fdecec;
+      --warn-bg: #fff3cd;
+      --warn-ink: #6b4f00;
+      --tag-bg: #f0ebe1;
+      --table-head: #f5f2ea;
+      --code-bg: #f4f1e8;
+      --green: #2e7d32;
+      --red: #c62828;
+      --amber: #ed6c02;
+    }
+    html, body { background: var(--bg); }
+    body {
+      font-family: -apple-system, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      color: var(--ink);
+      line-height: 1.75;
+      margin: 0;
+      padding: 24px 16px 80px;
+    }
+    .wrap { max-width: 920px; margin: 0 auto; }
+    .draft-banner {
+      background: var(--warn-bg);
+      color: var(--warn-ink);
+      border: 2px solid #e0c97a;
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .draft-banner small { display: block; font-weight: 400; margin-top: 4px; opacity: 0.8; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 28px 32px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    h1 {
+      font-size: 1.7rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.5px;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 10px;
+    }
+    h1 .date { font-size: 0.85rem; color: var(--ink-soft); font-weight: 400; }
+    h2 {
+      font-size: 1.3rem;
+      margin: 36px 0 12px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    h3 {
+      font-size: 1.08rem;
+      margin: 24px 0 8px;
+      color: var(--accent);
+    }
+    h4 {
+      font-size: 0.98rem;
+      margin: 18px 0 6px;
+      color: var(--ink);
+    }
+    p { margin: 8px 0 14px; }
+    ul, ol { margin: 8px 0 14px; padding-left: 24px; }
+    li { margin: 4px 0; }
+    blockquote {
+      margin: 14px 0;
+      padding: 10px 16px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      color: var(--ink);
+    }
+    blockquote p { margin: 4px 0; }
+    code {
+      background: var(--code-bg);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: var(--code-bg);
+      padding: 14px 18px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 22px;
+      font-size: 0.93rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { background: var(--table-head); font-weight: 600; }
+    tbody tr:nth-child(odd) { background: #fbfaf6; }
+    .tag {
+      display: inline-block;
+      padding: 1px 8px;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--tag-bg);
+      color: var(--ink-soft);
+      margin-right: 4px;
+    }
+    .ok { color: var(--green); font-weight: 600; }
+    .no { color: var(--red); font-weight: 600; }
+    .partial { color: var(--amber); font-weight: 600; }
+    .fact { background: #e8f1fb; color: #1a3d6e; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; font-weight: 600; }
+    .view { background: #fdecec; color: var(--accent); padding: 1px 6px; border-radius: 3px; font-size: 0.85em; font-weight: 600; }
+    .toc {
+      background: #f5f2ea;
+      border-radius: 8px;
+      padding: 16px 24px;
+      margin: 20px 0 28px;
+      font-size: 0.95rem;
+    }
+    .toc ol { margin: 6px 0 0; padding-left: 22px; }
+    .toc li { margin: 2px 0; }
+    .toc a { color: var(--ink); text-decoration: none; }
+    .toc a:hover { color: var(--accent); text-decoration: underline; }
+    hr { border: none; border-top: 1px dashed var(--line); margin: 36px 0; }
+    .meta-block {
+      background: var(--code-bg);
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+    }
+    .meta-block strong { color: var(--ink); }
+    footer.doc-footer {
+      margin-top: 50px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+    }
+    .pipeline {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="draft-banner">
+  ⚠️ 內部工作草稿（INTERNAL DRAFT）— 請勿對外發布、勿轉貼、勿提供媒體
+  <small>本檔位於 <code>child-rights/_drafts/</code>，含 <code>noindex</code> 標籤，未進入 sitemap。內容含未核對之條文引述、戰術判斷與內部分歧之記錄。</small>
+</div>
+
+<div class="card">
+
+<h1>成少共犯議題修法工作筆記 <span class="date">｜2026-05-23</span></h1>
+
+<div class="meta-block">
+  <strong>文件性質</strong>：內部工作筆記、未對外發布。<br>
+  <strong>建立理由</strong>：(1) 司法院 115/5/22 修正草案未處理成少共犯；(2) 國教盟既有少事法論述四大訴求中沒有此線；(3) 為下一步立場文件 / 新聞稿 / 公聽會書面意見預作彈藥儲備。<br>
+  <strong>引述紀律</strong>：所有條文引述均為訓練資料記憶版，對外發布前須以 <em>全國法規資料庫</em> 官方版本逐字核對。<br>
+  <strong>維護者</strong>：國教盟政策研究組
+</div>
+
+<div class="toc">
+  <strong>目次</strong>
+  <ol>
+    <li><a href="#sec-0">本筆記要回答的四個問題</a></li>
+    <li><a href="#sec-1">戰略突破點（本日新發現）</a></li>
+    <li><a href="#sec-2">司法院 5/22 草案 vs 國教盟訴求對照</a></li>
+    <li><a href="#sec-3">成少共犯結構性分析</a></li>
+    <li><a href="#sec-4">證據盤點</a></li>
+    <li><a href="#sec-5">修法五大條文模組</a></li>
+    <li><a href="#sec-6">戰術判斷</a></li>
+    <li><a href="#sec-7">下一步行動清單</a></li>
+    <li><a href="#sec-8">待補資料清單</a></li>
+    <li><a href="#sec-9">引用來源待補</a></li>
+  </ol>
+</div>
+
+<h2 id="sec-0">0. 本筆記要回答的四個問題</h2>
+<ol>
+  <li>司法院 5/22 草案是否符合國教盟預期？哪些沒做？</li>
+  <li>國教盟手邊成少共犯證據是否充足？修法是否最佳解方？</li>
+  <li>蒐集足夠證據與資料以支撐論述</li>
+  <li><s>林書立檔案特別留意</s>（議程已撤下，2026-05-23 決定）</li>
+</ol>
+
+<hr>
+
+<h2 id="sec-1">1. 戰略突破點（本日新發現）</h2>
+
+<blockquote>
+  <p><strong>成少共犯不是「新議題沒處理」，是「舊條款被閒置」。</strong></p>
+</blockquote>
+
+<p><span class="fact">事實</span> 我國現行法早已建立成年人利用未成年人犯罪之加重制度，散見四部特別法：</p>
+
+<table>
+  <thead>
+    <tr><th>法源</th><th>條文要旨（需以官方版本核對）</th><th>規範對象</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>少年事件處理法 §85</td><td>成年人教唆、幫助、利用未滿 18 歲之人犯罪，或與之共同實施犯罪者，加重其刑至 1/2</td><td>一般刑事案件</td></tr>
+    <tr><td>毒品危害防制條例 §9</td><td>成年人對未成年人犯本條例之罪、引誘或教唆未成年人施用毒品者，加重其刑</td><td>毒品案件</td></tr>
+    <tr><td>組織犯罪防制條例 §6 / §6-1</td><td>招募未成年人加入犯罪組織者加重其刑；指揮、操縱犯罪組織之主從責任</td><td>組織犯罪、詐欺機房</td></tr>
+    <tr><td>詐欺犯罪危害防制條例（2024 公布）</td><td>對指揮詐欺機房、招募未成年參與詐欺之加重條款</td><td>詐欺集團</td></tr>
+    <tr><td>刑法 §29、§30、§31</td><td>教唆犯、幫助犯、身分犯之一般規定</td><td>全體犯罪</td></tr>
+  </tbody>
+</table>
+
+<p><span class="view">國教盟觀點</span> 成少共犯的法律規範<strong>早已存在於四部特別法</strong>，但實務上：</p>
+
+<ol>
+  <li><strong>統計黑洞</strong>：司法院、法務部、警政署從未公開「成少共犯案件起訴 / 定罪 / 量刑」分類統計，社會無從評估 §85 等條款的真實適用率。</li>
+  <li><strong>競合處理不明</strong>：少事法 §85 vs 毒品條例 §9 vs 組織犯罪條例 §6 之間如何競合、檢察官如何起訴選用，沒有明文準則。</li>
+  <li><strong>偵查程序斷裂</strong>：成年人偵查由檢察官主導、少年案件由少年法庭處理，<strong>證據共用、人物對質、少年作證</strong>之程序在現行法找不到明文（少事法第三章「少年保護事件」是封閉體系）。</li>
+  <li><strong>未審查實效</strong>：立法院從未要求司法院、法務部提出 §85 等條款的「適用情形專案報告」。</li>
+</ol>
+
+<p><strong>論述翻轉</strong>：國教盟不必主張「全新立法」，而應主張：</p>
+
+<blockquote>
+  <p>「成少共犯既有法源未被有效執行，請司法院、法務部公開現行條款的適用率、起訴率、量刑分布，並就偵查程序、競合處理、被害人保護建立配套程序法。」</p>
+</blockquote>
+
+<p>政治效果：</p>
+<ul>
+  <li>砍掉司法院「現行法已可處理」的擋箭牌</li>
+  <li>砍掉兒少團體「修法傷少年保護」的反對論點</li>
+  <li>把責任壓到「執行不力」而非「立法不足」</li>
+  <li>同時為下一階段的程序法修法（增訂專章）鋪路</li>
+</ul>
+
+<hr>
+
+<h2 id="sec-2">2. 司法院 115/5/22 修正草案 vs 國教盟訴求對照</h2>
+
+<h3>2.1 司法院 5/22 草案三大主軸</h3>
+<ol type="A">
+  <li>少年刑事案件被害人訴訟參與制度</li>
+  <li>少年刑事案件假釋門檻分級</li>
+  <li>少年前案紀錄塗銷與「視為未曾受宣告」制度調整</li>
+</ol>
+
+<h3>2.2 國教盟 11 項訴求對照</h3>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>國教盟訴求</th><th>5/22 草案</th><th>對照狀態</th><th>重要性</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>矯正教育法制化（§42-1、§42-2）</td><td><span class="no">❌ 未處理</span></td><td>不符</td><td>★★★</td></tr>
+    <tr><td>2</td><td>假釋追蹤分級入法（§82-1、§82-2）</td><td><span class="partial">△ 處理「門檻」非「追蹤」</span></td><td>方向錯位</td><td>★★★</td></tr>
+    <tr><td>3</td><td>塗銷分級至 10 年、§83-3 職業查核、§83-4 被害人表意</td><td><span class="partial">△ 有條件塗銷、有觀察期</span></td><td>半符合</td><td>★★★</td></tr>
+    <tr><td>4</td><td>被害人權益（書面意見、塗銷通知）</td><td><span class="ok">✅ 訴訟參與制度</span></td><td>符合方向</td><td>★★</td></tr>
+    <tr><td>5</td><td>風險評估入法（量表科學驗證、680 位）</td><td><span class="no">❌ 未處理</span></td><td>口頭承諾未兌現</td><td>★★★</td></tr>
+    <tr><td>6</td><td>擴大曝險定義（增不良組織、犯罪交往）</td><td><span class="no">❌ 未處理</span></td><td>口頭承諾未兌現</td><td>★★★</td></tr>
+    <tr><td>7</td><td>觀護署設立、少保官改隸法務部</td><td><span class="no">❌ 書面稱無必要</span></td><td>內部立場矛盾未解</td><td>★★★</td></tr>
+    <tr><td>8</td><td>跨部會協調入法（§42 縣市長與庭長會議）</td><td><span class="no">❌ 未處理</span></td><td>不符</td><td>★★</td></tr>
+    <tr><td>9</td><td>家庭介入條款</td><td><span class="no">❌ 未處理</span></td><td>未回應</td><td>★★</td></tr>
+    <tr><td>10</td><td>返校追蹤條款</td><td><span class="no">❌ 未處理</span></td><td>未回應</td><td>★★</td></tr>
+    <tr><td>11</td><td><strong>成少共犯</strong>（行政院 114/6/19 指示）</td><td><span class="no">❌ 完全空白</span></td><td>違背行政院指示</td><td>★★★</td></tr>
+  </tbody>
+</table>
+
+<p><span class="fact">事實</span> 11 項中 1 項符合方向、2 項部分符合、8 項落空。<br>
+<span class="view">國教盟觀點</span> 司法院只做了三分之一，且最關鍵的結構性議題（風險評估、觀護署、成少共犯）全數迴避。</p>
+
+<h3>2.3 5/22 草案內部矛盾追蹤點</h3>
+<ul>
+  <li>司法院書面（323 公聽會、115/3/23）：「無成立成少合併之觀護署的必要」</li>
+  <li>鐘宗霖廳長口頭（同一場）：「贊成成立犯罪防治觀護署」</li>
+  <li>司法院 5/22 草案：未設觀護署 → <strong>書面立場勝出</strong></li>
+  <li>國教盟追蹤：要求司法院正式回應為何鐘廳長口頭立場未被採納</li>
+</ul>
+
+<hr>
+
+<h2 id="sec-3">3. 成少共犯結構性分析</h2>
+
+<h3>3.1 現實供應鏈結構</h3>
+
+<pre class="pipeline">〔上游〕跨國 / 組織化製造（毒品、詐騙劇本、洗錢通道）
+        │
+〔中游〕成年盤商 / 詐騙集團頭目 / 黑道組織首腦
+        │
+〔下游成年〕成年販運者 / 機房主管 / 中階幹部
+        │
+〔末端〕少年使用者 / 少年車手 / 少年運送 / 少年人頭
+        │
+        ▼
+    制度斷裂處 ────→ 少事法保護傘
+                      ─ 塗銷快（§83-1）
+                      ─ 檢察官難直接訊問
+                      ─ 少年作證程序不明
+                      ─ 少年法庭與檢察官不對話</pre>
+
+<p><strong>結構性套利</strong>：成年犯罪組織把少年當「法律屏蔽層」使用 — 風險轉嫁、責任稀釋、追訴困難。</p>
+
+<h3>3.2 制度斷裂的五個具體點</h3>
+<ol>
+  <li><strong>偵查發動</strong>：少年觸法後進入少年法庭，但與其共犯之成年人偵查由檢察官主導，兩條程序線<strong>無法定銜接機制</strong>。</li>
+  <li><strong>證據共用</strong>：少年於少年法庭之自白 / 陳述能否作為成年共犯之證據？少事法不規範。</li>
+  <li><strong>少年作證</strong>：成年共犯案件中傳喚少年作證，<strong>無強制陪同、心理評估、一站式偵訊規定</strong>（性侵害案件有，毒品 / 詐欺案件無）。</li>
+  <li><strong>量刑落差</strong>：同案兩人，少年走保護處分（無前科）、成年走刑事審判（有前科），社會觀感上的「不公平感」會被放大利用為反少年司法的政治資本。</li>
+  <li><strong>再犯防制</strong>：成年人服刑完畢後<strong>回頭吸收同一批少年</strong>，少事法與刑事執行法之間<strong>無強制通報機制</strong>。</li>
+</ol>
+
+<hr>
+
+<h2 id="sec-4">4. 證據盤點</h2>
+
+<h3>4.1 國教盟已有（repo 內可查）</h3>
+
+<table>
+  <thead>
+    <tr><th>類型</th><th>內容</th><th>來源檔案</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>案例</td><td>新北割頸案（<strong>少少共犯</strong>，非成少共犯）</td><td>child-rights/2026-04-01-少事法...md</td></tr>
+    <tr><td>案例</td><td>桃園國中喪屍煙彈進入校園</td><td>campus-safety/2025-12-16-...md</td></tr>
+    <tr><td>統計</td><td>毒駕案件：2023 年 267 → 2024 年 2,169 → 2025 1-9 月 5,468 件（8.1 倍、年內 2.5 倍）</td><td>campus-safety/2025-12-16-...md</td></tr>
+    <tr><td>結構</td><td>兩層式檢測倡議（唾液快篩 + LC-MS/MS）+ 溯源機制</td><td>campus-safety/2026-04-02-...md</td></tr>
+    <tr><td>政策軌跡</td><td>司法院 323 公聽會「成少合併之觀護署」用語（反對語境）</td><td>campus-safety/2026-03-23-...md</td></tr>
+    <tr><td>政策軌跡</td><td>司法院已口頭承諾擴大曝險定義加「參加不良組織」「交往犯罪習性者」</td><td>campus-safety/2026-03-23-...md</td></tr>
+    <tr><td>法理</td><td>日本 2022 少年法改正、CRC 兒童權利公約</td><td>child-rights/2026-04-01-...md</td></tr>
+  </tbody>
+</table>
+
+<h3>4.2 國教盟沒有但必補（採購清單）</h3>
+
+<h4>第 1 級必拿</h4>
+<table>
+  <thead>
+    <tr><th>#</th><th>項目</th><th>取得途徑</th><th>用途</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>行政院 114/6/19 院長指示原文</td><td>行政院新聞稿、行政院全球資訊網</td><td>證明「司法院違背行政院指示」</td></tr>
+    <tr><td>2</td><td>114/12/18 少事政策協商平台會議紀錄</td><td>司法院、法務部公文</td><td>證明司法院已知此議題卻不入法</td></tr>
+    <tr><td>3</td><td>司法院 115/5/22 修正草案全文 + 條文對照表 + 立法說明</td><td>司法院全球資訊網、立法院議事系統</td><td>證明草案真的零條款處理成少共犯</td></tr>
+    <tr><td>4</td><td>少事法 §85、毒品條例 §9、組織犯罪條例 §6 / §6-1 條文原文</td><td>全國法規資料庫</td><td>證明既有法源已存在</td></tr>
+  </tbody>
+</table>
+
+<h4>第 2 級必拿</h4>
+<table>
+  <thead>
+    <tr><th>#</th><th>項目</th><th>取得途徑</th><th>用途</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5</td><td>警政署近三年少年案件統計，按罪名（毒品、詐欺、組織犯罪）+ 共犯結構（純少 / 純成 / 成少混合）</td><td>警政署刑事警察局統計室</td><td>量化成少共犯案件規模</td></tr>
+    <tr><td>6</td><td>法務部司法統計年報：少事法 §85 起訴 / 定罪 / 量刑分布</td><td>法務部統計處</td><td>證明 §85 適用率低 / 統計透明不足</td></tr>
+    <tr><td>7</td><td>司法院統計處：少年法院移送檢察官（逆送）案件分類</td><td>司法院統計處</td><td>證明逆送制度的實際運作</td></tr>
+    <tr><td>8</td><td>法務部反毒報告年度數據：青少年涉毒案件分類</td><td>法務部反毒大本營網站</td><td>連結藥物濫用與成少共犯</td></tr>
+  </tbody>
+</table>
+
+<h4>第 3 級強烈建議</h4>
+<table>
+  <thead>
+    <tr><th>#</th><th>項目</th><th>取得途徑</th><th>用途</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>9</td><td>媒體報導案例庫：詐欺車手少年、毒品運送少年、暴力共犯少年各 5-7 案</td><td>鏡週刊、報導者、自由、聯合深度報導</td><td>質性證據</td></tr>
+    <tr><td>10</td><td>學術文獻：青少年犯罪組織化、邊緣少年被吸收機制</td><td>中央警察大學犯罪防治系；中華民國犯罪學學會</td><td>學術正當性</td></tr>
+    <tr><td>11</td><td>日本少年法 2022 改正英譯 / 中譯版</td><td>日本法務省、台日學界翻譯版</td><td>國際比較</td></tr>
+    <tr><td>12</td><td>律師、法官實務意見訪談 3-5 場</td><td>律師公會少年事件委員會、法官協會</td><td>實務痛點</td></tr>
+  </tbody>
+</table>
+
+<h3>4.3 用戶提及但 repo 未收錄的資料來源</h3>
+
+<table>
+  <thead>
+    <tr><th>來源</th><th>狀態</th><th>取得方式</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>用戶本機桌面「2026藥物濫用」資料夾</td><td><span class="no">❌ 沙箱不可達</span></td><td>用戶 commit 進分支 / 貼到對話</td></tr>
+    <tr><td>用戶本機桌面「成少共犯」資料夾（含 5/22 PDF）</td><td><span class="no">❌ 沙箱不可達</span></td><td>同上</td></tr>
+    <tr><td>aabe.org.tw /events/2026-05-20-drug-abuse-conference/notes/</td><td><span class="no">❌ 沙箱白名單外</span></td><td>用戶提供內容</td></tr>
+    <tr><td>立法院議事附件 PDF（ppg.ly.gov.tw 2025112181）</td><td><span class="no">❌ 沙箱白名單外</span></td><td>用戶提供內容</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="sec-5">5. 修法五大條文模組</h2>
+
+<h3>模組 ① 曝險前置（少事法 §3）</h3>
+
+<table>
+  <thead>
+    <tr><th>現行（記憶版，需核對）</th><th>國教盟建議擴增</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        1. 攜帶刀械無正當理由<br>
+        2. 施用毒品或迷幻物品而尚未涉犯刑罰法律<br>
+        3. 預備犯罪、未遂犯<br>
+        （依 2019 修法精神，僅限三項曝險事由）
+      </td>
+      <td>
+        <strong>+ 4.</strong> 參加不良組織或經常與有犯罪習性之人交往<br>
+        <strong>+ 5.</strong> 受他人誘導、雇用、指使，運送、寄藏或交付毒品、贓物、詐欺所得財物或人頭帳戶
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="view">國教盟觀點</span> 第 5 項是現有曝險定義最大盲區，正是車手少年、運毒少年被吸收的高風險前置態樣。</p>
+
+<h3>模組 ② 增訂「成少共犯案件特別程序」專章</h3>
+<p>建議放於少事法第四章之一（保護事件 vs 刑事事件之間），核心條款方向：</p>
+<ul>
+  <li><strong>定義條款</strong>：成少共犯案件 = 成年與少年共同涉犯特定犯罪（毒品、組織、洗錢、詐欺、人口販運、刑法殺傷詐欺等）</li>
+  <li><strong>偵查管轄分工</strong>：檢察官與少年法院共同偵辦時的卷證移交、證據共用、避免重複訊問</li>
+  <li><strong>少年作證保護</strong>：律師 / 法定代理人 / 社工強制陪同；訊問前心理評估；一站式偵訊、單面鏡、視訊作證、隔離詰問（參考性侵害犯罪防治法保護模式）</li>
+  <li><strong>卷證共用</strong>：少年法庭與成年法院認定事實衝突時的處理</li>
+  <li><strong>跨庭聯繫</strong>：少年法庭法官與檢察官就同案應有定期聯繫會議與書面紀錄</li>
+</ul>
+
+<h3>模組 ③ 既有加重條款活化 + 少年離團保護雙軌</h3>
+<p><strong>重點</strong>：不是新增加重條款（既有條款已足），而是<strong>活化既有規定 + 配套少年端保護</strong>。</p>
+<ul>
+  <li>要求司法院、法務部公布少事法 §85、毒品條例 §9、組織犯罪條例 §6 之適用率統計</li>
+  <li>增訂少事法「離團保護方案」：少年若係受成年人吸收，得作為處分減輕事由；同時建立人身安全 + 安置 + 教育 + 心理 + 戒癮<strong>五合一</strong>方案</li>
+  <li>政治話術：<strong>「重罰大人、保護孩子」</strong> — 一句話打掉「加重會傷少年」的反對論點</li>
+</ul>
+
+<h3>模組 ④ 跨機關通報 + 統計透明</h3>
+<ul>
+  <li>成少共犯案件之成年部分判決確定後，<strong>強制回頭通報</strong>少年端後續處遇承辦機關</li>
+  <li>司法院、法務部、警政署<strong>每年公布去識別化之成少共犯案件分類統計</strong></li>
+</ul>
+
+<h3>模組 ⑤ 校園端配套（接軌兩層式檢測）</h3>
+<ul>
+  <li>兩層式檢測陽性即<strong>啟動成年端溯源</strong></li>
+  <li>教育部、警政、檢察、法務四方<strong>跨部會 SOP</strong>：校園發現一個依托咪酯個案 → 24 小時內啟動供應鏈溯源</li>
+</ul>
+
+<hr>
+
+<h2 id="sec-6">6. 戰術判斷</h2>
+
+<h3>6.1 時機</h3>
+<ul>
+  <li>司法院 5/22 草案已送出，立法院審議將排下會期</li>
+  <li><strong>窗口期</strong>：現在到立法院一讀前</li>
+  <li>6 月：暑假前是議題熱度建立期</li>
+  <li>7-8 月：暑期少年犯罪報導熱點搭乘</li>
+  <li>9 月開學前：發布完整版立場文件</li>
+</ul>
+
+<h3>6.2 結盟對象</h3>
+
+<table>
+  <thead>
+    <tr><th>對象</th><th>立場預判</th><th>國教盟可給的價值</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>行政院</td><td>應該歡迎（卓榮泰已表態）</td><td>民間倡議 = 行政院加壓司法院的工具</td></tr>
+    <tr><td>法務部</td><td>大概率支持</td><td>提供民間正當性</td></tr>
+    <tr><td>警政署</td><td>大概率支持</td><td>提供基層執法痛點論述</td></tr>
+    <tr><td>立委（陳昭姿、葉元之、王婉諭、范雲、賴香伶）</td><td>可能支持</td><td>條文草案、公聽會內容</td></tr>
+    <tr><td>兒少團體（勵馨、家扶）</td><td>立場可能分歧</td><td>「重罰大人、保護孩子」雙軌話術</td></tr>
+    <tr><td>司法院少家廳</td><td>大概率反對</td><td>攻擊面：書面 vs 鐘廳長口頭矛盾</td></tr>
+  </tbody>
+</table>
+
+<h3>6.3 預期反對論點與駁論</h3>
+
+<table>
+  <thead>
+    <tr><th>反對方論點</th><th>駁論</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>加重將傷少年司法保護精神</td><td>加重對象是<strong>成年</strong>加害者，少年端反而引入更強的離團保護方案</td></tr>
+    <tr><td>偵查程序開放會讓少年再受創傷</td><td>一站式偵訊、心理評估、強制陪同<strong>本身就是保護升級</strong></td></tr>
+    <tr><td>統計公開侵害少年隱私</td><td>要求的是<strong>去識別化分類統計</strong>，不是個案揭露</td></tr>
+    <tr><td>應該繼續用「行政指引」處理就好</td><td>違背行政院指示、違背平等保護原則</td></tr>
+    <tr><td>增訂專章將拖延整體修法</td><td>五大模組可<strong>獨立成案併行審查</strong></td></tr>
+    <tr><td>現行法已可處理（§85 等）</td><td><strong>正中下懷</strong> — 那就請公布適用率與統計，證明真的「有用」</td></tr>
+  </tbody>
+</table>
+
+<h3>6.4 內部立場一致性問題（必須先講清楚）</h3>
+
+<blockquote>
+  <p>成少共犯案件中，少年既是<strong>加害人</strong>、也常是<strong>被害人</strong>。建議國教盟內部定調：</p>
+  <ul>
+    <li>「<strong>被吸收的少年</strong>」走保護路線（離團方案、減輕事由）</li>
+    <li>「<strong>主導或積極參與的少年</strong>」維持嚴格處遇路線</li>
+    <li>分流標準 = 風險評估量表（既有訴求）</li>
+  </ul>
+  <p>不先講清楚，外部會以「兩面下注」攻擊。</p>
+</blockquote>
+
+<hr>
+
+<h2 id="sec-7">7. 下一步行動清單</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>時程</th><th>動作</th><th>負責 / 待辦</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>本週</td><td>索取行政院 114/6/19 指示原文 + 114/12/18 政策協商平台會議紀錄</td><td>行文司法院、行政院</td></tr>
+    <tr><td>2</td><td>本週</td><td>索取司法院 5/22 草案全文 + 立法說明</td><td>行文司法院</td></tr>
+    <tr><td>3</td><td>兩週內</td><td>行文警政署、法務部、司法院索取成少共犯統計</td><td>三份公文</td></tr>
+    <tr><td>4</td><td>兩週內</td><td>蒐集媒體案例庫（詐欺、毒品、暴力各 5-7 案）</td><td>政策研究組</td></tr>
+    <tr><td>5</td><td>兩週內</td><td>訪談 3-5 位律師、法官、檢察官（成少共犯實務痛點）</td><td>政策研究組</td></tr>
+    <tr><td>6</td><td>三週內</td><td>發布新聞稿補位：「司法院 5/22 草案只做三分之一、成少共犯違背行政院指示」</td><td>對外發聲</td></tr>
+    <tr><td>7</td><td>一個月內</td><td>將既有四大訴求<strong>升級為五大</strong>（加入成少共犯章節）</td><td>edit child-rights/2026-04-01-...md</td></tr>
+    <tr><td>8</td><td>一個月內</td><td>起草完整立場文件 2026-06-XX-少事法成少共犯專章修法訴求</td><td>政策研究組 + LYL</td></tr>
+    <tr><td>9</td><td>一個半月內</td><td>向陳昭姿、葉元之委員提案召開<strong>成少共犯專題公聽會</strong></td><td>國會聯絡</td></tr>
+    <tr><td>10</td><td>持續</td><td>把成少共犯論述綁進每一次毒駕、校園藥物濫用、詐欺車手新聞回應</td><td>滾動發聲</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="sec-8">8. 待補資料清單（用戶提供）</h2>
+<ul>
+  <li>☐ 桌面「2026藥物濫用」資料夾內所有檔案 → commit 進分支或貼到對話</li>
+  <li>☐ 桌面「成少共犯」資料夾內所有檔案（含 5/22 PDF）→ 同上</li>
+  <li>☐ aabe.org.tw <code>/events/2026-05-20-drug-abuse-conference/notes/</code> 全文 → 同上</li>
+  <li>☐ 立法院議事附件 PDF（ppg.ly.gov.tw 2025112181）→ 同上</li>
+</ul>
+
+<hr>
+
+<h2 id="sec-9">9. 引用來源待補</h2>
+<ol>
+  <li>司法院（2026/5/22）。少年事件處理法修正草案新聞稿。</li>
+  <li>行政院（2024/6/19）。卓榮泰院長關於成少共犯議題之指示。</li>
+  <li>少事政策協商平台第 X 次會議紀錄（2024/12/18）。</li>
+  <li>全國法規資料庫。少年事件處理法 §3、§42、§83-1、§85。</li>
+  <li>全國法規資料庫。毒品危害防制條例 §9。</li>
+  <li>全國法規資料庫。組織犯罪防制條例 §6、§6-1。</li>
+  <li>全國法規資料庫。詐欺犯罪危害防制條例（2024）。</li>
+  <li>警政署刑事警察局。刑案統計年報（2023-2025）。</li>
+  <li>法務部統計處。司法統計年報。</li>
+  <li>司法院統計處。少年事件統計。</li>
+  <li>法務部反毒大本營。年度反毒報告。</li>
+</ol>
+
+<footer class="doc-footer">
+  <strong>修訂紀錄</strong><br>
+  2026-05-23：首版建立。基於對話討論、repo 既有素材、訓練資料內法條知識整合。<br>
+  待續：待用戶提供桌面資料、會議筆記後做完整版整合。<br><br>
+  <strong>檔案位置</strong>：<code>child-rights/_drafts/2026-05-23-成少共犯修法工作筆記.html</code><br>
+  <strong>對應 Markdown</strong>：<code>child-rights/_drafts/2026-05-23-成少共犯修法工作筆記.md</code><br>
+  <strong>分支</strong>：<code>claude/taiwan-juvenile-adult-cooffender-EDt1Q</code>
+</footer>
+
+</div>
+
+</div>
+</body>
+</html>
