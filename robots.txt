@@ -94,6 +94,28 @@ Allow: /
 # ═══ Default: 其他所有爬蟲也歡迎 ═══
 User-agent: *
 Allow: /
+Disallow: /child-rights/_drafts/
+Disallow: /cwa-reform/_drafts/
+
+# ═══ Working drafts — 內部草稿不索引 ═══
+# 適用於所有 bot，包含 AI、傳統搜尋引擎
+User-agent: Googlebot
+Disallow: /child-rights/_drafts/
+
+User-agent: Bingbot
+Disallow: /child-rights/_drafts/
+
+User-agent: GPTBot
+Disallow: /child-rights/_drafts/
+
+User-agent: ClaudeBot
+Disallow: /child-rights/_drafts/
+
+User-agent: PerplexityBot
+Disallow: /child-rights/_drafts/
+
+User-agent: Google-Extended
+Disallow: /child-rights/_drafts/
 
 # ═══ Content Discovery ═══
 Sitemap: https://policy.aabe.org.tw/sitemap.xml
