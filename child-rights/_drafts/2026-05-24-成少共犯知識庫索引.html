@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>[知識庫總索引] 成少共犯修法資料庫｜2026-05-24</title>
+  <style>
+    :root {
+      --bg:#fafaf7; --bg-card:#fff; --ink:#1a1a1a; --ink-soft:#555;
+      --line:#e5e3dc; --accent:#b22222; --accent-soft:#fdecec;
+      --warn-bg:#fff3cd; --warn-ink:#6b4f00;
+      --hero-bg:#1a3d6e; --hero-ink:#fff;
+      --table-head:#f5f2ea; --code-bg:#f4f1e8;
+      --red:#c62828; --orange:#ed6c02; --blue:#1976d2; --purple:#7b1fa2; --brown:#5d4037; --green:#2e7d32;
+    }
+    html,body{background:var(--bg);}
+    body{font-family:-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink);line-height:1.7;margin:0;padding:24px 16px 80px;}
+    .wrap{max-width:1080px;margin:0 auto;}
+    .draft-banner{background:var(--warn-bg);color:var(--warn-ink);border:2px solid #e0c97a;border-radius:8px;padding:12px 18px;margin-bottom:20px;font-weight:600;letter-spacing:0.5px;}
+    .draft-banner small{display:block;font-weight:400;margin-top:4px;opacity:0.8;}
+    .hero{background:linear-gradient(135deg, var(--hero-bg) 0%, #2d5e9e 100%);color:var(--hero-ink);border-radius:10px;padding:28px 36px;margin-bottom:24px;}
+    .hero h1{font-size:1.8rem;margin:0 0 8px;color:#fff;border:none;padding:0;}
+    .hero .subtitle{font-size:0.98rem;opacity:0.9;}
+    .hero .stats{display:flex;gap:24px;margin-top:18px;flex-wrap:wrap;}
+    .hero .stat-item{background:rgba(255,255,255,0.15);padding:8px 16px;border-radius:6px;font-size:0.92rem;}
+    .hero .stat-item strong{font-size:1.3rem;display:block;}
+
+    .card{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:24px 28px;margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,0.03);}
+    .card h2{font-size:1.3rem;margin:0 0 12px;padding-left:0;border-left:none;}
+    .card.section-A{border-left:6px solid var(--red);}
+    .card.section-B{border-left:6px solid var(--orange);}
+    .card.section-C{border-left:6px solid var(--blue);}
+    .card.section-D{border-left:6px solid var(--purple);}
+    .card.section-E{border-left:6px solid var(--brown);}
+
+    h2{font-size:1.3rem;margin:30px 0 14px;padding-left:12px;border-left:4px solid var(--accent);}
+    h3{font-size:1.1rem;margin:18px 0 8px;color:var(--accent);}
+    p{margin:8px 0 14px;}
+    ul,ol{margin:8px 0 14px;padding-left:24px;}
+    li{margin:4px 0;}
+    code{background:var(--code-bg);padding:1px 6px;border-radius:4px;font-family:"JetBrains Mono",Consolas,monospace;font-size:0.88em;}
+    pre{background:var(--code-bg);padding:14px 18px;border-radius:6px;overflow-x:auto;font-family:"JetBrains Mono",Consolas,monospace;font-size:0.85rem;line-height:1.5;}
+    table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:0.91rem;}
+    th,td{border:1px solid var(--line);padding:7px 10px;vertical-align:top;text-align:left;}
+    th{background:var(--table-head);font-weight:600;}
+    tbody tr:nth-child(odd){background:#fbfaf6;}
+
+    .file-row{display:grid;grid-template-columns:40px 1fr auto;gap:10px;padding:8px 12px;margin:4px 0;background:#fbfaf6;border-radius:5px;align-items:center;font-size:0.93rem;}
+    .file-row .ext{font-family:"JetBrains Mono",Consolas,monospace;font-size:0.78rem;color:#fff;background:#999;padding:2px 6px;border-radius:3px;text-align:center;}
+    .file-row .ext.md{background:#2d3436;}
+    .file-row .ext.html{background:#d97706;}
+    .file-row .ext.txt{background:#1976d2;}
+    .file-row .size{color:var(--ink-soft);font-size:0.85rem;}
+    .file-row code{font-size:0.85em;}
+
+    .badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.78rem;font-weight:600;margin-left:6px;}
+    .badge-public{background:#e8f5e9;color:var(--green);border:1px solid var(--green);}
+    .badge-draft{background:var(--warn-bg);color:var(--warn-ink);border:1px solid var(--warn-ink);}
+    .badge-source{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);}
+    .badge-star{background:#fff3cd;color:#9a3412;font-weight:700;}
+
+    .quick-nav{position:sticky;top:0;background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 18px;margin-bottom:24px;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,0.05);font-size:0.92rem;}
+    .quick-nav a{color:var(--accent);text-decoration:none;margin-right:14px;}
+    .quick-nav a:hover{text-decoration:underline;}
+
+    .reading-path{background:#fff7ed;border:1px solid #d4ce99;border-radius:8px;padding:16px 22px;margin:12px 0;}
+    .reading-path h4{margin:0 0 8px;color:var(--orange);font-size:1rem;}
+    .reading-path ol{margin:0;padding-left:22px;}
+
+    .pipeline-box{background:#f9fafb;border:1px solid var(--line);border-radius:8px;padding:16px 20px;font-family:ui-monospace,"JetBrains Mono",Consolas,monospace;font-size:0.82rem;line-height:1.6;color:#2d3436;white-space:pre;overflow-x:auto;}
+
+    .cta-box{background:linear-gradient(135deg, #fef3c7, #fde68a);border:2px solid #d97706;border-radius:8px;padding:18px 24px;margin:18px 0;}
+    .cta-box h4{margin:0 0 8px;color:#9a3412;}
+    .cta-box code{background:#fff;border:1px solid #d97706;font-size:0.9em;padding:2px 8px;display:inline-block;margin:2px 0;}
+
+    hr{border:none;border-top:1px dashed var(--line);margin:32px 0;}
+    .doc-footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:0.82rem;color:var(--ink-soft);}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="draft-banner">
+  ⚠️ 內部知識庫索引（INTERNAL DRAFT）— 請勿對外發布
+  <small>本檔位於 <code>child-rights/_drafts/</code>，含 <code>noindex</code> 標籤、未進入 sitemap。整合本輪 5/23-5/24 全套工作成果之主索引。</small>
+</div>
+
+<div class="hero">
+  <h1>📚 成少共犯修法知識庫索引</h1>
+  <div class="subtitle">國教行動聯盟｜2026-05-24｜涵蓋對外立場、內部分析、原始證據、行動文件、關聯背景</div>
+  <div class="stats">
+    <div class="stat-item"><strong>22</strong>檔案總數</div>
+    <div class="stat-item"><strong>5</strong>分類區塊</div>
+    <div class="stat-item"><strong>6</strong>角色閱讀路徑</div>
+    <div class="stat-item"><strong>54 頁</strong>原始公報</div>
+    <div class="stat-item"><strong>17 個月</strong>政治責任鏈</div>
+  </div>
+</div>
+
+<div class="quick-nav">
+  <strong>快速跳轉：</strong>
+  <a href="#sec-A">🟥 A 成少共犯核心</a>
+  <a href="#sec-B">🟧 B 既有四大訴求</a>
+  <a href="#sec-C">🟦 C 校園安全基底</a>
+  <a href="#sec-D">🟪 D 兒少權益</a>
+  <a href="#sec-E">🟫 E 倡議追蹤</a>
+  <a href="#sec-reading">📖 閱讀路徑</a>
+  <a href="#sec-transfer">💾 傳檔</a>
+</div>
+
+<div class="card">
+  <h2>0. 總覽：22 個檔案、6 個檔案組、5 個分類區塊</h2>
+
+  <h3>0.1 分類與性質</h3>
+  <table>
+    <thead><tr><th>分類</th><th>檔案數</th><th>性質</th></tr></thead>
+    <tbody>
+      <tr><td>🟥 <strong>A. 核心成少共犯議題</strong>（5/23-5/24 工作成果）</td><td>12 檔</td><td>5 個檔案組（md+html）+ 2 個原始檔</td></tr>
+      <tr><td>🟧 <strong>B. 既有少事法基底</strong>（2026/4/1 公聽會版本）</td><td>2 檔</td><td>1 個檔案組</td></tr>
+      <tr><td>🟦 <strong>C. 校園安全 + 藥物濫用基底</strong></td><td>8 檔</td><td>4 個檔案組</td></tr>
+      <tr><td>🟪 <strong>D. 兒少權益相關</strong>（量刑、霸凌、相關案件）</td><td>4 檔</td><td>2 個檔案組</td></tr>
+      <tr><td>🟫 <strong>E. 倡議成果追蹤</strong></td><td>2 檔</td><td>1 個檔案組</td></tr>
+    </tbody>
+  </table>
+
+  <h3>0.2 對外發布 vs 內部草稿</h3>
+  <table>
+    <thead><tr><th>性質</th><th>位置</th><th>數量</th><th>標示</th></tr></thead>
+    <tbody>
+      <tr><td><span class="badge badge-public">PUBLIC</span> 對外發布</td><td><code>child-rights/</code>、<code>campus-safety/</code> 根目錄</td><td>14 檔</td><td>產線 SEO 模板</td></tr>
+      <tr><td><span class="badge badge-draft">DRAFT</span> 內部草稿</td><td><code>child-rights/_drafts/</code></td><td>8 檔</td><td>noindex + 警示橫幅</td></tr>
+      <tr><td><span class="badge badge-source">SOURCE</span> 原始證據</td><td><code>child-rights/_drafts/source/</code></td><td>2 檔</td><td>原文存檔</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ── A 區 ── -->
+<div class="card section-A">
+  <h2 id="sec-A">🟥 A. 核心成少共犯議題（本輪 5/23-5/24 工作成果）</h2>
+
+  <h3>A1. 第五大訴求正式對外立場文件 <span class="badge badge-star">★★★ 核心</span> <span class="badge badge-public">PUBLIC</span></h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/2026-05-23-少事法成少共犯第五大訴求.md</code><span class="size">33 KB｜v1.1</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/2026-05-23-少事法成少共犯第五大訴求.html</code><span class="size">58 KB｜v1.1</span></div>
+  <p><strong>內含</strong>：成少共犯五大訴求架構、警政署 113 年 29.83% 統計、法務部 vs 司法院公開分歧、CRC 反論述、立委結盟名單、17 個月完整時間軸、FAQ、21 項引用來源。</p>
+
+  <h3>A2. 內部工作筆記 <span class="badge badge-star">★★★ 核心</span> <span class="badge badge-draft">DRAFT</span></h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/_drafts/2026-05-23-成少共犯修法工作筆記.md</code><span class="size">24 KB｜v1.1</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/_drafts/2026-05-23-成少共犯修法工作筆記.html</code><span class="size">31 KB｜v1.1</span></div>
+  <p><strong>內含</strong>：突破點論述、司法院 5/22 vs 國教盟 11 項訴求對照、證據盤點、修法五大條文模組、戰術判斷、結盟對象、反對論點駁論、行動清單。</p>
+
+  <h3>A3. 立法院 1127 會議紀錄分析 <span class="badge badge-star">★★★ 核心證據</span> <span class="badge badge-draft">DRAFT</span></h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/_drafts/2026-05-24-立法院1127會議紀錄分析.md</code><span class="size">19 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/_drafts/2026-05-24-立法院1127會議紀錄分析.html</code><span class="size">27 KB</span></div>
+  <p><strong>內含</strong>：6 個官員報告摘要、10 位立委質詢分析、官方統計、CRC 擋牌論述、法務部 vs 司法院分歧、5 個可立即使用引用句、對既有工作整合影響清單。</p>
+
+  <h3>A4. 新聞稿補位草稿 <span class="badge badge-star">★★ 行動</span> <span class="badge badge-draft">DRAFT</span></h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/_drafts/2026-05-24-新聞稿補位-司法院違背立委質詢.md</code><span class="size">9 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/_drafts/2026-05-24-新聞稿補位-司法院違背立委質詢.html</code><span class="size">16 KB</span></div>
+  <p><strong>內含</strong>：三個標題備選（推薦 A）、700 字正文、4 張圖卡建議、5 個媒體引用句、5 題記者 Q&amp;A、發布前 checklist。</p>
+
+  <h3>A5. 索資公文範本 <span class="badge badge-star">★★ 行動</span> <span class="badge badge-draft">DRAFT</span></h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/_drafts/2026-05-24-索資公文範本.md</code><span class="size">14 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/_drafts/2026-05-24-索資公文範本.html</code><span class="size">24 KB</span></div>
+  <p><strong>內含</strong>：致司法院、法務部、警政署、監察院四份公文，依政府資訊公開法第 5、6、7、9 條索取兩函示、三會議紀錄、各機關分類統計、監察院新北案調查報告全文。含預期回應、應對策略、行政訴訟法律行動準備。</p>
+
+  <h3>A6. 原始證據素材 <span class="badge badge-star">★★★ 核心</span> <span class="badge badge-source">SOURCE</span></h3>
+  <div class="file-row"><span class="ext txt">TXT</span><code>child-rights/_drafts/source/2025-11-27-立法院司法及法制委員會第12次會議紀錄.txt</code><span class="size">191 KB｜54 頁</span></div>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/_drafts/source/README.md</code><span class="size">1 KB</span></div>
+</div>
+
+<!-- ── B 區 ── -->
+<div class="card section-B">
+  <h2 id="sec-B">🟧 B. 既有少事法基底（2026/4/1 公聽會版本）<span class="badge badge-public">PUBLIC</span></h2>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.md</code><span class="size">15 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/2026-04-01-少事法矯正教育假釋塗銷轉銜改革.html</code><span class="size">44 KB</span></div>
+  <p>矯正教育法制化、假釋追蹤分級、塗銷分級、被害人權益四大訴求，李雨函青年部執行長 4/1 公聽會發言版。第五大訴求建立在此基礎上。</p>
+</div>
+
+<!-- ── C 區 ── -->
+<div class="card section-C">
+  <h2 id="sec-C">🟦 C. 校園安全 + 藥物濫用基底 <span class="badge badge-public">PUBLIC</span></h2>
+
+  <h3>C1. 校園菸毒與毒駕（藥物濫用主檔）</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.md</code><span class="size">12 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html</code><span class="size">39 KB</span></div>
+  <p>桃園喪屍煙彈 + 毒駕 2024 年 8.1 倍成長 + 2025 1-9 月 5468 件統計來源。</p>
+
+  <h3>C2. 校園唾液快篩二層檢測</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>campus-safety/2026-04-02-校園唾液快篩二層檢測機制.md</code><span class="size">15 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html</code><span class="size">42 KB</span></div>
+  <p>唾液快篩 + 液相層析串聯質譜兩層架構。第五大訴求第五層校園端配套之基底。</p>
+
+  <h3>C3. 轉介教育條例</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>campus-safety/2026-03-23-轉介教育條例.md</code><span class="size">8 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>campus-safety/2026-03-23-轉介教育條例.html</code><span class="size">27 KB</span></div>
+  <p>中介教育修法主張。</p>
+
+  <h3>C4. 永和國中霸凌案</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>campus-safety/2026-03-25-永和國中霸凌案.md</code><span class="size">13 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>campus-safety/2026-03-25-永和國中霸凌案.html</code><span class="size">42 KB</span></div>
+  <p>校園暴力個案分析。</p>
+</div>
+
+<!-- ── D 區 ── -->
+<div class="card section-D">
+  <h2 id="sec-D">🟪 D. 兒少權益相關 <span class="badge badge-public">PUBLIC</span></h2>
+
+  <h3>D1. 少年重大暴力案件量刑透明化</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/2025-12-24-少年重大暴力案件量刑透明化.md</code><span class="size">12 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/2025-12-24-少年重大暴力案件量刑透明化.html</code><span class="size">41 KB</span></div>
+  <p>新北割頸案後量刑論述。</p>
+
+  <h3>D2. 兒少權法修法六大缺口</h3>
+  <div class="file-row"><span class="ext md">MD</span><code>child-rights/2026-04-22-兒少權法修法六大缺口.md</code><span class="size">17 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>child-rights/2026-04-22-兒少權法修法六大缺口.html</code><span class="size">39 KB</span></div>
+  <p>衛福部草案分析。</p>
+</div>
+
+<!-- ── E 區 ── -->
+<div class="card section-E">
+  <h2 id="sec-E">🟫 E. 倡議成果追蹤 <span class="badge badge-public">PUBLIC</span></h2>
+  <div class="file-row"><span class="ext md">MD</span><code>campus-safety/2026-03-23-倡議成果追蹤.md</code><span class="size">14 KB</span></div>
+  <div class="file-row"><span class="ext html">HTML</span><code>campus-safety/2026-03-23-倡議成果追蹤.html</code><span class="size">59 KB</span></div>
+  <p>國教盟 2023/12 至 2026/3 完整時間軸、323 公聽會八項訴求對照表、司法院觀護署立場分歧、少保官改隸法務部、最大矛盾事實／國教盟觀點對照。</p>
+</div>
+
+<!-- ── 閱讀路徑 ── -->
+<h2 id="sec-reading">📖 不同角色的閱讀路徑</h2>
+
+<div class="reading-path">
+  <h4>👨‍💼 王瀚陽理事長（5-10 分鐘速覽版）</h4>
+  <ol>
+    <li><strong>A3 立法院 1127 分析 HTML</strong> — 看戰略意義 + 5 個引用句</li>
+    <li><strong>A4 新聞稿補位 HTML</strong> — 看標題建議 + 700 字正文</li>
+    <li><strong>A5 索資公文 HTML</strong> — 速覽四份公文</li>
+  </ol>
+</div>
+
+<div class="reading-path">
+  <h4>👩‍💼 李雨函青年部執行長（公聽會準備版）</h4>
+  <ol>
+    <li><strong>A1 第五大訴求 .md v1.1</strong> — 完整對外立場</li>
+    <li><strong>A2 工作筆記 .md v1.1</strong> — 戰術判斷、結盟對象、反對論點</li>
+    <li><strong>A3 1127 分析 .md</strong> — 立委質詢逐條摘要</li>
+    <li><strong>B 既有四大訴求 .md</strong> — 確認與舊訴求的接軌點</li>
+  </ol>
+</div>
+
+<div class="reading-path">
+  <h4>📊 政策研究組（完整版）</h4>
+  <ol>
+    <li><strong>A6 原始公報 .txt</strong> — 一字一句閱讀（54 頁、約 1 小時）</li>
+    <li><strong>A3 1127 分析 .md</strong> — 對照閱讀</li>
+    <li><strong>A2 工作筆記 .md v1.1</strong> — 對照採購清單，列出本週執行項目</li>
+    <li><strong>A5 索資公文 .md</strong> — 確認索資項目</li>
+  </ol>
+</div>
+
+<div class="reading-path">
+  <h4>📰 媒體記者</h4>
+  <ol>
+    <li><strong>A4 新聞稿補位 HTML</strong> — 標題、正文、Q&amp;A</li>
+    <li><strong>A1 第五大訴求 HTML</strong> — 完整立場</li>
+    <li><strong>A3 1127 分析 HTML</strong> — quote 牆 5 句</li>
+  </ol>
+</div>
+
+<div class="reading-path">
+  <h4>🏛️ 立委辦公室</h4>
+  <ol>
+    <li><strong>A4 新聞稿</strong> — 速覽議題定位</li>
+    <li><strong>A1 第五大訴求 .md</strong> — 完整修法主張</li>
+    <li><strong>A3 1127 分析 .md</strong> — 該立委自己的質詢摘要</li>
+    <li><strong>A2 工作筆記 §6.2 結盟對象</strong> — 看自己被列為什麼角色</li>
+  </ol>
+</div>
+
+<div class="reading-path">
+  <h4>⚖️ 律師、法官、檢察官（法律專業版）</h4>
+  <ol>
+    <li><strong>A1 第五大訴求 §4</strong> — 五個層次修法建議（條文層級）</li>
+    <li><strong>A6 原始公報</strong> — 法務部、司法院、警政署書面報告</li>
+    <li><strong>A3 1127 §3-5</strong> — 三部會立場分歧分析</li>
+    <li><strong>A1 §「司法院動用 CRC 兒權公約擋牌」</strong> — CRC 反論述</li>
+  </ol>
+</div>
+
+<!-- ── 引用關係圖 ── -->
+<h2>🔗 跨文件引用關係圖</h2>
+
+<div class="pipeline-box">                  ┌──────────────────────────────┐
+                  │  A6 原始公報（54 頁、核心證據） │
+                  └──────────────┬───────────────┘
+                                 │
+                  ┌──────────────▼───────────────┐
+                  │  A3 1127 會議分析（摘要 + quote）│
+                  └──┬────────────────────────┬───┘
+                     │                        │
+       ┌─────────────▼──┐         ┌──────────▼─────────┐
+       │  A1 第五大訴求 │◄────────┤  A2 工作筆記 v1.1  │
+       │  正式對外 v1.1 │  互引   │  內部戰略基底       │
+       └─┬──────────────┘         └─┬──────────────────┘
+         │                          │
+    ┌────▼────┐               ┌────▼─────┐
+    │ A4 新聞稿│               │ A5 索資公文│
+    │ 對外發布 │               │ 公文發送 │
+    └─────────┘               └──────────┘
+
+      ↓ 接軌
+   ┌─────────┐          ┌──────────────┐       ┌──────────┐
+   │ B 既有四大│          │ C 校園安全基底│       │ E 倡議追蹤│
+   │ 訴求 4/1 │          │ 毒駕、檢測   │       │ 兩年軌跡 │
+   └─────────┘          └──────────────┘       └──────────┘
+</div>
+
+<!-- ── 修法時序 ── -->
+<h2>📅 修法時序整合提示</h2>
+<table>
+  <thead><tr><th>立法階段</th><th>動用文件</th></tr></thead>
+  <tbody>
+    <tr><td>一讀前</td><td>A4 新聞稿補位 + A5 公文發送</td></tr>
+    <tr><td>委員會審查</td><td>A1 第五大訴求 + A3 1127 分析（公聽會書面意見骨架）</td></tr>
+    <tr><td>質詢答辯</td><td>A6 原始公報（即席引用）+ A2 §6.3 反對論點駁論</td></tr>
+    <tr><td>二讀協商</td><td>A2 §5 修法五大條文模組（條文具體建議）</td></tr>
+    <tr><td>三讀完成</td><td>A1 v2.0 升級（記錄最終結果）</td></tr>
+  </tbody>
+</table>
+
+<!-- ── 傳檔 ── -->
+<div class="cta-box" id="sec-transfer">
+  <h4>💾 一鍵把全套 22 個檔案傳到本機桌面</h4>
+  <p>本知識庫提供 bash 腳本，可自動把所有檔案整理到 <code>~/Desktop/2026少事法修法/</code>，並建立本機讀本 README。</p>
+  <p><strong>使用方式</strong>（在你本機跑、不是在沙箱跑）：</p>
+  <pre>cd ~/policy  # 你本機 policy repo 的路徑
+git checkout claude/taiwan-juvenile-adult-cooffender-EDt1Q
+git pull origin claude/taiwan-juvenile-adult-cooffender-EDt1Q
+bash child-rights/_drafts/transfer-to-desktop.sh</pre>
+  <p><strong>會建立的桌面結構</strong>：</p>
+  <pre>2026少事法修法/
+├── 00_索引/                          ← 本檔在這裡
+├── 01_對外立場文件/                  (A1 + B)
+├── 02_工作筆記/                      (A2 + A3)
+├── 03_行動文件_新聞稿與公文/         (A4 + A5)
+├── 04_原始證據/                      (A6 + README)
+└── 05_關聯背景檔案/
+    ├── 校園安全/                    (C1-C4 + E)
+    └── 兒少權益/                    (D1, D2)</pre>
+  <p>腳本支援 macOS 與 Linux 桌面路徑自動偵測，含預檢、複製紀錄、統計報告。</p>
+</div>
+
+<!-- ── 待補 ── -->
+<h2>📋 待補資料清單</h2>
+<ul>
+  <li>☐ 桌面「2026藥物濫用」資料夾 → push 至 <code>child-rights/source/</code> 或貼到對話</li>
+  <li>☐ 桌面「成少共犯」資料夾（5/22 PDF）→ 同上</li>
+  <li>☐ <code>aabe.org.tw /events/2026-05-20-drug-abuse-conference/notes/</code> 全套 → 同上</li>
+  <li>☐ 監察院 114/11 新北案調查報告全文 → 發 A5 公文 4</li>
+  <li>☐ 司法院 1140400447、1140008146 兩函示全文 → 發 A5 公文 1</li>
+  <li>☐ 三次跨院部協商會議完整紀錄 → 發 A5 公文 1、2、3</li>
+</ul>
+
+<div class="doc-footer">
+  <strong>檔案位置</strong>：<code>child-rights/_drafts/2026-05-24-成少共犯知識庫索引.md</code>（canonical）<br>
+  <strong>對應 HTML</strong>：<code>child-rights/_drafts/2026-05-24-成少共犯知識庫索引.html</code>（本檔）<br>
+  <strong>傳檔腳本</strong>：<code>child-rights/_drafts/transfer-to-desktop.sh</code><br>
+  <strong>分支</strong>：<code>claude/taiwan-juvenile-adult-cooffender-EDt1Q</code><br>
+  <strong>維護</strong>：國教盟政策研究組｜<strong>建立日期</strong>：2026-05-24
+</div>
+
+</div>
+</body>
+</html>
