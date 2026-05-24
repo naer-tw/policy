@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>[內部草稿] 索資公文範本四份｜成少共犯議題</title>
+  <style>
+    :root {
+      --bg:#fafaf7; --bg-card:#fff; --ink:#1a1a1a; --ink-soft:#555;
+      --line:#e5e3dc; --accent:#b22222; --accent-soft:#fdecec;
+      --warn-bg:#fff3cd; --warn-ink:#6b4f00;
+      --gov-bg:#2d3436; --gov-ink:#fff;
+      --table-head:#f5f2ea; --code-bg:#f4f1e8;
+      --letter-bg:#fefdf8; --letter-border:#d4ce99;
+    }
+    html,body{background:var(--bg);}
+    body{font-family:-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink);line-height:1.75;margin:0;padding:24px 16px 80px;}
+    .wrap{max-width:920px;margin:0 auto;}
+    .draft-banner{background:var(--warn-bg);color:var(--warn-ink);border:2px solid #e0c97a;border-radius:8px;padding:12px 18px;margin-bottom:20px;font-weight:600;letter-spacing:0.5px;}
+    .draft-banner small{display:block;font-weight:400;margin-top:4px;opacity:0.8;}
+    .card{background:var(--bg-card);border:1px solid var(--line);border-radius:10px;padding:28px 32px;box-shadow:0 1px 2px rgba(0,0,0,0.03);}
+    h1{font-size:1.65rem;margin:0 0 8px;letter-spacing:-0.5px;border-bottom:3px solid var(--accent);padding-bottom:10px;}
+    h1 .date{font-size:0.85rem;color:var(--ink-soft);font-weight:400;}
+    h2{font-size:1.3rem;margin:36px 0 14px;padding-left:12px;border-left:4px solid var(--accent);}
+    h3{font-size:1.08rem;margin:24px 0 8px;color:var(--accent);}
+    p{margin:8px 0 14px;}
+    ul,ol{margin:8px 0 14px;padding-left:24px;}
+    li{margin:4px 0;}
+    code{background:var(--code-bg);padding:1px 6px;border-radius:4px;font-family:"JetBrains Mono",Consolas,monospace;font-size:0.9em;}
+    table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:0.93rem;}
+    th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;}
+    th{background:var(--table-head);font-weight:600;}
+    tbody tr:nth-child(odd){background:#fbfaf6;}
+
+    .letter-card{background:var(--letter-bg);border:2px solid var(--letter-border);border-radius:8px;padding:0;margin:24px 0;overflow:hidden;}
+    .letter-header{background:var(--gov-bg);color:var(--gov-ink);padding:14px 22px;font-weight:700;letter-spacing:0.3em;font-size:0.92rem;}
+    .letter-header .num{background:#fff;color:var(--gov-bg);padding:2px 10px;border-radius:3px;margin-right:10px;font-family:"JetBrains Mono",Consolas,monospace;}
+    .letter-body{padding:22px 28px;font-family:"PMingLiU","新細明體","Noto Serif TC",serif;line-height:2.0;font-size:0.96rem;}
+    .letter-body table{font-family:-apple-system,"Noto Sans TC",sans-serif;margin:8px 0 14px;}
+    .letter-field{display:grid;grid-template-columns:90px 1fr;gap:8px 14px;margin:6px 0;}
+    .letter-field strong{color:#5a4e2a;}
+    .letter-subject{background:#fffbe6;border:1px solid #d4b85c;border-radius:4px;padding:10px 14px;margin:14px 0;font-weight:600;}
+    .letter-section-title{font-weight:700;color:#5a4e2a;margin-top:14px;}
+    .letter-numbered{counter-reset:item;list-style:none;padding-left:0;}
+    .letter-numbered > li{counter-increment:item;padding-left:36px;position:relative;margin:10px 0;}
+    .letter-numbered > li::before{content:counter(item,cjk-decimal)"、";position:absolute;left:0;font-weight:600;color:#5a4e2a;}
+    .letter-sub{list-style:none;padding-left:18px;margin:8px 0;counter-reset:subitem;}
+    .letter-sub > li{counter-increment:subitem;padding-left:32px;position:relative;margin:6px 0;}
+    .letter-sub > li::before{content:"（"counter(subitem,cjk-decimal)"）";position:absolute;left:0;color:#7a6a3a;}
+    .letter-signoff{text-align:right;margin-top:24px;font-weight:600;color:#5a4e2a;line-height:1.6;}
+    .letter-signoff .title{margin-right:14px;}
+    .letter-date{text-align:right;margin-top:6px;color:var(--ink-soft);}
+
+    .meta-block{background:var(--code-bg);border-radius:6px;padding:10px 16px;font-size:0.88rem;color:var(--ink-soft);margin-bottom:18px;}
+    .meta-block strong{color:var(--ink);}
+    .toc{background:#f5f2ea;border-radius:8px;padding:16px 24px;margin:20px 0 28px;font-size:0.95rem;}
+    .toc ol{margin:6px 0 0;padding-left:22px;}
+    .toc li{margin:4px 0;}
+    .toc a{color:var(--ink);text-decoration:none;}
+    .toc a:hover{color:var(--accent);text-decoration:underline;}
+    hr{border:none;border-top:1px dashed var(--line);margin:36px 0;}
+    .doc-footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);font-size:0.82rem;color:var(--ink-soft);}
+    .checklist{list-style:none;padding-left:0;}
+    .checklist li{padding:4px 0 4px 28px;position:relative;}
+    .checklist li::before{content:"☐";position:absolute;left:0;font-size:1.1em;color:var(--ink-soft);}
+    .note-box{background:#fff7ed;border-left:4px solid #d97706;padding:12px 18px;border-radius:4px;margin:14px 0;font-size:0.94rem;}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="draft-banner">
+  ⚠️ 內部公文草稿（INTERNAL DRAFT）— 請勿對外發布、勿轉貼、勿提供媒體
+  <small>本檔位於 <code>child-rights/_drafts/</code>，含 <code>noindex</code> 標籤，未進入 sitemap。待王瀚陽理事長過目簽核並由秘書處編製正式發文字號、用印後正式發文。</small>
+</div>
+
+<div class="card">
+
+<h1>索資公文範本｜成少共犯議題 <span class="date">（四份）</span></h1>
+
+<div class="meta-block">
+  <strong>文件性質</strong>：內部公文草稿、未授權發送。<br>
+  <strong>法律依據</strong>：政府資訊公開法第 5、6、7、9 條<br>
+  <strong>建立日期</strong>：2026-05-24<br>
+  <strong>維護者</strong>：國教盟政策研究組
+</div>
+
+<h2>發文紀律</h2>
+<ul>
+  <li><strong>抬頭格式</strong>：採用國教行動聯盟正式公文用紙</li>
+  <li><strong>發文字號</strong>：由秘書處編製</li>
+  <li><strong>副本</strong>：行政院（重要）、立法院司法及法制委員會召委辦公室、監察院（如涉及）</li>
+  <li><strong>附件</strong>：本聯盟第五大訴求立場文件電子檔</li>
+  <li><strong>送達方式</strong>：紙本掛號 + 電子公文系統雙軌</li>
+  <li><strong>法律依據</strong>：政府資訊公開法第 5、6、7、9 條</li>
+</ul>
+
+<div class="toc">
+  <strong>目次</strong>
+  <ol>
+    <li><a href="#letter-1">公文一｜致司法院</a></li>
+    <li><a href="#letter-2">公文二｜致法務部</a></li>
+    <li><a href="#letter-3">公文三｜致內政部警政署</a></li>
+    <li><a href="#letter-4">公文四｜致監察院</a></li>
+    <li><a href="#admin">行政管理 checklist</a></li>
+    <li><a href="#response">預期回應與應對</a></li>
+    <li><a href="#legal">後續法律行動準備</a></li>
+  </ol>
+</div>
+
+<hr>
+
+<!-- 公文一 -->
+<h2 id="letter-1">公文一｜致司法院</h2>
+
+<div class="letter-card">
+  <div class="letter-header"><span class="num">公文 1/4</span> 國教行動聯盟 函</div>
+  <div class="letter-body">
+    <div class="letter-field"><strong>受文者：</strong><span>司法院（秘書長收）</span></div>
+    <div class="letter-field"><strong>副　本：</strong><span>行政院、立法院司法及法制委員會莊瑞雄召集委員辦公室、立法院司法及法制委員會陳昭姿委員辦公室、監察院</span></div>
+    <div class="letter-field"><strong>發文字號：</strong><span>（待秘書處編製）</span></div>
+    <div class="letter-field"><strong>速　別：</strong><span>普通件</span></div>
+    <div class="letter-field"><strong>密等：</strong><span>普通</span></div>
+    <div class="letter-field"><strong>附　件：</strong><span>國教行動聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔</span></div>
+
+    <div class="letter-subject">
+      主　旨：請依政府資訊公開法第 5、6、7、9 條規定，公開貴院關於成少共犯議題之相關函示與會議紀錄，俾利民間倡議與政策研究。
+    </div>
+
+    <div class="letter-section-title">說　明：</div>
+    <ol class="letter-numbered">
+      <li>貴院已於 114 年 11 月 27 日立法院司法及法制委員會第 12 次全體委員會議專題報告「成少共犯如何解？院、檢、警協作與社政教育體系整合策進展望」中陳明貴院已採取多項精進作為，本聯盟為持續推動少事法修法配套政策，需取得相關文件以為研究基礎。</li>
+      <li>爰依政府資訊公開法第 5 條（政府資訊應依本法主動公開或應人民申請提供之）、第 6 條（與人民權益攸關之施政、措施及其他有關之政府資訊，以主動公開為原則）、第 7 條第 1 項第 6 款（會議紀錄）及第 9 條（具我國國籍並在我國設籍之國民及其所設立之本國法人、團體，得依本法規定申請政府機關提供政府資訊）之規定，請貴院公開下列文件：
+        <ol class="letter-sub">
+          <li>114 年 4 月 24 日院台廳少家一字第 1140400447 號函全文及附件，含建立少年法院與檢察機關聯繫機制之共識項目。</li>
+          <li>114 年 4 月 28 日院台廳少家一字第 1140008146 號函全文及附件，含管轄權認定統一適用少事法第 14 條之函釋說明。</li>
+          <li>行政院於 113 年 12 月 11 日、114 年 2 月 20 日邀集貴院、法務部、內政部警政署召開之跨院部研商會議完整紀錄。</li>
+          <li>114 年 7 月 9 日貴院與行政院共同召集之「協商成少共犯議題會議」完整紀錄。</li>
+          <li>貴院 115 年 5 月 22 日《少年事件處理法》修正草案立法說明、條文對照表、立法院關係文書版本。</li>
+          <li>關於成少共犯議題之「專家學者諮詢會議」紀錄（依貴院鍾廳長 2024/12/18 少事政策協商平台之承諾）。</li>
+          <li>貴院少年及家事廳「高風險少年評估量表」工作小組所編製之量表、專家效度會議紀錄、實證測試計畫之最新版本。</li>
+        </ol>
+      </li>
+      <li>上開資訊與人民健全自我成長之憲法權益、被害人權益保障之立法政策、跨機關偵辦少年共犯案件之程序法制密切相關，依政府資訊公開法第 6 條，應以主動公開為原則。</li>
+      <li>本聯盟為一全國性兒少權益倡議組織，依政府資訊公開法第 9 條及第 13 條，請於受理 15 日內以光碟、電子郵件或郵寄方式提供前揭資料。如有限制公開之具體事由（同法第 18 條），請逐項說明限制依據與比例原則之衡酌。</li>
+      <li>檢附本聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔，請參。</li>
+    </ol>
+
+    <div class="letter-signoff">
+      <span class="title">理 事 長</span>　王 瀚 陽
+    </div>
+    <div class="letter-date">中華民國 115 年 5 月 X 日</div>
+  </div>
+</div>
+
+<hr>
+
+<!-- 公文二 -->
+<h2 id="letter-2">公文二｜致法務部</h2>
+
+<div class="letter-card">
+  <div class="letter-header"><span class="num">公文 2/4</span> 國教行動聯盟 函</div>
+  <div class="letter-body">
+    <div class="letter-field"><strong>受文者：</strong><span>法務部（部長室收）</span></div>
+    <div class="letter-field"><strong>副　本：</strong><span>行政院、立法院司法及法制委員會莊瑞雄召集委員辦公室、司法院、內政部警政署</span></div>
+    <div class="letter-field"><strong>發文字號：</strong><span>（待秘書處編製）</span></div>
+    <div class="letter-field"><strong>速　別：</strong><span>普通件</span></div>
+    <div class="letter-field"><strong>密等：</strong><span>普通</span></div>
+    <div class="letter-field"><strong>附　件：</strong><span>國教行動聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔</span></div>
+
+    <div class="letter-subject">
+      主　旨：請依政府資訊公開法規定，公開貴部就成少共犯案件之分類統計、§85 適用情形及矯正學校相關數據，俾利民間倡議與政策研究。
+    </div>
+
+    <div class="letter-section-title">說　明：</div>
+    <ol class="letter-numbered">
+      <li>貴部政務次長徐錫祥於 114 年 11 月 27 日立法院司法及法制委員會第 12 次全體委員會議專題報告中已陳明：「113 年少年矯正學校在校受感化教育之少年觸犯詐欺罪之人數，已超越觸犯傷害罪之人數」、「近 10 年觸犯刑罰法律少年保護處分之罪名類型，113 年觸犯詐欺罪之少年人數達 2,190 人，其中與成年人共犯者為 1,162 人，已超過 50%」。</li>
+      <li>爰依政府資訊公開法第 5、6、7、9 條，請公開下列資訊：
+        <ol class="letter-sub">
+          <li>近 5 年（109-113 年）少事法第 85 條（成年人教唆、幫助、利用未成年人共同犯罪之加重）之起訴件數、定罪件數、實際加重幅度分布。</li>
+          <li>近 5 年毒品危害防制條例第 9 條（成年人對未成年人犯本條例之罪加重）之起訴件數、定罪件數、實際加重幅度分布。</li>
+          <li>近 5 年組織犯罪防制條例第 6 條、第 6 條之 1 涉及未成年共犯之起訴件數、定罪件數、實際加重幅度分布。</li>
+          <li>2024 年新公布之詐欺犯罪危害防制條例於 2024、2025 年之適用情形，特別是涉及未成年人之案件。</li>
+          <li>近 5 年少年矯正學校（敦品、誠正、勵志、明陽）受感化教育與受刑少年之<strong>罪名分類統計</strong>，特別是詐欺、毒品、組織犯罪三類。</li>
+          <li>矯正學校就「成少共犯」案件少年之<strong>離校復歸</strong>、<strong>再犯率</strong>、<strong>再次涉入成少共犯</strong>之追蹤統計。</li>
+          <li>跨院部協商會議（113/12/11、114/2/20、114/7/9）中貴部之書面立場與議題提案紀錄。</li>
+        </ol>
+      </li>
+      <li>本聯盟為一全國性兒少權益倡議組織，依政府資訊公開法第 9 條及第 13 條，請於受理 15 日內提供前揭資料。如有限制公開之具體事由，請逐項說明限制依據。</li>
+      <li>檢附本聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔，請參。</li>
+    </ol>
+
+    <div class="letter-signoff">
+      <span class="title">理 事 長</span>　王 瀚 陽
+    </div>
+    <div class="letter-date">中華民國 115 年 5 月 X 日</div>
+  </div>
+</div>
+
+<hr>
+
+<!-- 公文三 -->
+<h2 id="letter-3">公文三｜致內政部警政署</h2>
+
+<div class="letter-card">
+  <div class="letter-header"><span class="num">公文 3/4</span> 國教行動聯盟 函</div>
+  <div class="letter-body">
+    <div class="letter-field"><strong>受文者：</strong><span>內政部警政署（署長室收）</span></div>
+    <div class="letter-field"><strong>副　本：</strong><span>行政院、內政部、法務部、立法院司法及法制委員會莊瑞雄召集委員辦公室</span></div>
+    <div class="letter-field"><strong>發文字號：</strong><span>（待秘書處編製）</span></div>
+    <div class="letter-field"><strong>速　別：</strong><span>普通件</span></div>
+    <div class="letter-field"><strong>密等：</strong><span>普通</span></div>
+    <div class="letter-field"><strong>附　件：</strong><span>國教行動聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔</span></div>
+
+    <div class="letter-subject">
+      主　旨：請依政府資訊公開法規定，公開貴署成少共犯案件分類統計、校園藥物濫用溯源案件統計，俾利民間倡議與政策研究。
+    </div>
+
+    <div class="letter-section-title">說　明：</div>
+    <ol class="letter-numbered">
+      <li>貴署刑事警察局副局長蕭欽杰於 114 年 11 月 27 日立法院司法及法制委員會第 12 次全體委員會議專題報告中已陳明，依調閱司法院統計年報「少年交付保護處分事件行為態樣」之「與成人共同實施」統計項，109 年至 113 年成少共犯比率分別為 30.27%、（110 年未報）、31.99%、28.05%、29.83%；113 年妨害秩序 1,014 件中 604 件成少共犯（59.57%）、詐欺 2,190 件中 1,162 件成少共犯（53.06%）。</li>
+      <li>爰依政府資訊公開法第 5、6、7、9 條，請公開下列資訊：
+        <ol class="letter-sub">
+          <li>109 至 113 年之<strong>完整成少共犯案件分類統計</strong>（按罪名、少年年齡、地區、是否涉及犯罪組織分類）。</li>
+          <li>113 年至 115 年 4 月查獲之<strong>少年涉詐欺集團案件</strong>統計（含車手、人頭、機房協力等角色分類）。</li>
+          <li>113 年至 115 年 4 月查獲之<strong>校園藥物濫用個案</strong>統計（新興毒品依托咪酯、合成大麻素等之<strong>溯源結案</strong>比例）。</li>
+          <li>貴署函請各警察機關於移送少年案件時敘明與成年共犯關連性之 SOP（依貴署 11/27 報告所述「本署已函請各警察機關於移送少年案件時，能夠詳述與成年共犯的關連性…」）及相關函令編號。</li>
+          <li>警察機關發現學生疑似參加不良組織之 SOP（教育部、貴署、法務部共同研訂）之函令編號與最新版本。</li>
+          <li>跨院部協商會議（113/12/11、114/2/20、114/7/9）中貴署之書面立場與議題提案紀錄。</li>
+        </ol>
+      </li>
+      <li>本聯盟為一全國性兒少權益倡議組織，依政府資訊公開法第 9 條及第 13 條，請於受理 15 日內提供前揭資料。如有限制公開之具體事由（如涉及偵查機密），請依比例原則酌情提供經去識別化之分類統計，並逐項說明限制依據。</li>
+      <li>檢附本聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔，請參。</li>
+    </ol>
+
+    <div class="letter-signoff">
+      <span class="title">理 事 長</span>　王 瀚 陽
+    </div>
+    <div class="letter-date">中華民國 115 年 5 月 X 日</div>
+  </div>
+</div>
+
+<hr>
+
+<!-- 公文四 -->
+<h2 id="letter-4">公文四｜致監察院</h2>
+
+<div class="letter-card">
+  <div class="letter-header"><span class="num">公文 4/4</span> 國教行動聯盟 函</div>
+  <div class="letter-body">
+    <div class="letter-field"><strong>受文者：</strong><span>監察院（秘書長收）</span></div>
+    <div class="letter-field"><strong>副　本：</strong><span>行政院、立法院司法及法制委員會莊瑞雄召集委員辦公室、司法院、教育部、法務部、衛生福利部、內政部警政署</span></div>
+    <div class="letter-field"><strong>發文字號：</strong><span>（待秘書處編製）</span></div>
+    <div class="letter-field"><strong>速　別：</strong><span>普通件</span></div>
+    <div class="letter-field"><strong>密等：</strong><span>普通</span></div>
+    <div class="letter-field"><strong>附　件：</strong><span>國教行動聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔</span></div>
+
+    <div class="letter-subject">
+      主　旨：請依政府資訊公開法規定，公開貴院於 114 年 11 月發布之新北少年事件調查報告全文及相關後續監督文件，俾利民間倡議與政策研究。
+    </div>
+
+    <div class="letter-section-title">說　明：</div>
+    <ol class="letter-numbered">
+      <li>立法院司法及法制委員會莊瑞雄召集委員於 114 年 11 月 27 日第 12 次全體委員會議專題質詢中已引述貴院於 114 年 11 月發布之新北少年事件調查報告，指出警察端、少輔會、法院與行政整合失效、被害人權益保障不足等四大體系漏接問題。</li>
+      <li>爰依政府資訊公開法第 5、6、7、9 條，請公開下列資訊：
+        <ol class="letter-sub">
+          <li>114 年 11 月新北少年事件調查報告完整版（含已刪除個資之公開版本）。</li>
+          <li>該調查報告所建議之改善事項，及貴院後續對司法院、警政署、衛福部、教育部之追蹤監督紀錄。</li>
+          <li>近 5 年（109-113 年）貴院就少年司法、成少共犯議題所進行之其他調查報告與糾正案。</li>
+          <li>依貴院近年調查所示，少事法現行架構於成少共犯案件之結構性問題，貴院之政策建議與後續監督計畫。</li>
+        </ol>
+      </li>
+      <li>本聯盟為一全國性兒少權益倡議組織，依政府資訊公開法第 9 條及第 13 條，請於受理 15 日內提供前揭資料。</li>
+      <li>檢附本聯盟「成少共犯如何成為少事法第五大修法訴求？」立場文件電子檔，請參。</li>
+    </ol>
+
+    <div class="letter-signoff">
+      <span class="title">理 事 長</span>　王 瀚 陽
+    </div>
+    <div class="letter-date">中華民國 115 年 5 月 X 日</div>
+  </div>
+</div>
+
+<hr>
+
+<h2 id="admin">行政管理 checklist</h2>
+<ul class="checklist">
+  <li>王瀚陽理事長過目簽核</li>
+  <li>秘書處編製正式發文字號</li>
+  <li>用印（理事長章 + 法人章）</li>
+  <li>紙本掛號送出</li>
+  <li>電子公文系統送出（如有）</li>
+  <li>副本本聯盟存檔，並於 repo 內紀錄發文日期</li>
+  <li>受理 15 日後追蹤，未回函者依《政府資訊公開法》第 20 條提救濟</li>
+  <li>取得回函後同步存入 <code>_drafts/source/</code> 目錄</li>
+</ul>
+
+<h2 id="response">預期回應與應對</h2>
+<table>
+  <thead><tr><th>機關</th><th>預期回應</th><th>國教盟應對</th></tr></thead>
+  <tbody>
+    <tr><td>司法院</td><td>部分公開（兩函示應可獲）、會議紀錄可能以「機關內部審議」為由限制</td><td>援引政府資訊公開法第 18 條比例原則，要求說明限制依據；必要時提行政訴訟</td></tr>
+    <tr><td>法務部</td><td>統計部分可能提供、§85 適用統計可能拒絕</td><td>援引立法院 11/27 公報官員口頭承諾，要求說明限制依據</td></tr>
+    <tr><td>警政署</td><td>統計部分可能提供、SOP 函令編號應可獲</td><td>預期較配合，因警政署立場與國教盟接近</td></tr>
+    <tr><td>監察院</td><td>調查報告應可公開，後續監督紀錄可能限制</td><td>援引監察院公開政府資訊之積極義務</td></tr>
+  </tbody>
+</table>
+
+<h2 id="legal">後續法律行動準備（如機關拒絕）</h2>
+<div class="note-box">
+  依《政府資訊公開法》第 20 條，受理機關決定不予提供時，得提起救濟：
+  <ol>
+    <li><strong>訴願</strong>（向上級機關提）—— 30 日內</li>
+    <li><strong>行政訴訟</strong>（高等行政法院）—— 訴願決定後 2 個月內</li>
+  </ol>
+</div>
+
+<p>國教盟得援引憲法第 21 條（受國民教育權）、第 22 條（其他自由權利）、CRC 第 12 條（兒童表意權）、第 40 條（少年司法程序權利）作為法律利益依據。</p>
+
+<div class="doc-footer">
+  <strong>檔案位置</strong>：<code>child-rights/_drafts/2026-05-24-索資公文範本.md</code>（canonical）<br>
+  <strong>對應 HTML</strong>：<code>child-rights/_drafts/2026-05-24-索資公文範本.html</code>（本檔）<br>
+  <strong>分支</strong>：<code>claude/taiwan-juvenile-adult-cooffender-EDt1Q</code>
+</div>
+
+</div>
+</div>
+</body>
+</html>
