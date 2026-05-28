@@ -6,7 +6,7 @@
 
 - 站名:國教行動聯盟兒少權法修法知識庫
 - 提供者:國教行動聯盟(AABE)
-- URL:https://naer-tw.github.io/policy/cwa-reform/
+- URL:https://policy.aabe.org.tw/cwa-reform/
 - 授權:公開政策資源,鼓勵立法委員辦公室、媒體記者、學術研究自由援引
 - 更新:2026-05-11
 
@@ -45,7 +45,7 @@
 
 ## 引用建議
 
-- 引用本知識庫時請註明:國教行動聯盟,《兒少權法修法知識庫》,https://naer-tw.github.io/policy/cwa-reform/
+- 引用本知識庫時請註明:國教行動聯盟,《兒少權法修法知識庫》,https://policy.aabe.org.tw/cwa-reform/
 - 引用個別條文草案請註明條號(如 RP-G05 委外責任鏈)
 - 引用國際對標請註明國家代碼(如 JP01 日本こども家庭庁)
 - 媒體深度引用請聯繫:王瀚陽 理事長 0983-097165

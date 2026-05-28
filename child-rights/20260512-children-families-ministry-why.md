@@ -3,7 +3,7 @@ title: "為什麼台灣需要把兒少主管機關升格為「兒童家庭部」
 description: "兒少權法施行 15 年來最大幅度的全文修正,165 條卻沒有部級主管機關。通報 5 年增 65%、2024 致死 8 年新高、處置率僅 7%——兩會聯合呼籲修正第 2 條與第 3 條「雙條同修」,升格為部會層級的「兒童家庭部」(行政院所屬二級機關)。"
 date: 2026-05-12
 keywords: "兒童家庭部, 兒少權法, 兒少及家庭支持署, 兒家署, 升格, 雙條同修, 修正第2條, 修正第3條, 剴剴案, 國教行動聯盟, 兒少權益, こども家庭庁"
-url: https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-why.html
+url: https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-why.html
 source: 國教行動聯盟政策知識庫
 ---
 
@@ -27,7 +27,7 @@ source: 國教行動聯盟政策知識庫
  
  
  2026 年 5 月 12 日
- [國教行動聯盟](https://naer-tw.github.io/policy/#organization) × 台灣心理健康聯盟
+ [國教行動聯盟](https://policy.aabe.org.tw/#organization) × 台灣心理健康聯盟
  審稿:王瀚陽 理事長
  分類:兒少權益
  
@@ -424,13 +424,13 @@ _
 
  
 
- - [兒童家庭部組織法該怎麼寫?16 條草案與雙條同修法律承諾解析](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-how.html)
+ - [兒童家庭部組織法該怎麼寫?16 條草案與雙條同修法律承諾解析](https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-how.html)
 
- - **[ 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://naer-tw.github.io/policy/cwa-reform/)**
+ - **[ 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://policy.aabe.org.tw/cwa-reform/)**
 
- - [6 大缺口完整立法草案(RP-G01~G06)](https://naer-tw.github.io/policy/cwa-reform/reform-proposals/)
+ - [6 大缺口完整立法草案(RP-G01~G06)](https://policy.aabe.org.tw/cwa-reform/reform-proposals/)
 
- - [21 國國際對標卡(三欄齊全)](https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/)
+ - [21 國國際對標卡(三欄齊全)](https://policy.aabe.org.tw/cwa-reform/intl-benchmarks/)
 
  - [國教行動聯盟臉書專頁](https://www.facebook.com/twedumove/)
 

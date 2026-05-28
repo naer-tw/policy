@@ -3,7 +3,7 @@ title: "8742名青少年票選第三名：遇到性騷擾該怎麼辦？"
 description: "8,742名青少年調查顯示「遇到性騷擾該怎麼辦？」高居第三名。衛福部統計未成年性影像受害者佔32.9%，但國中小每週僅1節健康教育課。國教盟呼籲補上保護課。"
 date: 2025-12-08
 keywords: "性騷擾,性教育,數位性暴力,青少年保護,國教盟,國教行動聯盟,健康教育,性影像,兒少保護,同意文化,身體自主"
-url: https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html
+url: https://policy.aabe.org.tw/child-rights/20251208-sexual-violence-prevention-education.html
 source: 國教行動聯盟政策知識庫
 ---
 
@@ -147,6 +147,6 @@ source: 國教行動聯盟政策知識庫
 
 
 ---
-**原始頁面**：[https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html](https://naer-tw.github.io/policy/child-rights/20251208-sexual-violence-prevention-education.html)
-**組織**：[國教行動聯盟](https://naer-tw.github.io/policy/)（成立於 2012 年）
-**倡議資料庫**：https://naer-tw.github.io/advocacy-database/
+**原始頁面**：[https://policy.aabe.org.tw/child-rights/20251208-sexual-violence-prevention-education.html](https://policy.aabe.org.tw/child-rights/20251208-sexual-violence-prevention-education.html)
+**組織**：[國教行動聯盟](https://policy.aabe.org.tw/)（成立於 2012 年）
+**倡議資料庫**：https://advocacy.aabe.org.tw/

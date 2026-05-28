@@ -1,8 +1,8 @@
 Contact: https://www.facebook.com/twedumove/
 Preferred-Languages: zh-TW, en
-Canonical: https://naer-tw.github.io/policy/.well-known/security.txt
+Canonical: https://policy.aabe.org.tw/.well-known/security.txt
 Expires: 2027-04-19T00:00:00.000Z
-Policy: https://naer-tw.github.io/policy/
+Policy: https://policy.aabe.org.tw/
 
 # 國教行動聯盟政策知識庫安全通報
 # 若您發現本站任何安全問題（XSS、外洩、資料完整性等），請透過上方 Facebook 私訊聯繫。

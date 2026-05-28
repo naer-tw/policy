@@ -3,7 +3,7 @@ title: "兒童家庭部組織法該怎麼寫?16 條草案與雙條同修法律�
 description: "兒童家庭部組織法草案 16 條 5 章完整要點:法定勸告權、兒少代表 1/3、預算追蹤特別會計、獨立監督——對標日本こども家庭庁、挪威 Barneombudet、CRC GC2/19。"
 date: 2026-05-12
 keywords: "兒童家庭部組織法, 兒少權法雙條同修, 兒少權法修正第2條, 兒少權法修正第3條, 法定勸告權, 兒少預算特別會計, CRC GC2, 獨立兒少權利監督, 兒童權益促進委員會, 兒少代表參與, 國教行動聯盟"
-url: https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-how.html
+url: https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-how.html
 source: 國教行動聯盟政策知識庫
 ---
 
@@ -27,7 +27,7 @@ source: 國教行動聯盟政策知識庫
  
  
  2026 年 5 月 12 日
- [國教行動聯盟](https://naer-tw.github.io/policy/#organization) × 台灣心理健康聯盟 × 家庭韌性行動聯盟
+ [國教行動聯盟](https://policy.aabe.org.tw/#organization) × 台灣心理健康聯盟 × 家庭韌性行動聯盟
  審稿:王瀚陽 理事長
  分類:兒少權益
  
@@ -454,13 +454,13 @@ _
 
  
 
- - [為什麼台灣需要把兒少主管機關升格為「兒童家庭部」?(WHY 篇)](https://naer-tw.github.io/policy/child-rights/20260512-children-families-ministry-why.html)
+ - [為什麼台灣需要把兒少主管機關升格為「兒童家庭部」?(WHY 篇)](https://policy.aabe.org.tw/child-rights/20260512-children-families-ministry-why.html)
 
- - **[🌐 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://naer-tw.github.io/policy/cwa-reform/)**
+ - **[🌐 國教盟兒少權法修法知識庫(完整論述、6 大缺口立法草案、21 國國際對標、27 篇政策論述)](https://policy.aabe.org.tw/cwa-reform/)**
 
- - [6 大缺口完整立法草案(RP-G01~G06,可作為立委版獨立提案文字基礎)](https://naer-tw.github.io/policy/cwa-reform/reform-proposals/)
+ - [6 大缺口完整立法草案(RP-G01~G06,可作為立委版獨立提案文字基礎)](https://policy.aabe.org.tw/cwa-reform/reform-proposals/)
 
- - [21 國國際對標卡(strength / weakness / applicability 三欄齊全)](https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/)
+ - [21 國國際對標卡(strength / weakness / applicability 三欄齊全)](https://policy.aabe.org.tw/cwa-reform/intl-benchmarks/)
 
  - [全國法規資料庫——兒童及少年福利與權益保障法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050001)
 

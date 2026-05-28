@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /policy/cwa-reform/
 
-Sitemap: https://naer-tw.github.io/policy/cwa-reform/sitemap.xml
+Sitemap: https://policy.aabe.org.tw/cwa-reform/sitemap.xml

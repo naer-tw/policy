@@ -7,13 +7,13 @@
 部署後預期可訪問:
 
 ```
-https://naer-tw.github.io/policy/cwa-reform/                          (首頁)
-https://naer-tw.github.io/policy/cwa-reform/reform-proposals/         (6 大缺口列表)
-https://naer-tw.github.io/policy/cwa-reform/reform-proposals/RP-G01.html  (RP-G01 詳細)
-https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/          (21 國對標列表)
-https://naer-tw.github.io/policy/cwa-reform/intl-benchmarks/JP01.html (日本)
-https://naer-tw.github.io/policy/cwa-reform/policies/                  (27 篇政策列表)
-https://naer-tw.github.io/policy/cwa-reform/articles/                  (16 條評估列表)
+https://policy.aabe.org.tw/cwa-reform/                          (首頁)
+https://policy.aabe.org.tw/cwa-reform/reform-proposals/         (6 大缺口列表)
+https://policy.aabe.org.tw/cwa-reform/reform-proposals/RP-G01.html  (RP-G01 詳細)
+https://policy.aabe.org.tw/cwa-reform/intl-benchmarks/          (21 國對標列表)
+https://policy.aabe.org.tw/cwa-reform/intl-benchmarks/JP01.html (日本)
+https://policy.aabe.org.tw/cwa-reform/policies/                  (27 篇政策列表)
+https://policy.aabe.org.tw/cwa-reform/articles/                  (16 條評估列表)
 ```
 
 ## 部署步驟
@@ -32,7 +32,7 @@ git branch -M main
 git push -u origin main
 
 # 3. 在 GitHub 設定 → Pages → Source: main branch / root
-# 4. 等待 1-2 分鐘即可訪問 https://naer-tw.github.io/policy/cwa-reform/
+# 4. 等待 1-2 分鐘即可訪問 https://policy.aabe.org.tw/cwa-reform/
 ```
 
 ### Option 2:整合進現有 GEO 專案
