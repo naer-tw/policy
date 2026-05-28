@@ -1,0 +1,4 @@
+# === 5/28 GEO 優化版上線 ===
+# 12/16 兩層式檢測新聞稿：中文 slug 舊版 → 英文 slug 新版（保留 SEO link equity）
+/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html  /campus-safety/20251216-two-tier-drug-testing.html  301
+/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測  /campus-safety/20251216-two-tier-drug-testing.html  301
