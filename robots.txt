@@ -102,3 +102,4 @@ Sitemap: https://policy.aabe.org.tw/sitemap.xml
 # llms.txt: https://policy.aabe.org.tw/llms.txt
 # humans.txt: https://policy.aabe.org.tw/humans.txt
 # security.txt: https://policy.aabe.org.tw/.well-known/security.txt
+Sitemap: https://policy.aabe.org.tw/cwa-reform/sitemap.xml
