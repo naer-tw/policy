@@ -736,22 +736,23 @@
       <span class="section-hint">LATEST</span>
     </div>
     <div class="articles">
-      <a href="youth-health/20260610-new-drug-three-gaps.html" class="article">
+      <!-- AABE:LATEST -->
+      <a href="youth-health/20260610-new-drug-three-gaps.html" class="article" data-date="2026-06-10">
         <span class="article-date">06.10.2026</span>
         <span class="article-title">重懲毒駕之後，新興毒品還有哪三個防制缺口？</span>
         <span class="article-cat" style="--tag-color: var(--c-youth);">青少年健康</span>
       </a>
-      <a href="youth-health/20260610-nps-explainer.html" class="article">
+      <a href="youth-health/20260610-nps-explainer.html" class="article" data-date="2026-06-10">
         <span class="article-date">06.10.2026</span>
         <span class="article-title">什麼是新興毒品 NPS（新精神活性物質）？種類、舉例與台灣趨勢</span>
         <span class="article-cat" style="--tag-color: var(--c-youth);">青少年健康</span>
       </a>
-      <a href="youth-health/20260601-true-smoke-free-city-three-tests.html" class="article">
+      <a href="youth-health/20260601-true-smoke-free-city-three-tests.html" class="article" data-date="2026-06-01">
         <span class="article-date">06.01.2026</span>
         <span class="article-title">北市無菸城市上路後，要過哪三道考驗？</span>
         <span class="article-cat" style="--tag-color: var(--c-youth);">青少年健康</span>
       </a>
-      <a href="youth-health/20260529-world-no-tobacco-day-ban-flavoured.html" class="article">
+      <a href="youth-health/20260529-world-no-tobacco-day-ban-flavoured.html" class="article" data-date="2026-05-29">
         <span class="article-date">05.29.2026</span>
         <span class="article-title">世界無菸日前夕：6 民間團體呼籲落實禁加味菸　衛福部 5/28 啟動電子煙持有罰則修法</span>
         <span class="article-cat" style="--tag-color: var(--c-youth);">青少年健康</span>
@@ -810,5 +811,25 @@
 
   </main>
 
+<script>
+/* AABE freshness：data-date 14 天內自動加 NEW；data-event-end 過期自動標已結束（裝飾性，無 JS 不影響內容） */
+(function(){
+  var NOW=Date.now(), WIN=14*86400000;
+  document.querySelectorAll('[data-date]').forEach(function(c){
+    var t=Date.parse(c.getAttribute('data-date')+'T00:00:00+08:00');
+    if(isNaN(t)||NOW-t>=WIN||NOW<t-86400000) return;
+    var s=document.createElement('span'); s.textContent='NEW';
+    s.style.cssText='display:inline-block;margin-left:8px;padding:2px 8px;background:#c8385a;color:#fff;font:700 0.65rem/1.4 Inter,sans-serif;letter-spacing:.15em;border-radius:3px;vertical-align:middle;';
+    (c.querySelector('.date,.article-date')||c.firstElementChild||c).appendChild(s);
+  });
+  document.querySelectorAll('[data-event-end]').forEach(function(b){
+    var end=Date.parse(b.getAttribute('data-event-end')+'T23:59:59+08:00');
+    if(isNaN(end)||NOW<=end) return;
+    b.style.opacity='0.62';
+    var k=b.querySelector('.upcoming-kicker');
+    if(k){k.textContent='已結束';k.style.color='#9ca3af';}
+  });
+})();
+</script>
 </body>
 </html>
