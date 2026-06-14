@@ -6,7 +6,7 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 36 篇深度專題）
+## 議題分類（五大主軸，共 37 篇深度專題）
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
@@ -57,10 +57,11 @@
 - [免費營養午餐配套](https://policy.aabe.org.tw/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
 - [國民教育平權](https://policy.aabe.org.tw/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
 
-### 教師與校務（1 篇）
+### 教師與校務（2 篇）
 校事會議修法、教師申訴、教師專業、校園民主參與
 - [教師事務議題總覽](https://policy.aabe.org.tw/teacher-affairs/)
 - [校事會議修法](https://policy.aabe.org.tw/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
+- [校事會議該廢除嗎？國教盟公聽會完整書面意見](https://policy.aabe.org.tw/teacher-affairs/20260615-school-affairs-meeting-triage.html)：立法院教育及文化委員會校事會議公聽會書面意見——不廢除而分流（小案前端化解、重案查到底、高風險轉介）、雇主原則上移教育局處、合理管教安全港、三層 15 項建議、韓英日國際借鏡
 
 ## 倡議成果資料庫
 
