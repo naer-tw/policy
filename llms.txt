@@ -6,7 +6,7 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 37 篇深度專題）
+## 議題分類（五大主軸，共 39 篇深度專題）
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
@@ -57,11 +57,13 @@
 - [免費營養午餐配套](https://policy.aabe.org.tw/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
 - [國民教育平權](https://policy.aabe.org.tw/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
 
-### 教師與校務（2 篇）
+### 教師與校務（4 篇）
 校事會議修法、教師申訴、教師專業、校園民主參與
 - [教師事務議題總覽](https://policy.aabe.org.tw/teacher-affairs/)
 - [校事會議修法](https://policy.aabe.org.tw/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
 - [校事會議該廢除嗎？國教盟公聽會完整書面意見](https://policy.aabe.org.tw/teacher-affairs/20260615-school-affairs-meeting-triage.html)：立法院教育及文化委員會校事會議公聽會書面意見——不廢除而分流（小案前端化解、重案查到底、高風險轉介）、雇主原則上移教育局處、合理管教安全港、三層 15 項建議、韓英日國際借鏡
+- [校事會議知識專頁：是什麼·怎麼進行·修法沿革·爭議數據](https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/)：中立事實整理——制度定義與法源、七步流程與法定時限、2019–2026 修法沿革、1,372 件投訴完整漏斗與四方爭點地圖、十個公開報導案例
+- [韓國《2025 教育活動保護手冊》中文重點編譯](https://policy.aabe.org.tw/teacher-affairs/20260615-korea-education-activity-protection-manual.html)：韓國教育部與 KEDI 合編 220 頁手冊結構化編譯——兩級教權保護委員會、全鏈條時限、學生處分計分制、調解前置、被害教師支援 12 項、16 類侵害與 27 種書式；附台灣校事會議改革 10 點借鏡
 
 ## 倡議成果資料庫
 

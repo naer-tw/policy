@@ -292,4 +292,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/20260615-korea-education-activity-protection-manual.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/01_what.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/02_process.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/03_history.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/04_controversy.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
