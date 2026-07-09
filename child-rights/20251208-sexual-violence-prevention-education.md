@@ -4,7 +4,7 @@ description: "8,742名青少年調查顯示「遇到性騷擾該怎麼辦？」�
 date: 2025-12-08
 keywords: "性騷擾,性教育,數位性暴力,青少年保護,國教盟,國教行動聯盟,健康教育,性影像,兒少保護,同意文化,身體自主"
 url: https://policy.aabe.org.tw/child-rights/20251208-sexual-violence-prevention-education.html
-source: 國教行動聯盟政策知識庫
+source: 國教行動聯盟政策資料庫
 ---
 
 # 8742名青少年票選第三名：遇到性騷擾該怎麼辦？
