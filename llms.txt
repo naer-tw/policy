@@ -6,7 +6,7 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 40 篇深度專題）
+## 議題分類（六大主軸，共 43 篇深度專題）
 
 ### 校園安全（5 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
@@ -35,17 +35,22 @@
 - [人工生殖法修法風險](https://policy.aabe.org.tw/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
 - [兒童消失危機-育兒津貼翻倍](https://policy.aabe.org.tw/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
 
-### 青少年身心健康（5 篇）
+### 青少年身心健康（10 篇）
 青少年自殺防治、心理健康、菸害防制、電子煙管制、世代禁菸、新興毒品防制
 - [青少年健康議題總覽](https://policy.aabe.org.tw/youth-health/)
 - [健康政策議題總覽](https://policy.aabe.org.tw/health/)
 - [重懲毒駕之後，新興毒品還有哪三個防制缺口？](https://policy.aabe.org.tw/youth-health/20260610-new-drug-three-gaps.html)：依托咪酯毒駕後行政院 6/4 提 14 項作為，國教盟籲補上三大缺口——處理成少共犯（113 年成少共犯率 29.83%、詐欺類 53.06%）、接住孩子（學生輔導法施行日）、預警下一個毒品（NPS 早期預警機制）
 - [什麼是新興毒品 NPS（新精神活性物質）？](https://policy.aabe.org.tw/youth-health/20260610-nps-explainer.html)：UNODC 定義與 14 大分類、常見種類舉例、台灣檢出趨勢、咖啡包／軟糖／電子煙彈偽裝形式與依托咪酯案例、求助管道
+- [北市無菸城市上路後，要過哪三道考驗？](https://policy.aabe.org.tw/youth-health/20260601-true-smoke-free-city-three-tests.html)：國教盟青年部彙整三道考驗——二手菸外溢、執行配套、加熱菸納管，96.2% 市民支持但戶外二手菸暴露率仍達 48.9%
+- [世界無菸日前夕：6 民間團體呼籲落實禁加味菸　衛福部 5/28 啟動電子煙持有罰則修法](https://policy.aabe.org.tw/youth-health/20260529-world-no-tobacco-day-ban-flavoured.html)：台灣拒菸聯盟 6 團體呼籲落實禁加味菸，菸防法拖逾 40 個月，國教盟提三大訴求
+- [「可以調，但要看必要性」——食藥署副署長一句話，引發台大法醫所、國教盟與顏宗海主任五大反擊論點](https://policy.aabe.org.tw/youth-health/20260527-three-party-analysis.html)：台大法醫所翁德怡所長公開呼應國教盟降低依托咪酯閾值訴求，三方論述逐字保留與五大爭點深度分析
+- [當化工原料變成喪屍煙彈：誰在台灣製造毒品載具，誰又該負責管？](https://policy.aabe.org.tw/youth-health/20260526-vape-device-research.html)：依托咪酯國產製毒鏈成形、電子煙三類載具難辨，國教盟提 5 大修法建議並對標深圳供應鏈與英港新規範
+- [升毒等、唾液快篩、預防性羈押——林故廷攤開手講的政策三軸，為什麼還是攔不住毒駕？](https://policy.aabe.org.tw/youth-health/20260526-drug-driving-policy.html)：林故廷副局長揭露毒駕政策三軸，9 天後彰化、中和兩起致死，國教盟分析政策缺角與 5 大行動建議
 - [青少年自殺通報九年增 3.3 倍](https://policy.aabe.org.tw/youth-health/2025-12-05-青少年自殺通報.html)：心理健康評估入法倡議
 - [無菸城市政策分析](https://policy.aabe.org.tw/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
 - [健康台灣無菸品世代](https://policy.aabe.org.tw/health/2026-04-24-健康台灣無菸品世代.html)：英國世代禁菸法 vs 台灣應推動全面禁絕新型菸品（含電子煙、加熱菸、尼古丁袋）
 
-### 教育政策與改革（7 篇）
+### 教育政策與改革（8 篇）
 實驗教育、偏鄉公校、性平法、營養午餐、教育平權
 - [教育改革議題總覽](https://policy.aabe.org.tw/education-reform/)
 - [校園午餐議題總覽](https://policy.aabe.org.tw/school-lunch/)
@@ -56,6 +61,7 @@
 - [家長立場-全長聯公聽會](https://policy.aabe.org.tw/education-reform/2026-04-15-家長立場-全長聯公聽會.html)：家長團體聯合倡議
 - [免費營養午餐配套](https://policy.aabe.org.tw/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
 - [國民教育平權](https://policy.aabe.org.tw/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
+- [毒油燒進校園，然後呢？——學校午餐專法懶人包](https://policy.aabe.org.tw/school-lunch/2026-07-10-school-lunch-lazypack.html)：從中聯苯駢芘油品波及全國 881 校，看懂台灣學校午餐的供餐、財政、營養與立法全貌
 
 ### 教師與校務（4 篇）
 校事會議修法、教師申訴、教師專業、校園民主參與
@@ -64,6 +70,13 @@
 - [校事會議該廢除嗎？國教盟公聽會完整書面意見](https://policy.aabe.org.tw/teacher-affairs/20260615-school-affairs-meeting-triage.html)：立法院教育及文化委員會校事會議公聽會書面意見——不廢除而分流（小案前端化解、重案查到底、高風險轉介）、雇主原則上移教育局處、合理管教安全港、三層 15 項建議、韓英日國際借鏡
 - [校事會議知識專頁：是什麼·怎麼進行·修法沿革·爭議數據](https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/)：中立事實整理——制度定義與法源、七步流程與法定時限、2019–2026 修法沿革、1,372 件投訴完整漏斗與四方爭點地圖、十個公開報導案例
 - [韓國《2025 教育活動保護手冊》中文重點編譯](https://policy.aabe.org.tw/teacher-affairs/20260615-korea-education-activity-protection-manual.html)：韓國教育部與 KEDI 合編 220 頁手冊結構化編譯——兩級教權保護委員會、全鏈條時限、學生處分計分制、調解前置、被害教師支援 12 項、16 類侵害與 27 種書式；附台灣校事會議改革 10 點借鏡
+
+### 民間組織 AI 導入（3 篇）
+NPO 258 項工作拆解、AI 導入優先順序、九條紅線與人工控制點、台灣證據空白地圖。證據基礎：NPO 工作地圖與 AI 導入知識庫（平台碼 NW）。
+- [民間組織 AI 導入議題總覽](https://policy.aabe.org.tw/npo-ai/)
+- [NPO 最值得先導入 AI 的 40 項工作](https://policy.aabe.org.tw/npo-ai/20260809-npo-ai-top40-tasks.html)：258 項工作中 40 項高重複行政工作最值得優先評估；僅 14 項有 T1 直接證據支持；另有 3 項的建議自動化層級經複核校正而調降（層級校正，非實證發現）
+- [NPO 用 AI 的九條紅線與人工控制點](https://policy.aabe.org.tw/npo-ai/20260809-npo-ai-nine-redlines.html)：九類決定無論 AI 能力多強都不能只靠 AI 做最終判斷；含 L1-L4 分級與 14 個可複用人工控制點
+- [台灣 NPO 的 AI 證據空白地圖](https://policy.aabe.org.tw/npo-ai/20260809-taiwan-npo-ai-evidence-gap.html)：244 筆文獻盤點的誠實地圖——哪些場景有實證、哪些只有廠商自報、哪些完全空白；含覆蓋率三欄制與檢索邊界說明
 
 ## 倡議成果資料庫
 
