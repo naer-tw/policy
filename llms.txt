@@ -6,11 +6,12 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 41 篇深度專題）
+## 議題分類（五大主軸，共 47 篇深度專題）
 
-### 校園安全（5 篇）
+### 校園安全（6 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
 - [校園安全議題總覽](https://policy.aabe.org.tw/campus-safety/)
+- [嘉義退學少年持刀返校，暴露校園安全的哪些制度斷鏈？](https://policy.aabe.org.tw/campus-safety/20260310-chiayi-campus-safety-chain.html)：從新北割頸案到嘉義事件——斷鏈在在校預警、離校追蹤、跨系統聯防三個接口；113 年校安通報 341,152 件、113 學年度國中中輟 4,792 人；四點呼籲
 - [國民轉介教育條例](https://policy.aabe.org.tw/campus-safety/2026-03-23-轉介教育條例.html)：國教盟支持立法方向但提出三大配套機制
 - [永和國中霸凌案](https://policy.aabe.org.tw/campus-safety/2026-03-25-永和國中霸凌案.html)：校園霸凌通報機制與制度缺口分析
 - [倡議成果追蹤](https://policy.aabe.org.tw/campus-safety/2026-03-23-倡議成果追蹤.html)：國教盟兩年倡議全紀錄、8 項訴求 6 項獲回應
@@ -35,10 +36,13 @@
 - [人工生殖法修法風險](https://policy.aabe.org.tw/child-health/2026-01-14-人工生殖法修法風險.html)：早產 2.4 倍、低體重 2.3 倍的隱匿風險
 - [兒童消失危機-育兒津貼翻倍](https://policy.aabe.org.tw/child-health/2026-04-01-兒童消失危機-育兒津貼翻倍.html)：200 億幽靈預算分析
 
-### 青少年身心健康（5 篇）
+### 青少年身心健康（9 篇）
 青少年自殺防治、心理健康、菸害防制、電子煙管制、世代禁菸、新興毒品防制
 - [青少年健康議題總覽](https://policy.aabe.org.tw/youth-health/)
 - [健康政策議題總覽](https://policy.aabe.org.tw/health/)
+- [反毒打詐，為什麼不能只靠查緝？](https://policy.aabe.org.tw/youth-health/20260521-anti-drug-anti-fraud-safety-net.html)：2026 青少年藥物濫用預防與犯罪防治國際研討會 Day 1；毒品×詐欺×幫派×性剝削同一犯罪生態系（113 年成少共犯 29.83%、詐欺類 53.06%）；國教盟×共善促進協會四點聯合呼籲
+- [ADHD 用藥，台灣為什麼連藥證都沒有？](https://policy.aabe.org.tw/health/20260522-adhd-drug-licence-gap.html)：lisdexamfetamine／guanfacine／dexamfetamine 在台 TFDA 藥證 0 張（methylphenidate 48 張、atomoxetine 24 張）；不是自費問題而是無合法處方管道；附 18 項跨部會資料缺口與三層立委工具
+- [WHO 為什麼示警「菸草減害」不是科學？](https://policy.aabe.org.tw/health/20260625-who-tobacco-harm-reduction-warning.html)：WHO FCTC COP11 議程 4.5 直指菸草業「減害」論述；ENDS／ENNDS 只是產品分類不是危害分級；喪屍菸彈多透過電子煙裝置流通、部分不含尼古丁
 - [學生輔導法人力落地追蹤：第 11 條施行日期、專輔敘薪與 213 人進度](https://policy.aabe.org.tw/youth-health/20260813-student-counseling-act-implementation.html)：修正公布不等於施行——學輔法第 11、11-1 條施行日期仍待行政院核定；教育部 8/11 預告調高專輔敘薪上限（草案第 36 條自第 11 條施行之日施行）；追蹤三進度：施行日期核定、辦法發布、213 名新增專輔到位
 - [重懲毒駕之後，新興毒品還有哪三個防制缺口？](https://policy.aabe.org.tw/youth-health/20260610-new-drug-three-gaps.html)：依托咪酯毒駕後行政院 6/4 提 14 項作為，國教盟籲補上三大缺口——處理成少共犯（113 年成少共犯率 29.83%、詐欺類 53.06%）、接住孩子（學生輔導法施行日）、預警下一個毒品（NPS 早期預警機制）
 - [什麼是新興毒品 NPS（新精神活性物質）？](https://policy.aabe.org.tw/youth-health/20260610-nps-explainer.html)：UNODC 定義與 14 大分類、常見種類舉例、台灣檢出趨勢、咖啡包／軟糖／電子煙彈偽裝形式與依托咪酯案例、求助管道
@@ -46,9 +50,10 @@
 - [無菸城市政策分析](https://policy.aabe.org.tw/health/2026-01-13-無菸城市.html)：菸害防制法修正建議
 - [健康台灣無菸品世代](https://policy.aabe.org.tw/health/2026-04-24-健康台灣無菸品世代.html)：英國世代禁菸法 vs 台灣應推動全面禁絕新型菸品（含電子煙、加熱菸、尼古丁袋）
 
-### 教育政策與改革（7 篇）
+### 教育政策與改革（8 篇）
 實驗教育、偏鄉公校、性平法、營養午餐、教育平權
 - [教育改革議題總覽](https://policy.aabe.org.tw/education-reform/)
+- [大型路跑再撞統測，考生的赴考風險由誰承擔？](https://policy.aabe.org.tw/education-reform/20260423-marathon-vs-tvec-exam.html)：115 學年度四技二專統測（報名 65,802 人＋二技 5,766 人）遇台北市路跑交管；四項訴求含大型活動核准前先比對重大考試日期的預先比對機制
 - [校園午餐議題總覽](https://policy.aabe.org.tw/school-lunch/)
 - [偏鄉公校轉型實驗教育](https://policy.aabe.org.tw/education-reform/2026-04-12-偏鄉公校轉型實驗教育.html)：公立學校 93.8% 占比的制度偏離
 - [偽實驗與弱勢學生權益](https://policy.aabe.org.tw/education-reform/2026-04-12-偽實驗與弱勢學生權益.html)：實驗教育的質量落差
@@ -58,9 +63,10 @@
 - [免費營養午餐配套](https://policy.aabe.org.tw/school-lunch/2026-01-09-免費營養午餐配套.html)：食育力三大配套建議
 - [國民教育平權](https://policy.aabe.org.tw/school-lunch/2026-04-03-國民教育平權.html)：22 縣市教育落差分析
 
-### 教師與校務（4 篇）
+### 教師與校務（5 篇）
 校事會議修法、教師申訴、教師專業、校園民主參與
 - [教師事務議題總覽](https://policy.aabe.org.tw/teacher-affairs/)
+- [老師被期待當學生的守門人，誰來當老師的守門人？](https://policy.aabe.org.tw/teacher-affairs/20260528-teacher-mental-health-safety-net.html)：教師離世事件不簡化歸因但要追究制度責任；三項訴求——與考核脫鉤的教師心理安全支持方案、校方守門人制度、心理／行政／法律三軌支持
 - [校事會議修法](https://policy.aabe.org.tw/teacher-affairs/2026-01-23-校事會議修法.html)：分流檢舉、提升受理層級、強化外部專業三大改革
 - [校事會議該廢除嗎？國教盟公聽會完整書面意見](https://policy.aabe.org.tw/teacher-affairs/20260615-school-affairs-meeting-triage.html)：立法院教育及文化委員會校事會議公聽會書面意見——不廢除而分流（小案前端化解、重案查到底、高風險轉介）、雇主原則上移教育局處、合理管教安全港、三層 15 項建議、韓英日國際借鏡
 - [校事會議知識專頁：是什麼·怎麼進行·修法沿革·爭議數據](https://policy.aabe.org.tw/teacher-affairs/school-affairs-meeting-guide/)：中立事實整理——制度定義與法源、七步流程與法定時限、2019–2026 修法沿革、1,372 件投訴完整漏斗與四方爭點地圖、十個公開報導案例
