@@ -6,9 +6,9 @@
 
 本知識庫收錄國教盟歷年新聞稿、政策分析、公聽會發言、研究報告等資料，採用 GEO（Generative Engine Optimization）優化格式，方便 AI 搜尋引擎與研究者快速理解我們的立場與主張。
 
-## 議題分類（五大主軸，共 48 篇深度專題）
+## 議題分類（五大主軸，共 49 篇深度專題）
 
-### 校園安全（6 篇）
+### 校園安全（7 篇）
 校園霸凌防制、少年司法改革、轉介教育條例、校園檢測機制
 - [校園安全議題總覽](https://policy.aabe.org.tw/campus-safety/)
 - [嘉義退學少年持刀返校，暴露校園安全的哪些制度斷鏈？](https://policy.aabe.org.tw/campus-safety/20260310-chiayi-campus-safety-chain.html)：從新北割頸案到嘉義事件——斷鏈在在校預警、離校追蹤、跨系統聯防三個接口；113 年校安通報 341,152 件、113 學年度國中中輟 4,792 人；四點呼籲
@@ -17,6 +17,7 @@
 - [倡議成果追蹤](https://policy.aabe.org.tw/campus-safety/2026-03-23-倡議成果追蹤.html)：國教盟兩年倡議全紀錄、8 項訴求 6 項獲回應
 - [校園唾液快篩二層檢測機制](https://policy.aabe.org.tw/campus-safety/2026-04-02-校園唾液快篩二層檢測機制.html)：科技反制新興毒品
 - [校園菸毒與毒駕新興毒品檢測](https://policy.aabe.org.tw/campus-safety/2025-12-16-校園菸毒與毒駕新興毒品檢測.html)：喪屍煙彈與依托咪酯防制
+- [校安人力追蹤：國教盟與教育部](https://policy.aabe.org.tw/campus-safety/20261001-school-safety-manpower-tracker.html)：本盟從何時談起、教育部怎麼走到校安2000——雙軌時間軸與要求追蹤
 
 ### 兒少保護（13 篇）
 兒少保護法、人工生殖、育兒支持、少事法、社工責任、兒童家庭部
